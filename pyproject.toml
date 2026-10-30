@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kernel-deltanet"
+version = "1.0.0"
+description = "High-Capacity Linear Recurrence via In-Register Spectral Kernels and Analytical Transmutation"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Anonymous MLSys Authors", email = "anonymous@submission.org"}
+]
+dependencies = [
+    "torch>=2.1.0",
+    "numpy>=1.24.0"
+]
+
+[project.optional-dependencies]
+triton = ["triton>=2.1.0"]
+dev = ["pytest", "matplotlib"]
