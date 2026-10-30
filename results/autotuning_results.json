@@ -1,0 +1,34 @@
+{
+  "chunk_16": {
+    "chunk_size": 16,
+    "mean_latency_ms": 6.3786099999560975,
+    "std_latency_ms": 0.9544986012823826,
+    "throughput_tok_per_sec": 642146.1729167
+  },
+  "chunk_32": {
+    "chunk_size": 32,
+    "mean_latency_ms": 3.589014999306528,
+    "std_latency_ms": 0.8000914502701737,
+    "throughput_tok_per_sec": 1141260.2067117111
+  },
+  "chunk_64": {
+    "chunk_size": 64,
+    "mean_latency_ms": 2.186154999981227,
+    "std_latency_ms": 0.586182623864996,
+    "throughput_tok_per_sec": 1873609.1448388488
+  },
+  "chunk_128": {
+    "chunk_size": 128,
+    "mean_latency_ms": 1.0276799999701325,
+    "std_latency_ms": 0.07663269951688827,
+    "throughput_tok_per_sec": 3985676.4752832036
+  },
+  "chunk_256": {
+    "chunk_size": 256,
+    "mean_latency_ms": 0.7699050009250641,
+    "std_latency_ms": 0.056855699067475514,
+    "throughput_tok_per_sec": 5320136.893614839
+  },
+  "optimal_chunk_size": 256,
+  "optimal_throughput_tok_per_sec": 5320136.893614839
+}

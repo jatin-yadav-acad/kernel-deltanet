@@ -1,0 +1,102 @@
+[
+  {
+    "context_length": 4096,
+    "batch_size": 1,
+    "paged_attention_pages_per_seq": 256,
+    "paged_attention_metadata_kb": 22.0,
+    "kernel_deltanet_metadata_kb": 0.1719,
+    "metadata_reduction_factor": 128.0,
+    "paged_attention_internal_frag_mb": 0.17,
+    "kernel_deltanet_internal_frag_mb": 0.0
+  },
+  {
+    "context_length": 4096,
+    "batch_size": 128,
+    "paged_attention_pages_per_seq": 256,
+    "paged_attention_metadata_kb": 2816.0,
+    "kernel_deltanet_metadata_kb": 22.0,
+    "metadata_reduction_factor": 128.0,
+    "paged_attention_internal_frag_mb": 22.0,
+    "kernel_deltanet_internal_frag_mb": 0.0
+  },
+  {
+    "context_length": 8192,
+    "batch_size": 1,
+    "paged_attention_pages_per_seq": 512,
+    "paged_attention_metadata_kb": 44.0,
+    "kernel_deltanet_metadata_kb": 0.1719,
+    "metadata_reduction_factor": 256.0,
+    "paged_attention_internal_frag_mb": 0.17,
+    "kernel_deltanet_internal_frag_mb": 0.0
+  },
+  {
+    "context_length": 8192,
+    "batch_size": 128,
+    "paged_attention_pages_per_seq": 512,
+    "paged_attention_metadata_kb": 5632.0,
+    "kernel_deltanet_metadata_kb": 22.0,
+    "metadata_reduction_factor": 256.0,
+    "paged_attention_internal_frag_mb": 22.0,
+    "kernel_deltanet_internal_frag_mb": 0.0
+  },
+  {
+    "context_length": 16384,
+    "batch_size": 1,
+    "paged_attention_pages_per_seq": 1024,
+    "paged_attention_metadata_kb": 88.0,
+    "kernel_deltanet_metadata_kb": 0.1719,
+    "metadata_reduction_factor": 512.0,
+    "paged_attention_internal_frag_mb": 0.17,
+    "kernel_deltanet_internal_frag_mb": 0.0
+  },
+  {
+    "context_length": 16384,
+    "batch_size": 128,
+    "paged_attention_pages_per_seq": 1024,
+    "paged_attention_metadata_kb": 11264.0,
+    "kernel_deltanet_metadata_kb": 22.0,
+    "metadata_reduction_factor": 512.0,
+    "paged_attention_internal_frag_mb": 22.0,
+    "kernel_deltanet_internal_frag_mb": 0.0
+  },
+  {
+    "context_length": 32768,
+    "batch_size": 1,
+    "paged_attention_pages_per_seq": 2048,
+    "paged_attention_metadata_kb": 176.0,
+    "kernel_deltanet_metadata_kb": 0.1719,
+    "metadata_reduction_factor": 1024.0,
+    "paged_attention_internal_frag_mb": 0.17,
+    "kernel_deltanet_internal_frag_mb": 0.0
+  },
+  {
+    "context_length": 32768,
+    "batch_size": 128,
+    "paged_attention_pages_per_seq": 2048,
+    "paged_attention_metadata_kb": 22528.0,
+    "kernel_deltanet_metadata_kb": 22.0,
+    "metadata_reduction_factor": 1024.0,
+    "paged_attention_internal_frag_mb": 22.0,
+    "kernel_deltanet_internal_frag_mb": 0.0
+  },
+  {
+    "context_length": 65536,
+    "batch_size": 1,
+    "paged_attention_pages_per_seq": 4096,
+    "paged_attention_metadata_kb": 352.0,
+    "kernel_deltanet_metadata_kb": 0.1719,
+    "metadata_reduction_factor": 2048.0,
+    "paged_attention_internal_frag_mb": 0.17,
+    "kernel_deltanet_internal_frag_mb": 0.0
+  },
+  {
+    "context_length": 65536,
+    "batch_size": 128,
+    "paged_attention_pages_per_seq": 4096,
+    "paged_attention_metadata_kb": 45056.0,
+    "kernel_deltanet_metadata_kb": 22.0,
+    "metadata_reduction_factor": 2048.0,
+    "paged_attention_internal_frag_mb": 22.0,
+    "kernel_deltanet_internal_frag_mb": 0.0
+  }
+]

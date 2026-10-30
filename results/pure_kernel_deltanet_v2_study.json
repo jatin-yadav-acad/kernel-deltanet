@@ -1,0 +1,656 @@
+{
+  "device": "NVIDIA GeForce RTX 5070 Ti",
+  "timestamp": "2026-10-24 08:41:18",
+  "part1_symbolic_drift": {
+    "unroll_steps": [
+      16,
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024,
+      2048
+    ],
+    "evaluations": {
+      "N_16": {
+        "1. Naive Pure (D=512, Uncent, Decaying)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.5323,
+          "margin": 0.2462,
+          "state_norm": 1.27
+        },
+        "2. Pure + Strategy A (Spectral Deflation)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.3515,
+          "margin": 0.3937,
+          "state_norm": 1.45
+        },
+        "3. Pure + Strategy B (Capacity D=1024)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.5353,
+          "margin": 0.2437,
+          "state_norm": 1.27
+        },
+        "4. Pure + Strategy C (Persistent Heads)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.6069,
+          "margin": 0.2011,
+          "state_norm": 1.02
+        },
+        "5. Pure + Strategy D (Momentum Delta mu=0.85)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.5695,
+          "margin": 1.628,
+          "state_norm": 7.07
+        },
+        "6. Pure + Strat A+B (Deflation + D=1024)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.35,
+          "margin": 0.3947,
+          "state_norm": 1.46
+        },
+        "7. Pure + Strat A+B+C (Defl+D1024+Persist)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.4538,
+          "margin": 0.3153,
+          "state_norm": 1.16
+        },
+        "8. Full Pure v2 (Strat A+B+C+D)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.9423,
+          "margin": 1.9081,
+          "state_norm": 5.94
+        },
+        "9. Hybrid 20:2 (Softmax Anchor)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.865,
+          "margin": 0.0,
+          "state_norm": 0.0
+        }
+      },
+      "N_32": {
+        "1. Naive Pure (D=512, Uncent, Decaying)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.6216,
+          "margin": 0.1847,
+          "state_norm": 1.63
+        },
+        "2. Pure + Strategy A (Spectral Deflation)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.4496,
+          "margin": 0.3177,
+          "state_norm": 1.88
+        },
+        "3. Pure + Strategy B (Capacity D=1024)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.6222,
+          "margin": 0.1846,
+          "state_norm": 1.63
+        },
+        "4. Pure + Strategy C (Persistent Heads)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.682,
+          "margin": 0.1516,
+          "state_norm": 1.3
+        },
+        "5. Pure + Strategy D (Momentum Delta mu=0.85)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.1663,
+          "margin": 1.1356,
+          "state_norm": 11.21
+        },
+        "6. Pure + Strat A+B (Deflation + D=1024)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.4478,
+          "margin": 0.3188,
+          "state_norm": 1.89
+        },
+        "7. Pure + Strat A+B+C (Defl+D1024+Persist)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.536,
+          "margin": 0.2581,
+          "state_norm": 1.51
+        },
+        "8. Full Pure v2 (Strat A+B+C+D)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.2203,
+          "margin": 1.3698,
+          "state_norm": 9.31
+        },
+        "9. Hybrid 20:2 (Softmax Anchor)": {
+          "accuracy_pct": 84.0,
+          "mse": 0.9363,
+          "margin": 0.0,
+          "state_norm": 0.0
+        }
+      },
+      "N_64": {
+        "1. Naive Pure (D=512, Uncent, Decaying)": {
+          "accuracy_pct": 96.0,
+          "mse": 0.7389,
+          "margin": 0.114,
+          "state_norm": 1.94
+        },
+        "2. Pure + Strategy A (Spectral Deflation)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.6202,
+          "margin": 0.1979,
+          "state_norm": 2.26
+        },
+        "3. Pure + Strategy B (Capacity D=1024)": {
+          "accuracy_pct": 98.0,
+          "mse": 0.737,
+          "margin": 0.1153,
+          "state_norm": 1.95
+        },
+        "4. Pure + Strategy C (Persistent Heads)": {
+          "accuracy_pct": 96.0,
+          "mse": 0.777,
+          "margin": 0.0965,
+          "state_norm": 1.57
+        },
+        "5. Pure + Strategy D (Momentum Delta mu=0.85)": {
+          "accuracy_pct": 98.0,
+          "mse": 0.2765,
+          "margin": 0.4803,
+          "state_norm": 16.16
+        },
+        "6. Pure + Strat A+B (Deflation + D=1024)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.6139,
+          "margin": 0.2022,
+          "state_norm": 2.27
+        },
+        "7. Pure + Strat A+B+C (Defl+D1024+Persist)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.6694,
+          "margin": 0.1701,
+          "state_norm": 1.83
+        },
+        "8. Full Pure v2 (Strat A+B+C+D)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.1621,
+          "margin": 0.58,
+          "state_norm": 13.51
+        },
+        "9. Hybrid 20:2 (Softmax Anchor)": {
+          "accuracy_pct": 56.0,
+          "mse": 0.9689,
+          "margin": 0.0,
+          "state_norm": 0.0
+        }
+      },
+      "N_128": {
+        "1. Naive Pure (D=512, Uncent, Decaying)": {
+          "accuracy_pct": 74.0,
+          "mse": 0.8764,
+          "margin": 0.0306,
+          "state_norm": 2.14
+        },
+        "2. Pure + Strategy A (Spectral Deflation)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.8223,
+          "margin": 0.0685,
+          "state_norm": 2.48
+        },
+        "3. Pure + Strategy B (Capacity D=1024)": {
+          "accuracy_pct": 76.0,
+          "mse": 0.8762,
+          "margin": 0.0308,
+          "state_norm": 2.15
+        },
+        "4. Pure + Strategy C (Persistent Heads)": {
+          "accuracy_pct": 80.0,
+          "mse": 0.8818,
+          "margin": 0.0339,
+          "state_norm": 1.76
+        },
+        "5. Pure + Strategy D (Momentum Delta mu=0.85)": {
+          "accuracy_pct": 46.0,
+          "mse": 0.8743,
+          "margin": -0.0244,
+          "state_norm": 21.6
+        },
+        "6. Pure + Strat A+B (Deflation + D=1024)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.8173,
+          "margin": 0.0727,
+          "state_norm": 2.5
+        },
+        "7. Pure + Strat A+B+C (Defl+D1024+Persist)": {
+          "accuracy_pct": 100.0,
+          "mse": 0.8263,
+          "margin": 0.0718,
+          "state_norm": 2.05
+        },
+        "8. Full Pure v2 (Strat A+B+C+D)": {
+          "accuracy_pct": 78.0,
+          "mse": 0.5616,
+          "margin": 0.1717,
+          "state_norm": 18.19
+        },
+        "9. Hybrid 20:2 (Softmax Anchor)": {
+          "accuracy_pct": 64.0,
+          "mse": 0.9778,
+          "margin": 0.0,
+          "state_norm": 0.0
+        }
+      },
+      "N_256": {
+        "1. Naive Pure (D=512, Uncent, Decaying)": {
+          "accuracy_pct": 44.0,
+          "mse": 0.967,
+          "margin": -0.0094,
+          "state_norm": 2.2
+        },
+        "2. Pure + Strategy A (Spectral Deflation)": {
+          "accuracy_pct": 54.0,
+          "mse": 0.9596,
+          "margin": -0.0011,
+          "state_norm": 2.54
+        },
+        "3. Pure + Strategy B (Capacity D=1024)": {
+          "accuracy_pct": 44.0,
+          "mse": 0.9679,
+          "margin": -0.0079,
+          "state_norm": 2.21
+        },
+        "4. Pure + Strategy C (Persistent Heads)": {
+          "accuracy_pct": 54.0,
+          "mse": 0.9511,
+          "margin": 0.0029,
+          "state_norm": 1.85
+        },
+        "5. Pure + Strategy D (Momentum Delta mu=0.85)": {
+          "accuracy_pct": 36.0,
+          "mse": 1.0826,
+          "margin": -0.1393,
+          "state_norm": 25.84
+        },
+        "6. Pure + Strat A+B (Deflation + D=1024)": {
+          "accuracy_pct": 54.0,
+          "mse": 0.9589,
+          "margin": 0.0003,
+          "state_norm": 2.56
+        },
+        "7. Pure + Strat A+B+C (Defl+D1024+Persist)": {
+          "accuracy_pct": 74.0,
+          "mse": 0.9342,
+          "margin": 0.0164,
+          "state_norm": 2.17
+        },
+        "8. Full Pure v2 (Strat A+B+C+D)": {
+          "accuracy_pct": 50.0,
+          "mse": 0.8668,
+          "margin": -0.0076,
+          "state_norm": 22.0
+        },
+        "9. Hybrid 20:2 (Softmax Anchor)": {
+          "accuracy_pct": 34.0,
+          "mse": 0.9927,
+          "margin": 0.0,
+          "state_norm": 0.0
+        }
+      },
+      "N_512": {
+        "1. Naive Pure (D=512, Uncent, Decaying)": {
+          "accuracy_pct": 32.0,
+          "mse": 1.0148,
+          "margin": -0.0307,
+          "state_norm": 2.21
+        },
+        "2. Pure + Strategy A (Spectral Deflation)": {
+          "accuracy_pct": 28.0,
+          "mse": 1.0091,
+          "margin": -0.0202,
+          "state_norm": 2.55
+        },
+        "3. Pure + Strategy B (Capacity D=1024)": {
+          "accuracy_pct": 30.0,
+          "mse": 1.0128,
+          "margin": -0.0301,
+          "state_norm": 2.22
+        },
+        "4. Pure + Strategy C (Persistent Heads)": {
+          "accuracy_pct": 36.0,
+          "mse": 0.9897,
+          "margin": -0.0149,
+          "state_norm": 1.93
+        },
+        "5. Pure + Strategy D (Momentum Delta mu=0.85)": {
+          "accuracy_pct": 22.0,
+          "mse": 1.3159,
+          "margin": -0.2454,
+          "state_norm": 27.77
+        },
+        "6. Pure + Strat A+B (Deflation + D=1024)": {
+          "accuracy_pct": 26.0,
+          "mse": 1.0059,
+          "margin": -0.0191,
+          "state_norm": 2.57
+        },
+        "7. Pure + Strat A+B+C (Defl+D1024+Persist)": {
+          "accuracy_pct": 54.0,
+          "mse": 0.9731,
+          "margin": -0.0005,
+          "state_norm": 2.26
+        },
+        "8. Full Pure v2 (Strat A+B+C+D)": {
+          "accuracy_pct": 38.0,
+          "mse": 1.0162,
+          "margin": -0.1005,
+          "state_norm": 23.88
+        },
+        "9. Hybrid 20:2 (Softmax Anchor)": {
+          "accuracy_pct": 40.0,
+          "mse": 0.9967,
+          "margin": 0.0,
+          "state_norm": 0.0
+        }
+      },
+      "N_1024": {
+        "1. Naive Pure (D=512, Uncent, Decaying)": {
+          "accuracy_pct": 20.0,
+          "mse": 1.024,
+          "margin": -0.0393,
+          "state_norm": 2.2
+        },
+        "2. Pure + Strategy A (Spectral Deflation)": {
+          "accuracy_pct": 32.0,
+          "mse": 1.0088,
+          "margin": -0.0199,
+          "state_norm": 2.55
+        },
+        "3. Pure + Strategy B (Capacity D=1024)": {
+          "accuracy_pct": 18.0,
+          "mse": 1.0268,
+          "margin": -0.0406,
+          "state_norm": 2.21
+        },
+        "4. Pure + Strategy C (Persistent Heads)": {
+          "accuracy_pct": 28.0,
+          "mse": 0.9971,
+          "margin": -0.0214,
+          "state_norm": 2.01
+        },
+        "5. Pure + Strategy D (Momentum Delta mu=0.85)": {
+          "accuracy_pct": 32.0,
+          "mse": 1.2272,
+          "margin": -0.1342,
+          "state_norm": 27.86
+        },
+        "6. Pure + Strat A+B (Deflation + D=1024)": {
+          "accuracy_pct": 22.0,
+          "mse": 1.0132,
+          "margin": -0.0225,
+          "state_norm": 2.57
+        },
+        "7. Pure + Strat A+B+C (Defl+D1024+Persist)": {
+          "accuracy_pct": 46.0,
+          "mse": 0.9822,
+          "margin": -0.0042,
+          "state_norm": 2.35
+        },
+        "8. Full Pure v2 (Strat A+B+C+D)": {
+          "accuracy_pct": 30.0,
+          "mse": 1.0569,
+          "margin": -0.114,
+          "state_norm": 24.35
+        },
+        "9. Hybrid 20:2 (Softmax Anchor)": {
+          "accuracy_pct": 36.0,
+          "mse": 0.9983,
+          "margin": 0.0,
+          "state_norm": 0.0
+        }
+      },
+      "N_2048": {
+        "1. Naive Pure (D=512, Uncent, Decaying)": {
+          "accuracy_pct": 10.0,
+          "mse": 1.0268,
+          "margin": -0.0401,
+          "state_norm": 2.2
+        },
+        "2. Pure + Strategy A (Spectral Deflation)": {
+          "accuracy_pct": 28.0,
+          "mse": 1.001,
+          "margin": -0.0213,
+          "state_norm": 2.54
+        },
+        "3. Pure + Strategy B (Capacity D=1024)": {
+          "accuracy_pct": 12.0,
+          "mse": 1.0255,
+          "margin": -0.0391,
+          "state_norm": 2.21
+        },
+        "4. Pure + Strategy C (Persistent Heads)": {
+          "accuracy_pct": 14.0,
+          "mse": 1.0071,
+          "margin": -0.0249,
+          "state_norm": 2.11
+        },
+        "5. Pure + Strategy D (Momentum Delta mu=0.85)": {
+          "accuracy_pct": 32.0,
+          "mse": 1.1141,
+          "margin": -0.115,
+          "state_norm": 28.06
+        },
+        "6. Pure + Strat A+B (Deflation + D=1024)": {
+          "accuracy_pct": 26.0,
+          "mse": 0.999,
+          "margin": -0.0195,
+          "state_norm": 2.56
+        },
+        "7. Pure + Strat A+B+C (Defl+D1024+Persist)": {
+          "accuracy_pct": 38.0,
+          "mse": 0.9795,
+          "margin": -0.006,
+          "state_norm": 2.46
+        },
+        "8. Full Pure v2 (Strat A+B+C+D)": {
+          "accuracy_pct": 38.0,
+          "mse": 1.0746,
+          "margin": -0.1153,
+          "state_norm": 24.93
+        },
+        "9. Hybrid 20:2 (Softmax Anchor)": {
+          "accuracy_pct": 24.0,
+          "mse": 0.9992,
+          "margin": 0.0,
+          "state_norm": 0.0
+        }
+      }
+    }
+  },
+  "part2_angular_discrimination": {
+    "delta_cos_levels": [
+      0.3,
+      0.15,
+      0.08,
+      0.04,
+      0.02,
+      0.01
+    ],
+    "evaluations": {
+      "delta_0.3": {
+        "Naive Pure (D=512, Uncent)": 82.0,
+        "Pure + Deflation (D=512)": 68.0,
+        "Pure + Defl + D=1024": 64.0,
+        "Full Pure v2 (A+B+C+D)": 10.0
+      },
+      "delta_0.15": {
+        "Naive Pure (D=512, Uncent)": 16.0,
+        "Pure + Deflation (D=512)": 0.0,
+        "Pure + Defl + D=1024": 0.0,
+        "Full Pure v2 (A+B+C+D)": 0.0
+      },
+      "delta_0.08": {
+        "Naive Pure (D=512, Uncent)": 2.0,
+        "Pure + Deflation (D=512)": 0.0,
+        "Pure + Defl + D=1024": 0.0,
+        "Full Pure v2 (A+B+C+D)": 0.0
+      },
+      "delta_0.04": {
+        "Naive Pure (D=512, Uncent)": 0.0,
+        "Pure + Deflation (D=512)": 0.0,
+        "Pure + Defl + D=1024": 0.0,
+        "Full Pure v2 (A+B+C+D)": 0.0
+      },
+      "delta_0.02": {
+        "Naive Pure (D=512, Uncent)": 0.0,
+        "Pure + Deflation (D=512)": 0.0,
+        "Pure + Defl + D=1024": 0.0,
+        "Full Pure v2 (A+B+C+D)": 0.0
+      },
+      "delta_0.01": {
+        "Naive Pure (D=512, Uncent)": 0.0,
+        "Pure + Deflation (D=512)": 0.0,
+        "Pure + Defl + D=1024": 0.0,
+        "Full Pure v2 (A+B+C+D)": 0.0
+      }
+    }
+  },
+  "part3_mqar_capacity": {
+    "K_scales": [
+      16,
+      32,
+      64,
+      128,
+      256,
+      512,
+      1024
+    ],
+    "evaluations": {
+      "K_16": {
+        "Naive Pure (D=512)": {
+          "acc": 3.3,
+          "snr": 0.0
+        },
+        "Pure v2 (D=1024, Defl, Persist, Mom)": {
+          "acc": 70.0,
+          "snr": 0.77
+        },
+        "Softmax Attention": {
+          "acc": 6.7,
+          "snr": 0.0
+        }
+      },
+      "K_32": {
+        "Naive Pure (D=512)": {
+          "acc": 0.0,
+          "snr": 0.0
+        },
+        "Pure v2 (D=1024, Defl, Persist, Mom)": {
+          "acc": 70.0,
+          "snr": 0.87
+        },
+        "Softmax Attention": {
+          "acc": 3.3,
+          "snr": 0.0
+        }
+      },
+      "K_64": {
+        "Naive Pure (D=512)": {
+          "acc": 0.0,
+          "snr": -0.01
+        },
+        "Pure v2 (D=1024, Defl, Persist, Mom)": {
+          "acc": 26.7,
+          "snr": 0.45
+        },
+        "Softmax Attention": {
+          "acc": 0.0,
+          "snr": 0.0
+        }
+      },
+      "K_128": {
+        "Naive Pure (D=512)": {
+          "acc": 0.0,
+          "snr": 0.0
+        },
+        "Pure v2 (D=1024, Defl, Persist, Mom)": {
+          "acc": 0.0,
+          "snr": 0.0
+        },
+        "Softmax Attention": {
+          "acc": 0.0,
+          "snr": 0.0
+        }
+      },
+      "K_256": {
+        "Naive Pure (D=512)": {
+          "acc": 0.0,
+          "snr": -0.01
+        },
+        "Pure v2 (D=1024, Defl, Persist, Mom)": {
+          "acc": 0.0,
+          "snr": -0.51
+        },
+        "Softmax Attention": {
+          "acc": 3.3,
+          "snr": 0.0
+        }
+      },
+      "K_512": {
+        "Naive Pure (D=512)": {
+          "acc": 0.0,
+          "snr": -0.06
+        },
+        "Pure v2 (D=1024, Defl, Persist, Mom)": {
+          "acc": 0.0,
+          "snr": -1.85
+        },
+        "Softmax Attention": {
+          "acc": 0.0,
+          "snr": 0.0
+        }
+      },
+      "K_1024": {
+        "Naive Pure (D=512)": {
+          "acc": 0.0,
+          "snr": -0.03
+        },
+        "Pure v2 (D=1024, Defl, Persist, Mom)": {
+          "acc": 0.0,
+          "snr": -2.83
+        },
+        "Softmax Attention": {
+          "acc": 0.0,
+          "snr": 0.01
+        }
+      }
+    }
+  },
+  "part4_long_context_passkey": {
+    "context_lengths": [
+      4096,
+      8192,
+      16384,
+      32768,
+      65536
+    ],
+    "evaluations": {
+      "T_4096": {
+        "Naive Pure (D=512, Decaying lambda=0.999)": 40.0,
+        "Pure v2 (D=1024, Deflated + Persistent lambda=1.0)": 4.0
+      },
+      "T_8192": {
+        "Naive Pure (D=512, Decaying lambda=0.999)": 20.0,
+        "Pure v2 (D=1024, Deflated + Persistent lambda=1.0)": 0.0
+      },
+      "T_16384": {
+        "Naive Pure (D=512, Decaying lambda=0.999)": 0.0,
+        "Pure v2 (D=1024, Deflated + Persistent lambda=1.0)": 0.0
+      },
+      "T_32768": {
+        "Naive Pure (D=512, Decaying lambda=0.999)": 0.0,
+        "Pure v2 (D=1024, Deflated + Persistent lambda=1.0)": 0.0
+      },
+      "T_65536": {
+        "Naive Pure (D=512, Decaying lambda=0.999)": 0.0,
+        "Pure v2 (D=1024, Deflated + Persistent lambda=1.0)": 0.0
+      }
+    }
+  }
+}

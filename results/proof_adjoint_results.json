@@ -1,0 +1,63 @@
+{
+  "status": "SUCCESS",
+  "theoretical_proofs": {
+    "unipotent_resolvent_theorem": "Theorem: Let L_c in R^{C x C} be strictly lower triangular with zero diagonal. Then (I - L_c) is unit lower triangular (unipotent). Its characteristic polynomial is det(lambda I - (I - L_c)) = (lambda - 1)^C. All C eigenvalues are identically 1.0, and det(I - L_c) = 1.0 identically for all keys, step sizes, and decay rates. Consequently, (I - L_c) is strictly non-singular and unconditionally invertible.",
+    "adjoint_backward_theorem": "Theorem: Let tilde_V_c = (I - L_c)^{-1} (diag(beta_c) V_c). For any scalar loss L with upstream gradient G = dL/d(tilde_V_c), the exact vector-Jacobian product is: dL/dV_c = diag(beta_c) * (I - L_c)^{-T} * G = diag(beta_c) * (I - L_c^T)^{-1} * G. Because L_c is strictly lower triangular, (I - L_c^T) is unit upper triangular. The linear system (I - L_c^T) X = G is solved via reverse backward substitution: X_i = G_i + sum_{j=i+1}^C (L_c)_{ji} X_j in exactly O(C^2 d_v) operations, without materializing matrix inverses or incurring numerical drift."
+  },
+  "empirical_benchmarks": {
+    "chunk_size_16": {
+      "chunk_size": 16,
+      "det_I_minus_L_error": 0.0,
+      "det_I_minus_U_error": 0.0,
+      "eigenvalue_unipotent_error": 0.0,
+      "forward_solve_relative_error": 1.1213609450080638e-17,
+      "adjoint_grad_V_relative_error": 1.0530053499065169e-16,
+      "adjoint_grad_beta_relative_error": 1.8062840680810549e-16,
+      "adjoint_grad_L_relative_error": 2.732945694549234e-16,
+      "fp32_backward_relative_error": 0.0,
+      "complexity_ops": "O(16^2 * 64) = 7680 FLOPs",
+      "passed": true
+    },
+    "chunk_size_32": {
+      "chunk_size": 32,
+      "det_I_minus_L_error": 0.0,
+      "det_I_minus_U_error": 0.0,
+      "eigenvalue_unipotent_error": 0.0,
+      "forward_solve_relative_error": 1.188244016989213e-17,
+      "adjoint_grad_V_relative_error": 1.9882750195462242e-16,
+      "adjoint_grad_beta_relative_error": 2.547141277141033e-16,
+      "adjoint_grad_L_relative_error": 4.211104474877252e-16,
+      "fp32_backward_relative_error": 0.0,
+      "complexity_ops": "O(32^2 * 64) = 31744 FLOPs",
+      "passed": true
+    },
+    "chunk_size_64": {
+      "chunk_size": 64,
+      "det_I_minus_L_error": 0.0,
+      "det_I_minus_U_error": 0.0,
+      "eigenvalue_unipotent_error": 0.0,
+      "forward_solve_relative_error": 1.494615916405478e-17,
+      "adjoint_grad_V_relative_error": 2.5634029244656285e-16,
+      "adjoint_grad_beta_relative_error": 3.1518498685155985e-16,
+      "adjoint_grad_L_relative_error": 4.3537379784663117e-16,
+      "fp32_backward_relative_error": 0.0,
+      "complexity_ops": "O(64^2 * 64) = 129024 FLOPs",
+      "passed": true
+    },
+    "chunk_size_128": {
+      "chunk_size": 128,
+      "det_I_minus_L_error": 0.0,
+      "det_I_minus_U_error": 0.0,
+      "eigenvalue_unipotent_error": 0.0,
+      "forward_solve_relative_error": 1.4957562752621012e-17,
+      "adjoint_grad_V_relative_error": 2.8685271814230975e-16,
+      "adjoint_grad_beta_relative_error": 3.374883582037999e-16,
+      "adjoint_grad_L_relative_error": 4.67141635465746e-16,
+      "fp32_backward_relative_error": 0.0,
+      "complexity_ops": "O(128^2 * 64) = 520192 FLOPs",
+      "passed": true
+    }
+  },
+  "peak_vram_allocated_mb": 89.06,
+  "peak_vram_allocated_gb": 0.087
+}

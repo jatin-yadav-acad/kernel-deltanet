@@ -1,0 +1,63 @@
+{
+  "dynamic_overwrite": {
+    "Standard Softmax Attention": {
+      "overwrite_success_rate": 46.666666666666664,
+      "mean_cos_sim_new": 0.2567396213610967,
+      "mean_cos_sim_old": 0.2755294981102149
+    },
+    "Linear DeltaNet": {
+      "overwrite_success_rate": 56.666666666666664,
+      "mean_cos_sim_new": 0.009817033509413401,
+      "mean_cos_sim_old": -0.011294228335221609
+    },
+    "Kernel-DeltaNet (Ours)": {
+      "overwrite_success_rate": 46.666666666666664,
+      "mean_cos_sim_new": 0.00736161470413208,
+      "mean_cos_sim_old": 0.03900055003662904
+    }
+  },
+  "multihop_recall": {
+    "2_hops": {
+      "Standard Softmax Attention": {
+        "top1_accuracy": 12.0,
+        "mean_cos_sim": 0.22608812898397446
+      },
+      "Linear DeltaNet": {
+        "top1_accuracy": 0.0,
+        "mean_cos_sim": 0.047682932689785955
+      },
+      "Kernel-DeltaNet (Ours)": {
+        "top1_accuracy": 0.0,
+        "mean_cos_sim": 0.06934678643941879
+      }
+    },
+    "3_hops": {
+      "Standard Softmax Attention": {
+        "top1_accuracy": 12.0,
+        "mean_cos_sim": 0.2268158757686615
+      },
+      "Linear DeltaNet": {
+        "top1_accuracy": 8.0,
+        "mean_cos_sim": -0.0232371723651886
+      },
+      "Kernel-DeltaNet (Ours)": {
+        "top1_accuracy": 0.0,
+        "mean_cos_sim": 0.07353205427527428
+      }
+    }
+  },
+  "dyck_stack_tracking": {
+    "Standard Transformer LM": {
+      "bracket_matching_accuracy": 15.0,
+      "total_evaluated_tokens": 1600
+    },
+    "Linear DeltaNet LM": {
+      "bracket_matching_accuracy": 15.125,
+      "total_evaluated_tokens": 1600
+    },
+    "Kernel-DeltaNet LM": {
+      "bracket_matching_accuracy": 18.4375,
+      "total_evaluated_tokens": 1600
+    }
+  }
+}

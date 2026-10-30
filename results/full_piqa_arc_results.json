@@ -1,0 +1,32 @@
+{
+  "Teacher_TinyLlama_1.1B": {
+    "PIQA": {
+      "correct": 1358,
+      "total": 1838,
+      "accuracy": 73.88,
+      "se": 1.02
+    },
+    "ARC-Challenge": {
+      "correct": 277,
+      "total": 570,
+      "accuracy": 48.6,
+      "se": 2.09
+    }
+  },
+  "Kernel_DeltaNet_1.1B": {
+    "PIQA": {
+      "correct": 1005,
+      "total": 1838,
+      "accuracy": 54.68,
+      "se": 1.16,
+      "retention_pct": 74.01
+    },
+    "ARC-Challenge": {
+      "correct": 175,
+      "total": 570,
+      "accuracy": 30.7,
+      "se": 1.93,
+      "retention_pct": 63.17
+    }
+  }
+}

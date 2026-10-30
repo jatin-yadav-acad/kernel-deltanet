@@ -1,0 +1,231 @@
+{
+  "device": "NVIDIA GeForce RTX 5070 Ti",
+  "empirical_variance_vs_N_D": [
+    {
+      "D": 128,
+      "N": 8,
+      "ratio_N_over_D": 0.0625,
+      "empirical_error_variance": 114.55881
+    },
+    {
+      "D": 128,
+      "N": 16,
+      "ratio_N_over_D": 0.125,
+      "empirical_error_variance": 111.3453
+    },
+    {
+      "D": 128,
+      "N": 32,
+      "ratio_N_over_D": 0.25,
+      "empirical_error_variance": 121.53314
+    },
+    {
+      "D": 128,
+      "N": 64,
+      "ratio_N_over_D": 0.5,
+      "empirical_error_variance": 112.93143
+    },
+    {
+      "D": 128,
+      "N": 128,
+      "ratio_N_over_D": 1.0,
+      "empirical_error_variance": 116.89705
+    },
+    {
+      "D": 128,
+      "N": 256,
+      "ratio_N_over_D": 2.0,
+      "empirical_error_variance": 115.07762
+    },
+    {
+      "D": 256,
+      "N": 8,
+      "ratio_N_over_D": 0.0312,
+      "empirical_error_variance": 120.01165
+    },
+    {
+      "D": 256,
+      "N": 16,
+      "ratio_N_over_D": 0.0625,
+      "empirical_error_variance": 113.02075
+    },
+    {
+      "D": 256,
+      "N": 32,
+      "ratio_N_over_D": 0.125,
+      "empirical_error_variance": 110.1238
+    },
+    {
+      "D": 256,
+      "N": 64,
+      "ratio_N_over_D": 0.25,
+      "empirical_error_variance": 114.17734
+    },
+    {
+      "D": 256,
+      "N": 128,
+      "ratio_N_over_D": 0.5,
+      "empirical_error_variance": 116.37238
+    },
+    {
+      "D": 256,
+      "N": 256,
+      "ratio_N_over_D": 1.0,
+      "empirical_error_variance": 115.12908
+    },
+    {
+      "D": 512,
+      "N": 8,
+      "ratio_N_over_D": 0.0156,
+      "empirical_error_variance": 113.52485
+    },
+    {
+      "D": 512,
+      "N": 16,
+      "ratio_N_over_D": 0.0312,
+      "empirical_error_variance": 113.13655
+    },
+    {
+      "D": 512,
+      "N": 32,
+      "ratio_N_over_D": 0.0625,
+      "empirical_error_variance": 115.42884
+    },
+    {
+      "D": 512,
+      "N": 64,
+      "ratio_N_over_D": 0.125,
+      "empirical_error_variance": 114.35667
+    },
+    {
+      "D": 512,
+      "N": 128,
+      "ratio_N_over_D": 0.25,
+      "empirical_error_variance": 117.59888
+    },
+    {
+      "D": 512,
+      "N": 256,
+      "ratio_N_over_D": 0.5,
+      "empirical_error_variance": 120.88587
+    },
+    {
+      "D": 1024,
+      "N": 8,
+      "ratio_N_over_D": 0.0078,
+      "empirical_error_variance": 119.30114
+    },
+    {
+      "D": 1024,
+      "N": 16,
+      "ratio_N_over_D": 0.0156,
+      "empirical_error_variance": 115.57313
+    },
+    {
+      "D": 1024,
+      "N": 32,
+      "ratio_N_over_D": 0.0312,
+      "empirical_error_variance": 113.1121
+    },
+    {
+      "D": 1024,
+      "N": 64,
+      "ratio_N_over_D": 0.0625,
+      "empirical_error_variance": 115.03439
+    },
+    {
+      "D": 1024,
+      "N": 128,
+      "ratio_N_over_D": 0.125,
+      "empirical_error_variance": 108.87805
+    },
+    {
+      "D": 1024,
+      "N": 256,
+      "ratio_N_over_D": 0.25,
+      "empirical_error_variance": 118.12687
+    },
+    {
+      "D": 2048,
+      "N": 8,
+      "ratio_N_over_D": 0.0039,
+      "empirical_error_variance": 112.09335
+    },
+    {
+      "D": 2048,
+      "N": 16,
+      "ratio_N_over_D": 0.0078,
+      "empirical_error_variance": 113.18788
+    },
+    {
+      "D": 2048,
+      "N": 32,
+      "ratio_N_over_D": 0.0156,
+      "empirical_error_variance": 117.94627
+    },
+    {
+      "D": 2048,
+      "N": 64,
+      "ratio_N_over_D": 0.0312,
+      "empirical_error_variance": 113.56007
+    },
+    {
+      "D": 2048,
+      "N": 128,
+      "ratio_N_over_D": 0.0625,
+      "empirical_error_variance": 115.64905
+    },
+    {
+      "D": 2048,
+      "N": 256,
+      "ratio_N_over_D": 0.125,
+      "empirical_error_variance": 120.79649
+    }
+  ],
+  "topologies_accuracy": [
+    {
+      "topology": "Pure Recurrent (22:0)",
+      "num_anchors": 0,
+      "accuracy_by_N": {
+        "16": 100.0,
+        "32": 100.0,
+        "64": 100.0,
+        "128": 100.0,
+        "256": 100.0
+      }
+    },
+    {
+      "topology": "Hybrid Gauge (21:1 Anchor)",
+      "num_anchors": 1,
+      "accuracy_by_N": {
+        "16": 100.0,
+        "32": 100.0,
+        "64": 100.0,
+        "128": 100.0,
+        "256": 100.0
+      }
+    },
+    {
+      "topology": "Hybrid Gauge (20:2 Anchors, Ours)",
+      "num_anchors": 2,
+      "accuracy_by_N": {
+        "16": 100.0,
+        "32": 100.0,
+        "64": 100.0,
+        "128": 100.0,
+        "256": 100.0
+      }
+    },
+    {
+      "topology": "Softmax Attention (22:22)",
+      "num_anchors": 22,
+      "accuracy_by_N": {
+        "16": 100.0,
+        "32": 100.0,
+        "64": 100.0,
+        "128": 100.0,
+        "256": 100.0
+      }
+    }
+  ]
+}

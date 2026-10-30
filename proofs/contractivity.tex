@@ -1,0 +1,87 @@
+% proofs/contractivity.tex
+% Formal Proof: Strict Spectral Non-Expansiveness and Uniform State Boundedness of Spherically Renormalized Kernel-DeltaNet
+
+\begin{theorem}[\textbf{Strict Spectral Non-Expansiveness via Spherical Dual Renormalization}]
+\label{thm:contractivity}
+Let $x_t \in \mathbb{R}^d$ be an arbitrary sequence of tokens with key projections $k_t = W_k x_t \in \mathbb{R}^{d_k}$, adaptive learning rates $\beta_t \in (0, 1]$, and scalar decays $\lambda_t \in (0, 1]$. Let $\phi: \mathbb{S}^{d_k-1} \to \mathbb{R}^D$ be an explicit Random Fourier Feature map with finite dimension $D < \infty$. Define the spherically renormalized dual feature representation:
+\begin{equation}
+\hat{\phi}(k_t) \triangleq \frac{\phi(k_t)}{\|\phi(k_t)\|_2} \in \mathbb{S}^{D-1}
+\label{eq:spherical_renorm_def}
+\end{equation}
+and the instantaneous state transition operator $A_t \in \mathbb{R}^{D \times D}$:
+\begin{equation}
+A_t \triangleq \lambda_t \left( I - \beta_t \hat{\phi}(k_t) \hat{\phi}(k_t)^T \right)
+\label{eq:operator_a_def}
+\end{equation}
+Then for all $t \ge 1$ and any realization of random feature weights $(\Omega, b)$:
+\begin{enumerate}[label=(\roman*)]
+    \item The spectral operator norm of $A_t$ satisfies:
+    \begin{equation}
+    \|A_t\|_2 \triangleq \sup_{\|u\|_2 = 1} \|A_t u\|_2 = \lambda_t \max\left(1, |1 - \beta_t|\right) = \lambda_t \le 1
+    \label{eq:spectral_norm_exact}
+    \end{equation}
+    with strict contractivity $\|A_t\|_2 < 1$ if and only if $\lambda_t < 1$.
+    \item For the recurrent associative update $S_t = S_{t-1} A_t + \beta_t v_t \hat{\phi}(k_t)^T$ with $S_0 = 0$, if $\bar{\lambda} \triangleq \sup_{t} \lambda_t < 1$ and $V_{\max} \triangleq \sup_{t} \|v_t\|_2 < \infty$, the state Frobenius norm is uniformly bounded for all sequence lengths $T \ge 1$:
+    \begin{equation}
+    \|S_T\|_F \le \frac{V_{\max}}{1 - \bar{\lambda}} < \infty
+    \label{eq:state_frobenius_bound}
+    \end{equation}
+\end{enumerate}
+\end{theorem}
+
+\begin{proof}
+\textbf{Part (i): Spectral Decomposition of $A_t$.}
+The operator $A_t = \lambda_t (I - \beta_t P_t)$ is a scalar multiple of the identity perturbed by the rank-1 outer product $P_t \triangleq \hat{\phi}(k_t) \hat{\phi}(k_t)^T$. By construction, $\|\hat{\phi}(k_t)\|_2 = 1$, which implies:
+\begin{equation}
+P_t^2 = \left(\hat{\phi}(k_t) \hat{\phi}(k_t)^T\right) \left(\hat{\phi}(k_t) \hat{\phi}(k_t)^T\right) = \hat{\phi}(k_t) \left(\hat{\phi}(k_t)^T \hat{\phi}(k_t)\right) \hat{\phi}(k_t)^T = P_t
+\end{equation}
+Hence, $P_t$ is an orthogonal projection matrix onto the 1-dimensional subspace $\operatorname{span}\{\hat{\phi}(k_t)\}$. Its eigenvalues are $\mu(P_t) \in \{1, 0, \dots, 0\}$ with corresponding eigenspaces:
+\begin{enumerate}
+    \item \textbf{Collinear Subspace:} For any vector $u \in \operatorname{span}\{\hat{\phi}(k_t)\}$ ($u = c \hat{\phi}(k_t), c \neq 0$):
+    \begin{align}
+    A_t u &= \lambda_t \left( I - \beta_t \hat{\phi}(k_t) \hat{\phi}(k_t)^T \right) \left( c \hat{\phi}(k_t) \right) \nonumber \\
+          &= c \lambda_t \left( \hat{\phi}(k_t) - \beta_t \hat{\phi}(k_t) \|\hat{\phi}(k_t)\|_2^2 \right) \nonumber \\
+          &= \lambda_t (1 - \beta_t) u
+    \end{align}
+    yielding eigenvalue $\nu_1 = \lambda_t (1 - \beta_t)$ with multiplicity 1.
+    \item \textbf{Orthogonal Complement Subspace:} For any vector $w \in \hat{\phi}(k_t)^\perp$ ($\hat{\phi}(k_t)^T w = 0$):
+    \begin{equation}
+    A_t w = \lambda_t \left( w - \beta_t \hat{\phi}(k_t) (\hat{\phi}(k_t)^T w) \right) = \lambda_t w
+    \end{equation}
+    yielding eigenvalue $\nu_2 = \lambda_t$ with geometric and algebraic multiplicity $D - 1$.
+\end{enumerate}
+Since $A_t$ is symmetric ($A_t = A_t^T$), its spectral norm equals the maximum absolute eigenvalue:
+\begin{equation}
+\|A_t\|_2 = \max\left( |\nu_1|, |\nu_2| \right) = \max\left( \lambda_t |1 - \beta_t|, \lambda_t \right) = \lambda_t \max\left( |1 - \beta_t|, 1 \right)
+\end{equation}
+Under the physical constraint $\beta_t \in (0, 1]$, we have $0 \le 1 - \beta_t < 1$, so $|1 - \beta_t| \le 1$. Consequently:
+\begin{equation}
+\max\left( |1 - \beta_t|, 1 \right) = 1 \implies \|A_t\|_2 = \lambda_t \le 1
+\end{equation}
+This concludes the proof of Part (i).
+
+\bigskip
+\noindent
+\textbf{Part (ii): Uniform Boundedness of the Recurrent State.}
+The state update equation is $S_t = S_{t-1} A_t + B_t$, where $B_t \triangleq \beta_t v_t \hat{\phi}(k_t)^T \in \mathbb{R}^{d_v \times D}$. Using the sub-multiplicative property of matrix norms for the product $S_{t-1} A_t$ (specifically $\|X Y\|_F \le \|X\|_F \|Y\|_2$):
+\begin{align}
+\|S_t\|_F &\le \|S_{t-1} A_t\|_F + \|B_t\|_F \nonumber \\
+          &\le \|S_{t-1}\|_F \|A_t\|_2 + \|\beta_t v_t \hat{\phi}(k_t)^T\|_F
+\end{align}
+For rank-1 outer products, the Frobenius norm equals the Euclidean norm product:
+\begin{equation}
+\|\beta_t v_t \hat{\phi}(k_t)^T\|_F = \beta_t \|v_t\|_2 \|\hat{\phi}(k_t)\|_2 = \beta_t \|v_t\|_2 \cdot 1 = \beta_t \|v_t\|_2
+\end{equation}
+Substituting $\|A_t\|_2 = \lambda_t$:
+\begin{equation}
+\|S_t\|_F \le \lambda_t \|S_{t-1}\|_F + \beta_t \|v_t\|_2
+\end{equation}
+Unrolling this scalar recurrence from $S_0 = 0$:
+\begin{align}
+\|S_T\|_F &\le \sum_{t=1}^T \beta_t \|v_t\|_2 \left( \prod_{s=t+1}^T \lambda_s \right) \nonumber \\
+          &\le \sum_{t=1}^T 1 \cdot V_{\max} \cdot \bar{\lambda}^{T - t} \nonumber \\
+          &= V_{\max} \sum_{k=0}^{T-1} \bar{\lambda}^k \nonumber \\
+          &< V_{\max} \sum_{k=0}^{\infty} \bar{\lambda}^k = \frac{V_{\max}}{1 - \bar{\lambda}}
+\end{align}
+Since this geometric series bound is strictly independent of $T$, the state trajectory $\{S_t\}_{t=1}^\infty$ is uniformly bounded in the Frobenius norm, preventing numerical overflow and gradient explosion across infinite horizon sequences.
+\end{proof}

@@ -1,0 +1,26 @@
+{
+  "T_4096": {
+    "context_length": 4096,
+    "latency_ms": 887.8919999988284,
+    "throughput_tok_per_sec": 4613.1736742817875,
+    "kernel_ttt_peak_vram_mb": 165.66650390625,
+    "transformer_theoretical_vram_mb": 181.66650390625,
+    "memory_reduction_factor": 1.0965795717464668
+  },
+  "T_8192": {
+    "context_length": 8192,
+    "latency_ms": 1467.0025000013993,
+    "throughput_tok_per_sec": 5584.1758960821035,
+    "kernel_ttt_peak_vram_mb": 357.94775390625,
+    "transformer_theoretical_vram_mb": 389.94775390625,
+    "memory_reduction_factor": 1.089398521574132
+  },
+  "T_16384": {
+    "context_length": 16384,
+    "latency_ms": 3270.405600000231,
+    "throughput_tok_per_sec": 5009.7761574279475,
+    "kernel_ttt_peak_vram_mb": 678.01025390625,
+    "transformer_theoretical_vram_mb": 742.01025390625,
+    "memory_reduction_factor": 1.0943938526464372
+  }
+}

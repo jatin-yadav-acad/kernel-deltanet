@@ -1,0 +1,236 @@
+{
+  "device": "NVIDIA GeForce RTX 5070 Ti",
+  "dataset": "FineWeb-Edu + Natural English BPE (50,257 vocab)",
+  "results": {
+    "35m": {
+      "Kernel-DeltaNet": {
+        "model_family": "kernel_deltanet",
+        "scale_name": "35m",
+        "parameters": 33461136,
+        "final_val_loss": 7.3475,
+        "final_ppl": 1552.24,
+        "total_time_sec": 14.71,
+        "history": [
+          {
+            "step": 50,
+            "train_loss": 7.0828,
+            "val_loss": 8.3416,
+            "val_ppl": 4194.74,
+            "elapsed_sec": 2.81
+          },
+          {
+            "step": 100,
+            "train_loss": 6.7684,
+            "val_loss": 7.7312,
+            "val_ppl": 2278.35,
+            "elapsed_sec": 5.35
+          },
+          {
+            "step": 150,
+            "train_loss": 5.8455,
+            "val_loss": 7.5233,
+            "val_ppl": 1850.65,
+            "elapsed_sec": 7.62
+          },
+          {
+            "step": 200,
+            "train_loss": 6.2254,
+            "val_loss": 7.4384,
+            "val_ppl": 1700.1,
+            "elapsed_sec": 9.77
+          },
+          {
+            "step": 250,
+            "train_loss": 6.0823,
+            "val_loss": 7.3712,
+            "val_ppl": 1589.5,
+            "elapsed_sec": 12.07
+          },
+          {
+            "step": 300,
+            "train_loss": 6.3758,
+            "val_loss": 7.3475,
+            "val_ppl": 1552.24,
+            "elapsed_sec": 14.59
+          }
+        ],
+        "checkpoint_path": "checkpoints\\kernel_deltanet_35m_bpe_converged.pt"
+      },
+      "Standard Transformer": {
+        "model_family": "transformer",
+        "scale_name": "35m",
+        "parameters": 33460992,
+        "final_val_loss": 7.437,
+        "final_ppl": 1697.58,
+        "total_time_sec": 7.81,
+        "history": [
+          {
+            "step": 50,
+            "train_loss": 7.2664,
+            "val_loss": 8.0322,
+            "val_ppl": 3078.36,
+            "elapsed_sec": 1.34
+          },
+          {
+            "step": 100,
+            "train_loss": 6.74,
+            "val_loss": 7.7493,
+            "val_ppl": 2320.02,
+            "elapsed_sec": 2.68
+          },
+          {
+            "step": 150,
+            "train_loss": 6.1851,
+            "val_loss": 7.669,
+            "val_ppl": 2140.9,
+            "elapsed_sec": 3.98
+          },
+          {
+            "step": 200,
+            "train_loss": 6.1217,
+            "val_loss": 7.5376,
+            "val_ppl": 1877.35,
+            "elapsed_sec": 5.22
+          },
+          {
+            "step": 250,
+            "train_loss": 6.1534,
+            "val_loss": 7.4664,
+            "val_ppl": 1748.31,
+            "elapsed_sec": 6.49
+          },
+          {
+            "step": 300,
+            "train_loss": 5.8346,
+            "val_loss": 7.437,
+            "val_ppl": 1697.58,
+            "elapsed_sec": 7.7
+          }
+        ],
+        "checkpoint_path": "checkpoints\\transformer_35m_bpe_converged.pt"
+      }
+    },
+    "70m": {
+      "Kernel-DeltaNet": {
+        "model_family": "kernel_deltanet",
+        "scale_name": "70m",
+        "parameters": 57855216,
+        "final_val_loss": 7.2396,
+        "final_ppl": 1393.54,
+        "total_time_sec": 23.43,
+        "history": [
+          {
+            "step": 50,
+            "train_loss": 7.0068,
+            "val_loss": 8.1171,
+            "val_ppl": 3351.32,
+            "elapsed_sec": 3.28
+          },
+          {
+            "step": 100,
+            "train_loss": 6.7553,
+            "val_loss": 7.6582,
+            "val_ppl": 2117.97,
+            "elapsed_sec": 6.63
+          },
+          {
+            "step": 150,
+            "train_loss": 6.0977,
+            "val_loss": 7.5263,
+            "val_ppl": 1856.24,
+            "elapsed_sec": 9.81
+          },
+          {
+            "step": 200,
+            "train_loss": 6.4531,
+            "val_loss": 7.3787,
+            "val_ppl": 1601.52,
+            "elapsed_sec": 12.78
+          },
+          {
+            "step": 250,
+            "train_loss": 5.6776,
+            "val_loss": 7.351,
+            "val_ppl": 1557.83,
+            "elapsed_sec": 15.86
+          },
+          {
+            "step": 300,
+            "train_loss": 6.3295,
+            "val_loss": 7.2591,
+            "val_ppl": 1421.01,
+            "elapsed_sec": 19.14
+          },
+          {
+            "step": 350,
+            "train_loss": 4.728,
+            "val_loss": 7.2396,
+            "val_ppl": 1393.54,
+            "elapsed_sec": 22.35
+          }
+        ],
+        "checkpoint_path": "checkpoints\\kernel_deltanet_70m_bpe_converged.pt"
+      },
+      "Standard Transformer": {
+        "model_family": "transformer",
+        "scale_name": "70m",
+        "parameters": 57854976,
+        "final_val_loss": 7.4546,
+        "final_ppl": 1727.77,
+        "total_time_sec": 13.38,
+        "history": [
+          {
+            "step": 50,
+            "train_loss": 7.2681,
+            "val_loss": 8.0192,
+            "val_ppl": 3038.72,
+            "elapsed_sec": 1.75
+          },
+          {
+            "step": 100,
+            "train_loss": 6.8496,
+            "val_loss": 7.8212,
+            "val_ppl": 2492.85,
+            "elapsed_sec": 3.46
+          },
+          {
+            "step": 150,
+            "train_loss": 6.6394,
+            "val_loss": 7.7278,
+            "val_ppl": 2270.7,
+            "elapsed_sec": 5.21
+          },
+          {
+            "step": 200,
+            "train_loss": 6.7108,
+            "val_loss": 7.5883,
+            "val_ppl": 1975.02,
+            "elapsed_sec": 6.99
+          },
+          {
+            "step": 250,
+            "train_loss": 6.614,
+            "val_loss": 7.5117,
+            "val_ppl": 1829.32,
+            "elapsed_sec": 8.74
+          },
+          {
+            "step": 300,
+            "train_loss": 6.6223,
+            "val_loss": 7.4609,
+            "val_ppl": 1738.79,
+            "elapsed_sec": 10.52
+          },
+          {
+            "step": 350,
+            "train_loss": 6.4585,
+            "val_loss": 7.4546,
+            "val_ppl": 1727.77,
+            "elapsed_sec": 12.25
+          }
+        ],
+        "checkpoint_path": "checkpoints\\transformer_70m_bpe_converged.pt"
+      }
+    }
+  }
+}

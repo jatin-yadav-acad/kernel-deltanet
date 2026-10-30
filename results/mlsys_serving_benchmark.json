@@ -1,0 +1,343 @@
+{
+  "hardware": {
+    "device": "NVIDIA GeForce RTX 5070 Ti",
+    "total_vram_gb": 16.0,
+    "available_cache_budget_gb": 12.0
+  },
+  "concurrency_sweep_32k": [
+    {
+      "batch_size": 1,
+      "softmax_kv_cache_gb": 0.69,
+      "softmax_oom": false,
+      "softmax_throughput_tok_s": 340694.5,
+      "kernel_deltanet_state_gb": 0.021,
+      "kernel_deltanet_oom": false,
+      "kernel_deltanet_throughput_tok_s": 437957.8,
+      "concurrency_speedup": "2.24x"
+    },
+    {
+      "batch_size": 2,
+      "softmax_kv_cache_gb": 1.38,
+      "softmax_oom": false,
+      "softmax_throughput_tok_s": 340694.5,
+      "kernel_deltanet_state_gb": 0.043,
+      "kernel_deltanet_oom": false,
+      "kernel_deltanet_throughput_tok_s": 807391.9,
+      "concurrency_speedup": "4.04x"
+    },
+    {
+      "batch_size": 4,
+      "softmax_kv_cache_gb": 2.75,
+      "softmax_oom": false,
+      "softmax_throughput_tok_s": 340694.5,
+      "kernel_deltanet_state_gb": 0.086,
+      "kernel_deltanet_oom": false,
+      "kernel_deltanet_throughput_tok_s": 1396314.1,
+      "concurrency_speedup": "7.27x"
+    },
+    {
+      "batch_size": 8,
+      "softmax_kv_cache_gb": 5.5,
+      "softmax_oom": false,
+      "softmax_throughput_tok_s": 340694.5,
+      "kernel_deltanet_state_gb": 0.172,
+      "kernel_deltanet_oom": false,
+      "kernel_deltanet_throughput_tok_s": 2197903.9,
+      "concurrency_speedup": "12.57x"
+    },
+    {
+      "batch_size": 16,
+      "softmax_kv_cache_gb": 11.0,
+      "softmax_oom": false,
+      "softmax_throughput_tok_s": 340694.5,
+      "kernel_deltanet_state_gb": 0.344,
+      "kernel_deltanet_oom": false,
+      "kernel_deltanet_throughput_tok_s": 3082777.7,
+      "concurrency_speedup": "20.08x"
+    },
+    {
+      "batch_size": 32,
+      "softmax_kv_cache_gb": 22.0,
+      "softmax_oom": true,
+      "softmax_throughput_tok_s": null,
+      "kernel_deltanet_state_gb": 0.688,
+      "kernel_deltanet_oom": false,
+      "kernel_deltanet_throughput_tok_s": 3859741.6,
+      "concurrency_speedup": "Inf (Softmax OOM)"
+    },
+    {
+      "batch_size": 64,
+      "softmax_kv_cache_gb": 44.0,
+      "softmax_oom": true,
+      "softmax_throughput_tok_s": null,
+      "kernel_deltanet_state_gb": 1.375,
+      "kernel_deltanet_oom": false,
+      "kernel_deltanet_throughput_tok_s": 4416265.5,
+      "concurrency_speedup": "Inf (Softmax OOM)"
+    },
+    {
+      "batch_size": 128,
+      "softmax_kv_cache_gb": 88.0,
+      "softmax_oom": true,
+      "softmax_throughput_tok_s": null,
+      "kernel_deltanet_state_gb": 2.75,
+      "kernel_deltanet_oom": false,
+      "kernel_deltanet_throughput_tok_s": 4759385.9,
+      "concurrency_speedup": "Inf (Softmax OOM)"
+    }
+  ],
+  "concurrency_sweep_64k": [
+    {
+      "batch_size": 1,
+      "softmax_kv_cache_gb": 1.38,
+      "softmax_oom": false,
+      "softmax_throughput_tok_s": 171385.2,
+      "kernel_deltanet_state_gb": 0.021,
+      "kernel_deltanet_oom": false,
+      "kernel_deltanet_throughput_tok_s": 487800.5,
+      "concurrency_speedup": "4.20x"
+    },
+    {
+      "batch_size": 2,
+      "softmax_kv_cache_gb": 2.75,
+      "softmax_oom": false,
+      "softmax_throughput_tok_s": 171385.2,
+      "kernel_deltanet_state_gb": 0.043,
+      "kernel_deltanet_oom": false,
+      "kernel_deltanet_throughput_tok_s": 931570.7,
+      "concurrency_speedup": "7.81x"
+    },
+    {
+      "batch_size": 4,
+      "softmax_kv_cache_gb": 5.5,
+      "softmax_oom": false,
+      "softmax_throughput_tok_s": 171385.2,
+      "kernel_deltanet_state_gb": 0.086,
+      "kernel_deltanet_oom": false,
+      "kernel_deltanet_throughput_tok_s": 1708891.8,
+      "concurrency_speedup": "14.30x"
+    },
+    {
+      "batch_size": 8,
+      "softmax_kv_cache_gb": 11.0,
+      "softmax_oom": false,
+      "softmax_throughput_tok_s": 171385.2,
+      "kernel_deltanet_state_gb": 0.172,
+      "kernel_deltanet_oom": false,
+      "kernel_deltanet_throughput_tok_s": 2932259.5,
+      "concurrency_speedup": "24.92x"
+    },
+    {
+      "batch_size": 16,
+      "softmax_kv_cache_gb": 22.0,
+      "softmax_oom": true,
+      "softmax_throughput_tok_s": null,
+      "kernel_deltanet_state_gb": 0.344,
+      "kernel_deltanet_oom": false,
+      "kernel_deltanet_throughput_tok_s": 4566968.6,
+      "concurrency_speedup": "Inf (Softmax OOM)"
+    },
+    {
+      "batch_size": 32,
+      "softmax_kv_cache_gb": 44.0,
+      "softmax_oom": true,
+      "softmax_throughput_tok_s": null,
+      "kernel_deltanet_state_gb": 0.688,
+      "kernel_deltanet_oom": false,
+      "kernel_deltanet_throughput_tok_s": 6331980.7,
+      "concurrency_speedup": "Inf (Softmax OOM)"
+    },
+    {
+      "batch_size": 64,
+      "softmax_kv_cache_gb": 88.0,
+      "softmax_oom": true,
+      "softmax_throughput_tok_s": null,
+      "kernel_deltanet_state_gb": 1.375,
+      "kernel_deltanet_oom": false,
+      "kernel_deltanet_throughput_tok_s": 7848622.8,
+      "concurrency_speedup": "Inf (Softmax OOM)"
+    },
+    {
+      "batch_size": 128,
+      "softmax_kv_cache_gb": 176.0,
+      "softmax_oom": true,
+      "softmax_throughput_tok_s": null,
+      "kernel_deltanet_state_gb": 2.75,
+      "kernel_deltanet_oom": false,
+      "kernel_deltanet_throughput_tok_s": 8916462.6,
+      "concurrency_speedup": "Inf (Softmax OOM)"
+    }
+  ],
+  "decoding_itl_step_ms": [
+    {
+      "context_length": 512,
+      "softmax_kv_read_mb": 11.0,
+      "softmax_per_layer_itl_us": 11.9,
+      "kernel_deltanet_per_layer_itl_us": 20.6,
+      "kernel_deltanet_per_layer_itl_std_us": 1.4,
+      "softmax_attention_subsystem_ms": 0.262,
+      "kernel_deltanet_attention_subsystem_ms": 0.453,
+      "softmax_full_model_itl_ms": 2.33,
+      "kernel_deltanet_full_model_itl_ms": 2.52,
+      "kernel_deltanet_full_model_itl_std_ms": 0.08,
+      "kernel_deltanet_state_mb": 22.0,
+      "kernel_deltanet_itl_ms": 0.453,
+      "itl_speedup": 0.58
+    },
+    {
+      "context_length": 1024,
+      "softmax_kv_read_mb": 22.0,
+      "softmax_per_layer_itl_us": 12.5,
+      "kernel_deltanet_per_layer_itl_us": 20.6,
+      "kernel_deltanet_per_layer_itl_std_us": 1.4,
+      "softmax_attention_subsystem_ms": 0.274,
+      "kernel_deltanet_attention_subsystem_ms": 0.453,
+      "softmax_full_model_itl_ms": 2.34,
+      "kernel_deltanet_full_model_itl_ms": 2.52,
+      "kernel_deltanet_full_model_itl_std_ms": 0.08,
+      "kernel_deltanet_state_mb": 22.0,
+      "kernel_deltanet_itl_ms": 0.453,
+      "itl_speedup": 0.6
+    },
+    {
+      "context_length": 2048,
+      "softmax_kv_read_mb": 44.0,
+      "softmax_per_layer_itl_us": 13.5,
+      "kernel_deltanet_per_layer_itl_us": 20.6,
+      "kernel_deltanet_per_layer_itl_std_us": 1.4,
+      "softmax_attention_subsystem_ms": 0.298,
+      "kernel_deltanet_attention_subsystem_ms": 0.453,
+      "softmax_full_model_itl_ms": 2.37,
+      "kernel_deltanet_full_model_itl_ms": 2.52,
+      "kernel_deltanet_full_model_itl_std_ms": 0.08,
+      "kernel_deltanet_state_mb": 22.0,
+      "kernel_deltanet_itl_ms": 0.453,
+      "itl_speedup": 0.66
+    },
+    {
+      "context_length": 4096,
+      "softmax_kv_read_mb": 88.0,
+      "softmax_per_layer_itl_us": 15.7,
+      "kernel_deltanet_per_layer_itl_us": 20.6,
+      "kernel_deltanet_per_layer_itl_std_us": 1.4,
+      "softmax_attention_subsystem_ms": 0.346,
+      "kernel_deltanet_attention_subsystem_ms": 0.453,
+      "softmax_full_model_itl_ms": 2.42,
+      "kernel_deltanet_full_model_itl_ms": 2.52,
+      "kernel_deltanet_full_model_itl_std_ms": 0.08,
+      "kernel_deltanet_state_mb": 22.0,
+      "kernel_deltanet_itl_ms": 0.453,
+      "itl_speedup": 0.76
+    },
+    {
+      "context_length": 8192,
+      "softmax_kv_read_mb": 176.0,
+      "softmax_per_layer_itl_us": 20.1,
+      "kernel_deltanet_per_layer_itl_us": 20.6,
+      "kernel_deltanet_per_layer_itl_std_us": 1.4,
+      "softmax_attention_subsystem_ms": 0.442,
+      "kernel_deltanet_attention_subsystem_ms": 0.453,
+      "softmax_full_model_itl_ms": 2.51,
+      "kernel_deltanet_full_model_itl_ms": 2.52,
+      "kernel_deltanet_full_model_itl_std_ms": 0.08,
+      "kernel_deltanet_state_mb": 22.0,
+      "kernel_deltanet_itl_ms": 0.453,
+      "itl_speedup": 0.98
+    },
+    {
+      "context_length": 16384,
+      "softmax_kv_read_mb": 352.0,
+      "softmax_per_layer_itl_us": 28.8,
+      "kernel_deltanet_per_layer_itl_us": 20.6,
+      "kernel_deltanet_per_layer_itl_std_us": 1.4,
+      "softmax_attention_subsystem_ms": 0.634,
+      "kernel_deltanet_attention_subsystem_ms": 0.453,
+      "softmax_full_model_itl_ms": 2.7,
+      "kernel_deltanet_full_model_itl_ms": 2.52,
+      "kernel_deltanet_full_model_itl_std_ms": 0.08,
+      "kernel_deltanet_state_mb": 22.0,
+      "kernel_deltanet_itl_ms": 0.453,
+      "itl_speedup": 1.4
+    },
+    {
+      "context_length": 32768,
+      "softmax_kv_read_mb": 704.0,
+      "softmax_per_layer_itl_us": 46.2,
+      "kernel_deltanet_per_layer_itl_us": 20.6,
+      "kernel_deltanet_per_layer_itl_std_us": 1.4,
+      "softmax_attention_subsystem_ms": 1.017,
+      "kernel_deltanet_attention_subsystem_ms": 0.453,
+      "softmax_full_model_itl_ms": 4.09,
+      "kernel_deltanet_full_model_itl_ms": 2.52,
+      "kernel_deltanet_full_model_itl_std_ms": 0.08,
+      "kernel_deltanet_state_mb": 22.0,
+      "kernel_deltanet_itl_ms": 0.453,
+      "itl_speedup": 2.25
+    },
+    {
+      "context_length": 65536,
+      "softmax_kv_read_mb": 1408.0,
+      "softmax_per_layer_itl_us": 81.1,
+      "kernel_deltanet_per_layer_itl_us": 20.6,
+      "kernel_deltanet_per_layer_itl_std_us": 1.4,
+      "softmax_attention_subsystem_ms": 1.785,
+      "kernel_deltanet_attention_subsystem_ms": 0.453,
+      "softmax_full_model_itl_ms": 4.85,
+      "kernel_deltanet_full_model_itl_ms": 2.52,
+      "kernel_deltanet_full_model_itl_std_ms": 0.08,
+      "kernel_deltanet_state_mb": 22.0,
+      "kernel_deltanet_itl_ms": 0.453,
+      "itl_speedup": 3.94
+    }
+  ],
+  "prefill_ttft_ms": [
+    {
+      "sequence_length": 512,
+      "flashattention2_ttft_ms": 0.05,
+      "kernel_deltanet_ttft_ms": 1.34,
+      "speedup": 0.04
+    },
+    {
+      "sequence_length": 1024,
+      "flashattention2_ttft_ms": 0.14,
+      "kernel_deltanet_ttft_ms": 3.16,
+      "speedup": 0.04
+    },
+    {
+      "sequence_length": 2048,
+      "flashattention2_ttft_ms": 0.46,
+      "kernel_deltanet_ttft_ms": 4.72,
+      "speedup": 0.1
+    },
+    {
+      "sequence_length": 4096,
+      "flashattention2_ttft_ms": 1.64,
+      "kernel_deltanet_ttft_ms": 11.09,
+      "speedup": 0.15
+    },
+    {
+      "sequence_length": 8192,
+      "flashattention2_ttft_ms": 6.27,
+      "kernel_deltanet_ttft_ms": 20.99,
+      "speedup": 0.3
+    },
+    {
+      "sequence_length": 16384,
+      "flashattention2_ttft_ms": 26.25,
+      "kernel_deltanet_ttft_ms": 41.43,
+      "speedup": 0.63
+    },
+    {
+      "sequence_length": 32768,
+      "flashattention2_ttft_ms": 97.94,
+      "kernel_deltanet_ttft_ms": 81.93,
+      "speedup": 1.2
+    },
+    {
+      "sequence_length": 65536,
+      "flashattention2_ttft_ms": 403.59,
+      "kernel_deltanet_ttft_ms": 161.26,
+      "speedup": 2.5
+    }
+  ]
+}

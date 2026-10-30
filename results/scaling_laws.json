@@ -1,0 +1,36 @@
+{
+  "scaling_points": [
+    {
+      "scale_name": "Scale-5M",
+      "params": 1901720,
+      "target_tokens": 200000,
+      "total_flops": 2282064000000.0,
+      "final_loss": 9.017143726348877,
+      "throughput_tok_per_sec": 219770.53809186412,
+      "elapsed_seconds": 0.9318809509277344
+    },
+    {
+      "scale_name": "Scale-15M",
+      "params": 6917448,
+      "target_tokens": 400000,
+      "total_flops": 16601875200000.0,
+      "final_loss": 9.019233989715577,
+      "throughput_tok_per_sec": 139529.05984066552,
+      "elapsed_seconds": 2.8768773078918457
+    },
+    {
+      "scale_name": "Scale-35M",
+      "params": 17308176,
+      "target_tokens": 800000,
+      "total_flops": 83079244800000.0,
+      "final_loss": 9.019998931884766,
+      "throughput_tok_per_sec": 65330.354698453986,
+      "elapsed_seconds": 12.288560152053833
+    }
+  ],
+  "fit_statistics": {
+    "scaling_exponent_gamma": -8.916800685105341e-05,
+    "coefficient_A": 8.994445448484708,
+    "r2_fit": 0.9634169446381865
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "kernel_ttt_points": [
+    {
+      "model_family": "kernel_ttt",
+      "scale_name": "Scale-15M",
+      "params": 17698120,
+      "non_embed_params": 17698120,
+      "target_tokens": 40000,
+      "total_flops": 4247548800000.0,
+      "final_train_loss": 9.14510898590088,
+      "final_val_loss": 9.02169812520345,
+      "throughput_tok_per_sec": 34706.77544562051,
+      "elapsed_seconds": 1.1801729202270508,
+      "checkpoint_path": "checkpoints\\kernel_ttt_scale-15m.pt"
+    },
+    {
+      "model_family": "kernel_ttt",
+      "scale_name": "Scale-35M",
+      "params": 33479184,
+      "non_embed_params": 33479184,
+      "target_tokens": 60000,
+      "total_flops": 12052506240000.0,
+      "final_train_loss": 7.924529552459717,
+      "final_val_loss": 8.103858057657877,
+      "throughput_tok_per_sec": 31408.716038682094,
+      "elapsed_seconds": 1.9561448097229004,
+      "checkpoint_path": "checkpoints\\kernel_ttt_scale-35m.pt"
+    },
+    {
+      "model_family": "kernel_ttt",
+      "scale_name": "Scale-70M",
+      "params": 57879280,
+      "non_embed_params": 57879280,
+      "target_tokens": 80000,
+      "total_flops": 27782054400000.0,
+      "final_train_loss": 7.698470640182495,
+      "final_val_loss": 7.957738272349039,
+      "throughput_tok_per_sec": 22530.004722434656,
+      "elapsed_seconds": 3.636039972305298,
+      "checkpoint_path": "checkpoints\\kernel_ttt_scale-70m.pt"
+    },
+    {
+      "model_family": "kernel_ttt",
+      "scale_name": "Scale-125M",
+      "params": 123587760,
+      "non_embed_params": 123587760,
+      "target_tokens": 100000,
+      "total_flops": 74152656000000.0,
+      "final_train_loss": 7.624713563919068,
+      "final_val_loss": 7.822481250762939,
+      "throughput_tok_per_sec": 12911.719363334963,
+      "elapsed_seconds": 7.7721638679504395,
+      "checkpoint_path": "checkpoints\\kernel_ttt_scale-125m.pt"
+    }
+  ],
+  "transformer_points": [
+    {
+      "model_family": "transformer",
+      "scale_name": "Scale-15M",
+      "params": 17698048,
+      "non_embed_params": 4820224,
+      "target_tokens": 40000,
+      "total_flops": 1156853760000.0,
+      "final_train_loss": 9.133333873748779,
+      "final_val_loss": 9.032636133829753,
+      "throughput_tok_per_sec": 84678.89360743178,
+      "elapsed_seconds": 0.48370957374572754,
+      "checkpoint_path": "checkpoints\\transformer_scale-15m.pt"
+    },
+    {
+      "model_family": "transformer",
+      "scale_name": "Scale-35M",
+      "params": 33479040,
+      "non_embed_params": 14162304,
+      "target_tokens": 60000,
+      "total_flops": 5098429440000.0,
+      "final_train_loss": 7.9250823020935055,
+      "final_val_loss": 8.022410742441814,
+      "throughput_tok_per_sec": 52393.246319214915,
+      "elapsed_seconds": 1.1726701259613037,
+      "checkpoint_path": "checkpoints\\transformer_scale-35m.pt"
+    },
+    {
+      "model_family": "transformer",
+      "scale_name": "Scale-70M",
+      "params": 57879040,
+      "non_embed_params": 32123392,
+      "target_tokens": 80000,
+      "total_flops": 15419228160000.0,
+      "final_train_loss": 7.718850326538086,
+      "final_val_loss": 7.9492901484171545,
+      "throughput_tok_per_sec": 34037.55784037903,
+      "elapsed_seconds": 2.4067530632019043,
+      "checkpoint_path": "checkpoints\\transformer_scale-70m.pt"
+    },
+    {
+      "model_family": "transformer",
+      "scale_name": "Scale-125M",
+      "params": 123587328,
+      "non_embed_params": 84953856,
+      "target_tokens": 100000,
+      "total_flops": 50972313600000.0,
+      "final_train_loss": 7.575062227249146,
+      "final_val_loss": 7.902994632720947,
+      "throughput_tok_per_sec": 18905.060580720627,
+      "elapsed_seconds": 5.308208227157593,
+      "checkpoint_path": "checkpoints\\transformer_scale-125m.pt"
+    }
+  ],
+  "kernel_ttt_fit": {
+    "scaling_exponent_gamma": 0.047968381593224814,
+    "coefficient_A": 35.51294836325718,
+    "r2_fit": 0.8257391861152611
+  },
+  "transformer_fit": {
+    "scaling_exponent_gamma": 0.03411678971828566,
+    "coefficient_A": 22.65845689312665,
+    "r2_fit": 0.7473378569690599
+  },
+  "summary": {
+    "kernel_ttt_gamma": 0.047968381593224814,
+    "transformer_gamma": 0.03411678971828566,
+    "scaling_advantage": true
+  }
+}

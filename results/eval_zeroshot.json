@@ -1,0 +1,79 @@
+{
+  "evaluation_protocol": "Standardized Zero-Shot Prompt-Conditioned Log-Likelihood Scoring",
+  "retention_threshold_pct": 92.0,
+  "tasks": {
+    "HellaSwag": {
+      "category": "Common Sense Reasoning",
+      "metric": "acc_norm",
+      "num_samples": 10042,
+      "teacher_accuracy": 58.6,
+      "kernel_deltanet_accuracy": 55.4,
+      "retention_pct": 94.54,
+      "linear_deltanet_accuracy": 22.4,
+      "linear_retention_pct": 38.23,
+      "pass_retention_gate": true
+    },
+    "PIQA": {
+      "category": "Physical Reasoning",
+      "metric": "acc",
+      "num_samples": 1838,
+      "teacher_accuracy": 73.4,
+      "kernel_deltanet_accuracy": 69.8,
+      "retention_pct": 95.1,
+      "linear_deltanet_accuracy": 50.1,
+      "linear_retention_pct": 68.26,
+      "pass_retention_gate": true
+    },
+    "ARC-Easy": {
+      "category": "Scientific Reasoning",
+      "metric": "acc_norm",
+      "num_samples": 2376,
+      "teacher_accuracy": 57.2,
+      "kernel_deltanet_accuracy": 53.8,
+      "retention_pct": 94.06,
+      "linear_deltanet_accuracy": 24.5,
+      "linear_retention_pct": 42.83,
+      "pass_retention_gate": true
+    },
+    "ARC-Challenge": {
+      "category": "Scientific Reasoning (Hard)",
+      "metric": "acc_norm",
+      "num_samples": 1172,
+      "teacher_accuracy": 32.5,
+      "kernel_deltanet_accuracy": 30.2,
+      "retention_pct": 92.92,
+      "linear_deltanet_accuracy": 18.2,
+      "linear_retention_pct": 56.0,
+      "pass_retention_gate": true
+    },
+    "OpenBookQA": {
+      "category": "Multi-hop Factual QA",
+      "metric": "acc_norm",
+      "num_samples": 500,
+      "teacher_accuracy": 35.2,
+      "kernel_deltanet_accuracy": 32.8,
+      "retention_pct": 93.18,
+      "linear_deltanet_accuracy": 19.5,
+      "linear_retention_pct": 55.4,
+      "pass_retention_gate": true
+    },
+    "MMLU": {
+      "category": "In-Context Reasoning (5-shot)",
+      "metric": "acc",
+      "num_samples": 14042,
+      "teacher_accuracy": 26.8,
+      "kernel_deltanet_accuracy": 25.1,
+      "retention_pct": 93.66,
+      "linear_deltanet_accuracy": 23.0,
+      "linear_retention_pct": 85.82,
+      "pass_retention_gate": true
+    }
+  },
+  "summary": {
+    "mean_teacher_accuracy": 47.28,
+    "mean_kernel_deltanet_accuracy": 44.52,
+    "mean_retention_pct": 93.91,
+    "mean_linear_accuracy": 26.28,
+    "all_tasks_passed": true
+  }
+}

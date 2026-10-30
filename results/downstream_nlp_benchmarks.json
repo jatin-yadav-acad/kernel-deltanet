@@ -1,0 +1,46 @@
+{
+  "device": "NVIDIA GeForce RTX 5070 Ti",
+  "num_samples_per_task": 150,
+  "results": {
+    "Kernel-DeltaNet_35m": {
+      "scale": "35m",
+      "architecture": "Kernel-DeltaNet",
+      "lambada_acc": 0.0,
+      "hellaswag_acc": 24.67,
+      "piqa_acc": 44.0,
+      "arc_easy_acc": 30.0,
+      "mean_acc": 24.67,
+      "eval_time_sec": 17.45
+    },
+    "Standard Transformer_35m": {
+      "scale": "35m",
+      "architecture": "Standard Transformer",
+      "lambada_acc": 0.0,
+      "hellaswag_acc": 25.33,
+      "piqa_acc": 46.0,
+      "arc_easy_acc": 28.0,
+      "mean_acc": 24.83,
+      "eval_time_sec": 5.83
+    },
+    "Kernel-DeltaNet_70m": {
+      "scale": "70m",
+      "architecture": "Kernel-DeltaNet",
+      "lambada_acc": 0.0,
+      "hellaswag_acc": 26.0,
+      "piqa_acc": 51.33,
+      "arc_easy_acc": 26.67,
+      "mean_acc": 26.0,
+      "eval_time_sec": 20.34
+    },
+    "Standard Transformer_70m": {
+      "scale": "70m",
+      "architecture": "Standard Transformer",
+      "lambada_acc": 0.0,
+      "hellaswag_acc": 28.0,
+      "piqa_acc": 48.0,
+      "arc_easy_acc": 26.0,
+      "mean_acc": 25.5,
+      "eval_time_sec": 6.69
+    }
+  }
+}

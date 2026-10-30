@@ -1,0 +1,197 @@
+{
+  "B_8": {
+    "T_512": {
+      "FlashAttention-2 (PyTorch SDPA)": {
+        "latency_ms": 0.7666816234588623,
+        "throughput_tok_per_sec": 5342504.469483712,
+        "peak_vram_mb": 84.0400390625
+      },
+      "Chunk-Parallel DeltaNet": {
+        "latency_ms": 2.893907165527344,
+        "throughput_tok_per_sec": 1415387.4902388598,
+        "peak_vram_mb": 103.822265625
+      },
+      "Mamba-2 / SSD (1-Semiseparable)": {
+        "latency_ms": 1.2012351989746093,
+        "throughput_tok_per_sec": 3409823.491266657,
+        "peak_vram_mb": 85.47509765625
+      },
+      "Kernel-DeltaNet (Ours, RKHS D=512)": {
+        "latency_ms": 3.8643264770507812,
+        "throughput_tok_per_sec": 1059951.8504259584,
+        "peak_vram_mb": 150.64013671875
+      },
+      "TTT-MLP (Sequential Inner GELU)": {
+        "latency_ms": 2782.76171875,
+        "throughput_tok_per_sec": 1471.9190552326195,
+        "peak_vram_mb": 865.4755859375
+      }
+    },
+    "T_1024": {
+      "FlashAttention-2 (PyTorch SDPA)": {
+        "latency_ms": 0.8904383659362793,
+        "throughput_tok_per_sec": 9199962.977096416,
+        "peak_vram_mb": 102.1689453125
+      },
+      "Chunk-Parallel DeltaNet": {
+        "latency_ms": 3.6296737670898436,
+        "throughput_tok_per_sec": 2256952.146574893,
+        "peak_vram_mb": 140.853515625
+      },
+      "Mamba-2 / SSD (1-Semiseparable)": {
+        "latency_ms": 1.286409568786621,
+        "throughput_tok_per_sec": 6368111.835274152,
+        "peak_vram_mb": 104.66259765625
+      },
+      "Kernel-DeltaNet (Ours, RKHS D=512)": {
+        "latency_ms": 4.398252868652344,
+        "throughput_tok_per_sec": 1862557.7575102197,
+        "peak_vram_mb": 233.89013671875
+      },
+      "TTT-MLP (Sequential Inner GELU)": {
+        "latency_ms": 5760.13671875,
+        "throughput_tok_per_sec": 1422.1884653074233,
+        "peak_vram_mb": 1662.0302734375
+      }
+    },
+    "T_2048": {
+      "FlashAttention-2 (PyTorch SDPA)": {
+        "latency_ms": 2.0650304794311523,
+        "throughput_tok_per_sec": 7934023.329531317,
+        "peak_vram_mb": 138.4267578125
+      },
+      "Chunk-Parallel DeltaNet": {
+        "latency_ms": 5.640963363647461,
+        "throughput_tok_per_sec": 2904468.429202147,
+        "peak_vram_mb": 214.916015625
+      },
+      "Mamba-2 / SSD (1-Semiseparable)": {
+        "latency_ms": 1.7284799575805665,
+        "throughput_tok_per_sec": 9478848.700642988,
+        "peak_vram_mb": 143.03759765625
+      },
+      "Kernel-DeltaNet (Ours, RKHS D=512)": {
+        "latency_ms": 8.550118255615235,
+        "throughput_tok_per_sec": 1916230.806426556,
+        "peak_vram_mb": 400.39013671875
+      },
+      "TTT-MLP (Sequential Inner GELU)": {
+        "latency_ms": 11463.986328125,
+        "throughput_tok_per_sec": 1429.1712787378817,
+        "peak_vram_mb": 3256.2802734375
+      }
+    },
+    "T_4096": {
+      "FlashAttention-2 (PyTorch SDPA)": {
+        "latency_ms": 6.5006561279296875,
+        "throughput_tok_per_sec": 5040721.94485326,
+        "peak_vram_mb": 210.5673828125
+      },
+      "Chunk-Parallel DeltaNet": {
+        "latency_ms": 16.73152313232422,
+        "throughput_tok_per_sec": 1958458.8767471113,
+        "peak_vram_mb": 362.666015625
+      },
+      "Mamba-2 / SSD (1-Semiseparable)": {
+        "latency_ms": 3.163430404663086,
+        "throughput_tok_per_sec": 10358375.500121009,
+        "peak_vram_mb": 219.41259765625
+      },
+      "Kernel-DeltaNet (Ours, RKHS D=512)": {
+        "latency_ms": 23.492726135253907,
+        "throughput_tok_per_sec": 1394814.7103637892,
+        "peak_vram_mb": 733.01513671875
+      }
+    }
+  },
+  "B_16": {
+    "T_512": {
+      "FlashAttention-2 (PyTorch SDPA)": {
+        "latency_ms": 0.7436192035675049,
+        "throughput_tok_per_sec": 11016391.132314725,
+        "peak_vram_mb": 101.7939453125
+      },
+      "Chunk-Parallel DeltaNet": {
+        "latency_ms": 2.7842687606811523,
+        "throughput_tok_per_sec": 2942244.6983874803,
+        "peak_vram_mb": 140.978515625
+      },
+      "Mamba-2 / SSD (1-Semiseparable)": {
+        "latency_ms": 1.2085760116577149,
+        "throughput_tok_per_sec": 6778224.886959021,
+        "peak_vram_mb": 104.28759765625
+      },
+      "Kernel-DeltaNet (Ours, RKHS D=512)": {
+        "latency_ms": 4.315670394897461,
+        "throughput_tok_per_sec": 1898198.7154731816,
+        "peak_vram_mb": 234.01513671875
+      }
+    },
+    "T_1024": {
+      "FlashAttention-2 (PyTorch SDPA)": {
+        "latency_ms": 1.3062015533447267,
+        "throughput_tok_per_sec": 12543240.327686252,
+        "peak_vram_mb": 138.0517578125
+      },
+      "Chunk-Parallel DeltaNet": {
+        "latency_ms": 3.6589950561523437,
+        "throughput_tok_per_sec": 4477732.204762467,
+        "peak_vram_mb": 215.041015625
+      },
+      "Mamba-2 / SSD (1-Semiseparable)": {
+        "latency_ms": 1.464198398590088,
+        "throughput_tok_per_sec": 11189740.41753942,
+        "peak_vram_mb": 142.66259765625
+      },
+      "Kernel-DeltaNet (Ours, RKHS D=512)": {
+        "latency_ms": 6.601103973388672,
+        "throughput_tok_per_sec": 2482009.080003823,
+        "peak_vram_mb": 400.51513671875
+      }
+    },
+    "T_2048": {
+      "FlashAttention-2 (PyTorch SDPA)": {
+        "latency_ms": 3.594598388671875,
+        "throughput_tok_per_sec": 9115900.152647387,
+        "peak_vram_mb": 210.5673828125
+      },
+      "Chunk-Parallel DeltaNet": {
+        "latency_ms": 9.527152252197265,
+        "throughput_tok_per_sec": 3439432.80558392,
+        "peak_vram_mb": 363.166015625
+      },
+      "Mamba-2 / SSD (1-Semiseparable)": {
+        "latency_ms": 2.320499229431152,
+        "throughput_tok_per_sec": 14121099.280878777,
+        "peak_vram_mb": 219.41259765625
+      },
+      "Kernel-DeltaNet (Ours, RKHS D=512)": {
+        "latency_ms": 16.40601348876953,
+        "throughput_tok_per_sec": 1997316.412206463,
+        "peak_vram_mb": 733.51513671875
+      }
+    },
+    "T_4096": {
+      "FlashAttention-2 (PyTorch SDPA)": {
+        "latency_ms": 12.365382385253906,
+        "throughput_tok_per_sec": 5299957.409983024,
+        "peak_vram_mb": 355.5986328125
+      },
+      "Chunk-Parallel DeltaNet": {
+        "latency_ms": 29.45769348144531,
+        "throughput_tok_per_sec": 2224749.878712654,
+        "peak_vram_mb": 659.416015625
+      },
+      "Mamba-2 / SSD (1-Semiseparable)": {
+        "latency_ms": 6.022505569458008,
+        "throughput_tok_per_sec": 10881849.629555076,
+        "peak_vram_mb": 372.91259765625
+      },
+      "Kernel-DeltaNet (Ours, RKHS D=512)": {
+        "latency_ms": 44.440625,
+        "throughput_tok_per_sec": 1474686.730890936,
+        "peak_vram_mb": 1399.51513671875
+      }
+    }
+  }
+}

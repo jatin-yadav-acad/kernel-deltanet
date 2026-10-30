@@ -1,0 +1,582 @@
+{
+  "device": "NVIDIA GeForce RTX 5070 Ti",
+  "corpus": "PG-19 Natural English Prose",
+  "sequence_lengths": [
+    2048,
+    4096,
+    8192,
+    16384,
+    32768
+  ],
+  "depths": [
+    10,
+    30,
+    50,
+    70,
+    90
+  ],
+  "needle": "The secret access code to the vault hidden in the cellar is 948291.",
+  "results": {
+    "Kernel-DeltaNet (Ours)": {
+      "T_2048": {
+        "depth_10%": {
+          "is_recalled": false,
+          "target_prob": 1.995416641875636e-05,
+          "top1_token": 19813,
+          "target_token": 860,
+          "snr_db": -10.81
+        },
+        "depth_30%": {
+          "is_recalled": false,
+          "target_prob": 1.9956565665779635e-05,
+          "top1_token": 19813,
+          "target_token": 860,
+          "snr_db": -10.75
+        },
+        "depth_50%": {
+          "is_recalled": false,
+          "target_prob": 1.9944336600019597e-05,
+          "top1_token": 19813,
+          "target_token": 860,
+          "snr_db": -11.04
+        },
+        "depth_70%": {
+          "is_recalled": false,
+          "target_prob": 2.0005263650091365e-05,
+          "top1_token": 19813,
+          "target_token": 860,
+          "snr_db": -9.77
+        },
+        "depth_90%": {
+          "is_recalled": false,
+          "target_prob": 1.9590685042203404e-05,
+          "top1_token": 19813,
+          "target_token": 860,
+          "snr_db": -40.0
+        }
+      },
+      "T_4096": {
+        "depth_10%": {
+          "is_recalled": false,
+          "target_prob": 2.0178635168122128e-05,
+          "top1_token": 36685,
+          "target_token": 860,
+          "snr_db": -7.43
+        },
+        "depth_30%": {
+          "is_recalled": false,
+          "target_prob": 2.0161382053629495e-05,
+          "top1_token": 36685,
+          "target_token": 860,
+          "snr_db": -7.61
+        },
+        "depth_50%": {
+          "is_recalled": false,
+          "target_prob": 2.0163804947515018e-05,
+          "top1_token": 36685,
+          "target_token": 860,
+          "snr_db": -7.58
+        },
+        "depth_70%": {
+          "is_recalled": false,
+          "target_prob": 2.0171130017843097e-05,
+          "top1_token": 36685,
+          "target_token": 860,
+          "snr_db": -7.5
+        },
+        "depth_90%": {
+          "is_recalled": false,
+          "target_prob": 1.9930475900764577e-05,
+          "top1_token": 36685,
+          "target_token": 860,
+          "snr_db": -11.42
+        }
+      },
+      "T_8192": {
+        "depth_10%": {
+          "is_recalled": false,
+          "target_prob": 1.859542135207448e-05,
+          "top1_token": 35914,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_30%": {
+          "is_recalled": false,
+          "target_prob": 1.8595423171063885e-05,
+          "top1_token": 35914,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_50%": {
+          "is_recalled": false,
+          "target_prob": 1.8595426809042692e-05,
+          "top1_token": 35914,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_70%": {
+          "is_recalled": false,
+          "target_prob": 1.8590830222819932e-05,
+          "top1_token": 35914,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_90%": {
+          "is_recalled": false,
+          "target_prob": 1.859542135207448e-05,
+          "top1_token": 35914,
+          "target_token": 860,
+          "snr_db": -40.0
+        }
+      },
+      "T_16384": {
+        "depth_10%": {
+          "is_recalled": false,
+          "target_prob": 1.6112469893414527e-05,
+          "top1_token": 19088,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_30%": {
+          "is_recalled": false,
+          "target_prob": 1.6112469893414527e-05,
+          "top1_token": 19088,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_50%": {
+          "is_recalled": false,
+          "target_prob": 1.6112469893414527e-05,
+          "top1_token": 19088,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_70%": {
+          "is_recalled": false,
+          "target_prob": 1.6112478988361545e-05,
+          "top1_token": 19088,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_90%": {
+          "is_recalled": false,
+          "target_prob": 1.6112369848997332e-05,
+          "top1_token": 19088,
+          "target_token": 860,
+          "snr_db": -40.0
+        }
+      },
+      "T_32768": {
+        "depth_10%": {
+          "is_recalled": false,
+          "target_prob": 1.894329943752382e-05,
+          "top1_token": 13026,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_30%": {
+          "is_recalled": false,
+          "target_prob": 1.894329943752382e-05,
+          "top1_token": 13026,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_50%": {
+          "is_recalled": false,
+          "target_prob": 1.894329943752382e-05,
+          "top1_token": 13026,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_70%": {
+          "is_recalled": false,
+          "target_prob": 1.894329943752382e-05,
+          "top1_token": 13026,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_90%": {
+          "is_recalled": false,
+          "target_prob": 1.8924700270872563e-05,
+          "top1_token": 13026,
+          "target_token": 860,
+          "snr_db": -40.0
+        }
+      }
+    },
+    "Linear DeltaNet": {
+      "T_2048": {
+        "depth_10%": {
+          "is_recalled": false,
+          "target_prob": 4.289402132010492e-36,
+          "top1_token": 20313,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_30%": {
+          "is_recalled": false,
+          "target_prob": 3.326955370302538e-36,
+          "top1_token": 20313,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_50%": {
+          "is_recalled": false,
+          "target_prob": 4.1551314619793716e-36,
+          "top1_token": 20313,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_70%": {
+          "is_recalled": false,
+          "target_prob": 3.3336303041971153e-37,
+          "top1_token": 20313,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_90%": {
+          "is_recalled": false,
+          "target_prob": 3.303706584426353e-38,
+          "top1_token": 44586,
+          "target_token": 860,
+          "snr_db": -40.0
+        }
+      },
+      "T_4096": {
+        "depth_10%": {
+          "is_recalled": false,
+          "target_prob": 3.045038916450071e-27,
+          "top1_token": 47678,
+          "target_token": 860,
+          "snr_db": 0.4
+        },
+        "depth_30%": {
+          "is_recalled": false,
+          "target_prob": 3.091706895304496e-27,
+          "top1_token": 47678,
+          "target_token": 860,
+          "snr_db": 0.4
+        },
+        "depth_50%": {
+          "is_recalled": false,
+          "target_prob": 3.512296869163625e-27,
+          "top1_token": 47678,
+          "target_token": 860,
+          "snr_db": 0.43
+        },
+        "depth_70%": {
+          "is_recalled": false,
+          "target_prob": 4.4984265415423436e-27,
+          "top1_token": 47678,
+          "target_token": 860,
+          "snr_db": 0.48
+        },
+        "depth_90%": {
+          "is_recalled": false,
+          "target_prob": 6.545126545324248e-27,
+          "top1_token": 47678,
+          "target_token": 860,
+          "snr_db": 0.27
+        }
+      },
+      "T_8192": {
+        "depth_10%": {
+          "is_recalled": false,
+          "target_prob": 7.904528191802969e-34,
+          "top1_token": 6288,
+          "target_token": 860,
+          "snr_db": -7.16
+        },
+        "depth_30%": {
+          "is_recalled": false,
+          "target_prob": 7.78198015066486e-34,
+          "top1_token": 6288,
+          "target_token": 860,
+          "snr_db": -7.18
+        },
+        "depth_50%": {
+          "is_recalled": false,
+          "target_prob": 7.661342747024319e-34,
+          "top1_token": 6288,
+          "target_token": 860,
+          "snr_db": -7.2
+        },
+        "depth_70%": {
+          "is_recalled": false,
+          "target_prob": 1.3629451084891405e-33,
+          "top1_token": 6288,
+          "target_token": 860,
+          "snr_db": -7.11
+        },
+        "depth_90%": {
+          "is_recalled": false,
+          "target_prob": 1.4302421600737165e-33,
+          "top1_token": 6288,
+          "target_token": 860,
+          "snr_db": -7.05
+        }
+      },
+      "T_16384": {
+        "depth_10%": {
+          "is_recalled": false,
+          "target_prob": 2.382786686137341e-38,
+          "top1_token": 3504,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_30%": {
+          "is_recalled": false,
+          "target_prob": 2.382786686137341e-38,
+          "top1_token": 3504,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_50%": {
+          "is_recalled": false,
+          "target_prob": 2.382786686137341e-38,
+          "top1_token": 3504,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_70%": {
+          "is_recalled": false,
+          "target_prob": 2.744675657925232e-38,
+          "top1_token": 3504,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_90%": {
+          "is_recalled": false,
+          "target_prob": 2.1964322072621765e-38,
+          "top1_token": 3504,
+          "target_token": 860,
+          "snr_db": -40.0
+        }
+      },
+      "T_32768": {
+        "depth_10%": {
+          "is_recalled": false,
+          "target_prob": 0.0,
+          "top1_token": 18838,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_30%": {
+          "is_recalled": false,
+          "target_prob": 0.0,
+          "top1_token": 18838,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_50%": {
+          "is_recalled": false,
+          "target_prob": 0.0,
+          "top1_token": 18838,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_70%": {
+          "is_recalled": false,
+          "target_prob": 0.0,
+          "top1_token": 18838,
+          "target_token": 860,
+          "snr_db": -40.0
+        },
+        "depth_90%": {
+          "is_recalled": false,
+          "target_prob": 0.0,
+          "top1_token": 18838,
+          "target_token": 860,
+          "snr_db": -40.0
+        }
+      }
+    },
+    "Standard Attention": {
+      "T_2048": {
+        "depth_10%": {
+          "is_recalled": false,
+          "target_prob": 2.0805327949346974e-05,
+          "top1_token": 21590,
+          "target_token": 860,
+          "snr_db": -3.44
+        },
+        "depth_30%": {
+          "is_recalled": false,
+          "target_prob": 2.077989120152779e-05,
+          "top1_token": 21590,
+          "target_token": 860,
+          "snr_db": -3.54
+        },
+        "depth_50%": {
+          "is_recalled": false,
+          "target_prob": 2.0769763068528846e-05,
+          "top1_token": 21590,
+          "target_token": 860,
+          "snr_db": -3.59
+        },
+        "depth_70%": {
+          "is_recalled": false,
+          "target_prob": 2.077989120152779e-05,
+          "top1_token": 21590,
+          "target_token": 860,
+          "snr_db": -3.54
+        },
+        "depth_90%": {
+          "is_recalled": false,
+          "target_prob": 2.0769823095179163e-05,
+          "top1_token": 21590,
+          "target_token": 860,
+          "snr_db": -3.59
+        }
+      },
+      "T_4096": {
+        "depth_10%": {
+          "is_recalled": false,
+          "target_prob": 2.0797304387087934e-05,
+          "top1_token": 21590,
+          "target_token": 860,
+          "snr_db": -3.47
+        },
+        "depth_30%": {
+          "is_recalled": false,
+          "target_prob": 2.078191209875513e-05,
+          "top1_token": 21590,
+          "target_token": 860,
+          "snr_db": -3.54
+        },
+        "depth_50%": {
+          "is_recalled": false,
+          "target_prob": 2.079206024063751e-05,
+          "top1_token": 21590,
+          "target_token": 860,
+          "snr_db": -3.49
+        },
+        "depth_70%": {
+          "is_recalled": false,
+          "target_prob": 2.0797067918465473e-05,
+          "top1_token": 21590,
+          "target_token": 860,
+          "snr_db": -3.47
+        },
+        "depth_90%": {
+          "is_recalled": false,
+          "target_prob": 2.0786923414561898e-05,
+          "top1_token": 21590,
+          "target_token": 860,
+          "snr_db": -3.52
+        }
+      },
+      "T_8192": {
+        "depth_10%": {
+          "is_recalled": false,
+          "target_prob": 2.0443034372874536e-05,
+          "top1_token": 7707,
+          "target_token": 860,
+          "snr_db": -5.27
+        },
+        "depth_30%": {
+          "is_recalled": false,
+          "target_prob": 2.043315726041328e-05,
+          "top1_token": 7707,
+          "target_token": 860,
+          "snr_db": -5.33
+        },
+        "depth_50%": {
+          "is_recalled": false,
+          "target_prob": 2.041814150288701e-05,
+          "top1_token": 7707,
+          "target_token": 860,
+          "snr_db": -5.43
+        },
+        "depth_70%": {
+          "is_recalled": false,
+          "target_prob": 2.042806772806216e-05,
+          "top1_token": 7707,
+          "target_token": 860,
+          "snr_db": -5.37
+        },
+        "depth_90%": {
+          "is_recalled": false,
+          "target_prob": 2.0418086933204904e-05,
+          "top1_token": 7707,
+          "target_token": 860,
+          "snr_db": -5.43
+        }
+      },
+      "T_16384": {
+        "depth_10%": {
+          "is_recalled": false,
+          "target_prob": 2.0410223442013375e-05,
+          "top1_token": 21590,
+          "target_token": 860,
+          "snr_db": -5.48
+        },
+        "depth_30%": {
+          "is_recalled": false,
+          "target_prob": 2.042267624347005e-05,
+          "top1_token": 21590,
+          "target_token": 860,
+          "snr_db": -5.4
+        },
+        "depth_50%": {
+          "is_recalled": false,
+          "target_prob": 2.042268715740647e-05,
+          "top1_token": 21590,
+          "target_token": 860,
+          "snr_db": -5.4
+        },
+        "depth_70%": {
+          "is_recalled": false,
+          "target_prob": 2.041271363850683e-05,
+          "top1_token": 21590,
+          "target_token": 860,
+          "snr_db": -5.46
+        },
+        "depth_90%": {
+          "is_recalled": false,
+          "target_prob": 2.0422725356183946e-05,
+          "top1_token": 21590,
+          "target_token": 860,
+          "snr_db": -5.4
+        }
+      },
+      "T_32768": {
+        "depth_10%": {
+          "is_recalled": false,
+          "target_prob": 2.0727862647618167e-05,
+          "top1_token": 21590,
+          "target_token": 860,
+          "snr_db": -3.77
+        },
+        "depth_30%": {
+          "is_recalled": false,
+          "target_prob": 2.0727891751448624e-05,
+          "top1_token": 21590,
+          "target_token": 860,
+          "snr_db": -3.77
+        },
+        "depth_50%": {
+          "is_recalled": false,
+          "target_prob": 2.0727902665385045e-05,
+          "top1_token": 21590,
+          "target_token": 860,
+          "snr_db": -3.77
+        },
+        "depth_70%": {
+          "is_recalled": false,
+          "target_prob": 2.0722818590002134e-05,
+          "top1_token": 21590,
+          "target_token": 860,
+          "snr_db": -3.79
+        },
+        "depth_90%": {
+          "is_recalled": false,
+          "target_prob": 2.0722820408991538e-05,
+          "top1_token": 21590,
+          "target_token": 860,
+          "snr_db": -3.79
+        }
+      }
+    }
+  }
+}

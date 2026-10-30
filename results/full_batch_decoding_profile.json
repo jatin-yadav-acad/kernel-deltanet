@@ -1,0 +1,69 @@
+{
+  "device": "NVIDIA GeForce RTX 5070 Ti",
+  "benchmarks": [
+    {
+      "batch_size": 1,
+      "state_memory_mb": 44.0,
+      "step_latency_ms_per_layer": 0.2014,
+      "itl_us_per_layer": 201.38,
+      "end_to_end_step_ms_22_layers": 4.43,
+      "generation_throughput_tok_s": 225.7
+    },
+    {
+      "batch_size": 2,
+      "state_memory_mb": 88.0,
+      "step_latency_ms_per_layer": 0.1962,
+      "itl_us_per_layer": 196.16,
+      "end_to_end_step_ms_22_layers": 4.316,
+      "generation_throughput_tok_s": 463.4
+    },
+    {
+      "batch_size": 4,
+      "state_memory_mb": 176.0,
+      "step_latency_ms_per_layer": 0.197,
+      "itl_us_per_layer": 197.03,
+      "end_to_end_step_ms_22_layers": 4.335,
+      "generation_throughput_tok_s": 922.8
+    },
+    {
+      "batch_size": 8,
+      "state_memory_mb": 352.0,
+      "step_latency_ms_per_layer": 0.31,
+      "itl_us_per_layer": 309.95,
+      "end_to_end_step_ms_22_layers": 6.819,
+      "generation_throughput_tok_s": 1173.2
+    },
+    {
+      "batch_size": 16,
+      "state_memory_mb": 704.0,
+      "step_latency_ms_per_layer": 0.7366,
+      "itl_us_per_layer": 736.62,
+      "end_to_end_step_ms_22_layers": 16.206,
+      "generation_throughput_tok_s": 987.3
+    },
+    {
+      "batch_size": 32,
+      "state_memory_mb": 1408.0,
+      "step_latency_ms_per_layer": 1.6732,
+      "itl_us_per_layer": 1673.18,
+      "end_to_end_step_ms_22_layers": 36.81,
+      "generation_throughput_tok_s": 869.3
+    },
+    {
+      "batch_size": 64,
+      "state_memory_mb": 2816.0,
+      "step_latency_ms_per_layer": 3.2898,
+      "itl_us_per_layer": 3289.83,
+      "end_to_end_step_ms_22_layers": 72.376,
+      "generation_throughput_tok_s": 884.3
+    },
+    {
+      "batch_size": 128,
+      "state_memory_mb": 5632.0,
+      "step_latency_ms_per_layer": 6.4975,
+      "itl_us_per_layer": 6497.46,
+      "end_to_end_step_ms_22_layers": 142.944,
+      "generation_throughput_tok_s": 895.5
+    }
+  ]
+}

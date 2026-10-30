@@ -1,0 +1,3533 @@
+{
+  "campaign": "Kernel-DeltaNet Multi-Day Converged Compute Campaign",
+  "last_updated": "2026-10-01 01:56:52",
+  "hardware": "NVIDIA GeForce RTX 5070 Ti",
+  "active_phase": "Phase 2: 1.1B Foundation Distillation",
+  "overall_elapsed_hours": 36.01,
+  "overall_target_hours": 36.0,
+  "overall_percent_complete": 100.0,
+  "phase_telemetry": {
+    "step": 650400,
+    "total_loss": 1.5625,
+    "distill_loss": 0.5586,
+    "ce_loss": 2.5625,
+    "tokens_per_sec": 4324.9,
+    "total_tokens_trained": 333004800,
+    "elapsed_hours": 24.0,
+    "target_hours": 24.0,
+    "remaining_hours": 0.0,
+    "vram_allocated_gb": 10.77,
+    "downstream_retention": {
+      "step_5000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 60.0,
+          "retention_percentage": 88.24
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 8.0,
+          "retention_percentage": 20.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 57.83
+      },
+      "step_10000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 64.0,
+          "retention_percentage": 94.12
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 8.0,
+          "retention_percentage": 20.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 68.0,
+          "retention_percentage": 68.0
+        },
+        "mean_retention_percentage": 58.77
+      },
+      "step_15000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 60.0,
+          "retention_percentage": 88.24
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 35.29
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 4.0,
+          "retention_percentage": 10.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 92.0,
+          "retention_percentage": 92.0
+        },
+        "mean_retention_percentage": 56.38
+      },
+      "step_20000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 4.0,
+          "retention_percentage": 10.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 52.38
+      },
+      "step_25000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 59.91
+      },
+      "step_30000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 61.38
+      },
+      "step_35000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 44.0,
+          "retention_percentage": 64.71
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 23.53
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 51.06
+      },
+      "step_40000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 12.0,
+          "retention_percentage": 30.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 80.0,
+          "retention_percentage": 80.0
+        },
+        "mean_retention_percentage": 59.85
+      },
+      "step_45000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 12.0,
+          "retention_percentage": 30.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 57.85
+      },
+      "step_50000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 58.88
+      },
+      "step_55000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 4.0,
+          "retention_percentage": 10.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 68.0,
+          "retention_percentage": 68.0
+        },
+        "mean_retention_percentage": 47.44
+      },
+      "step_60000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 60.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 63.88
+      },
+      "step_65000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 44.0,
+          "retention_percentage": 64.71
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 54.47
+      },
+      "step_70000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 58.88
+      },
+      "step_75000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 40.0,
+          "retention_percentage": 58.82
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 29.41
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 4.0,
+          "retention_percentage": 10.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 80.0,
+          "retention_percentage": 80.0
+        },
+        "mean_retention_percentage": 44.56
+      },
+      "step_80000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 8.0,
+          "retention_percentage": 20.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 55.35
+      },
+      "step_85000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 58.88
+      },
+      "step_90000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 56.94
+      },
+      "step_95000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 60.0,
+          "retention_percentage": 88.24
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 44.0,
+          "retention_percentage": 64.71
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 4.0,
+          "retention_percentage": 10.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 80.0,
+          "retention_percentage": 80.0
+        },
+        "mean_retention_percentage": 60.74
+      },
+      "step_100000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 12.0,
+          "retention_percentage": 30.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 57.85
+      },
+      "step_105000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 35.29
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 58.44
+      },
+      "step_110000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 58.88
+      },
+      "step_115000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 12.0,
+          "retention_percentage": 17.65
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 12.0,
+          "retention_percentage": 30.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 80.0,
+          "retention_percentage": 80.0
+        },
+        "mean_retention_percentage": 52.5
+      },
+      "step_120000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 62.85
+      },
+      "step_125000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 88.0,
+          "retention_percentage": 88.0
+        },
+        "mean_retention_percentage": 62.88
+      },
+      "step_130000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 35.29
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 84.0,
+          "retention_percentage": 84.0
+        },
+        "mean_retention_percentage": 58.94
+      },
+      "step_135000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 12.0,
+          "retention_percentage": 30.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 84.0,
+          "retention_percentage": 84.0
+        },
+        "mean_retention_percentage": 60.85
+      },
+      "step_140000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 40.0,
+          "retention_percentage": 58.82
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 40.0,
+          "retention_percentage": 58.82
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 12.0,
+          "retention_percentage": 30.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 80.0,
+          "retention_percentage": 80.0
+        },
+        "mean_retention_percentage": 56.91
+      },
+      "step_145000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 57.41
+      },
+      "step_150000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 80.0,
+          "retention_percentage": 80.0
+        },
+        "mean_retention_percentage": 62.35
+      },
+      "step_155000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 60.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 64.0,
+          "retention_percentage": 64.0
+        },
+        "mean_retention_percentage": 58.94
+      },
+      "step_160000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 12.0,
+          "retention_percentage": 30.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 59.32
+      },
+      "step_165000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 61.38
+      },
+      "step_170000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 35.29
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 80.0,
+          "retention_percentage": 80.0
+        },
+        "mean_retention_percentage": 56.47
+      },
+      "step_175000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 40.0,
+          "retention_percentage": 58.82
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 12.0,
+          "retention_percentage": 30.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 80.0,
+          "retention_percentage": 80.0
+        },
+        "mean_retention_percentage": 61.32
+      },
+      "step_180000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 57.41
+      },
+      "step_185000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 64.0,
+          "retention_percentage": 94.12
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 64.3
+      },
+      "step_190000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 44.0,
+          "retention_percentage": 64.71
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 12.0,
+          "retention_percentage": 30.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 100.0,
+          "retention_percentage": 100.0
+        },
+        "mean_retention_percentage": 58.97
+      },
+      "step_195000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 12.0,
+          "retention_percentage": 30.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 56.38
+      },
+      "step_200000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 60.0,
+          "retention_percentage": 88.24
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 60.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 68.0,
+          "retention_percentage": 68.0
+        },
+        "mean_retention_percentage": 65.83
+      },
+      "step_205000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 60.0,
+          "retention_percentage": 88.24
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 64.3
+      },
+      "step_210000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 68.0,
+          "retention_percentage": 68.0
+        },
+        "mean_retention_percentage": 59.35
+      },
+      "step_215000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 64.0,
+          "retention_percentage": 94.12
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 40.0,
+          "retention_percentage": 58.82
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 68.73
+      },
+      "step_220000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 60.35
+      },
+      "step_225000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 62.82
+      },
+      "step_230000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 12.0,
+          "retention_percentage": 30.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 80.0,
+          "retention_percentage": 80.0
+        },
+        "mean_retention_percentage": 58.38
+      },
+      "step_235000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 64.0,
+          "retention_percentage": 94.12
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 40.0,
+          "retention_percentage": 58.82
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 68.73
+      },
+      "step_240000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 68.0,
+          "retention_percentage": 68.0
+        },
+        "mean_retention_percentage": 60.38
+      },
+      "step_245000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 60.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 63.41
+      },
+      "step_250000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 44.0,
+          "retention_percentage": 64.71
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 35.29
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 4.0,
+          "retention_percentage": 10.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 88.0,
+          "retention_percentage": 88.0
+        },
+        "mean_retention_percentage": 49.5
+      },
+      "step_255000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 61.82
+      },
+      "step_260000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 60.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 65.35
+      },
+      "step_265000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 29.41
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 70.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 68.0,
+          "retention_percentage": 68.0
+        },
+        "mean_retention_percentage": 62.44
+      },
+      "step_270000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 35.29
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 80.0,
+          "retention_percentage": 80.0
+        },
+        "mean_retention_percentage": 59.41
+      },
+      "step_275000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 40.0,
+          "retention_percentage": 58.82
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 60.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 66.82
+      },
+      "step_280000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 44.0,
+          "retention_percentage": 64.71
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 12.0,
+          "retention_percentage": 30.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 54.91
+      },
+      "step_285000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 35.29
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 12.0,
+          "retention_percentage": 30.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 55.91
+      },
+      "step_290000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 8.0,
+          "retention_percentage": 20.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 84.0,
+          "retention_percentage": 84.0
+        },
+        "mean_retention_percentage": 55.41
+      },
+      "step_295000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 68.0,
+          "retention_percentage": 68.0
+        },
+        "mean_retention_percentage": 60.82
+      },
+      "step_300000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 44.0,
+          "retention_percentage": 64.71
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 58.41
+      },
+      "step_305000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 29.41
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 12.0,
+          "retention_percentage": 30.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 84.0,
+          "retention_percentage": 84.0
+        },
+        "mean_retention_percentage": 56.44
+      },
+      "step_310000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 29.41
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 8.0,
+          "retention_percentage": 20.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 84.0,
+          "retention_percentage": 84.0
+        },
+        "mean_retention_percentage": 53.94
+      },
+      "step_315000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 40.0,
+          "retention_percentage": 58.82
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 60.35
+      },
+      "step_320000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 44.0,
+          "retention_percentage": 64.71
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 68.0,
+          "retention_percentage": 68.0
+        },
+        "mean_retention_percentage": 58.91
+      },
+      "step_325000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 12.0,
+          "retention_percentage": 30.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 84.0,
+          "retention_percentage": 84.0
+        },
+        "mean_retention_percentage": 59.38
+      },
+      "step_330000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 68.0,
+          "retention_percentage": 68.0
+        },
+        "mean_retention_percentage": 60.82
+      },
+      "step_335000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 60.0,
+          "retention_percentage": 88.24
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 62.83
+      },
+      "step_340000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 60.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 68.0,
+          "retention_percentage": 68.0
+        },
+        "mean_retention_percentage": 65.82
+      },
+      "step_345000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 80.0,
+          "retention_percentage": 80.0
+        },
+        "mean_retention_percentage": 57.94
+      },
+      "step_350000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 60.0,
+          "retention_percentage": 88.24
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 70.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 70.8
+      },
+      "step_355000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 62.85
+      },
+      "step_360000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 60.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 68.0,
+          "retention_percentage": 68.0
+        },
+        "mean_retention_percentage": 64.35
+      },
+      "step_365000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 4.0,
+          "retention_percentage": 10.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 92.0,
+          "retention_percentage": 92.0
+        },
+        "mean_retention_percentage": 54.91
+      },
+      "step_370000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 60.0,
+          "retention_percentage": 88.24
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 44.0,
+          "retention_percentage": 64.71
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 60.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 72.24
+      },
+      "step_375000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 64.0,
+          "retention_percentage": 64.0
+        },
+        "mean_retention_percentage": 55.41
+      },
+      "step_380000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 44.0,
+          "retention_percentage": 64.71
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 67.27
+      },
+      "step_385000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 35.29
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 68.0,
+          "retention_percentage": 68.0
+        },
+        "mean_retention_percentage": 55.97
+      },
+      "step_390000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 62.38
+      },
+      "step_395000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 63.85
+      },
+      "step_400000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 44.0,
+          "retention_percentage": 64.71
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 40.0,
+          "retention_percentage": 58.82
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 61.38
+      },
+      "step_405000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 12.0,
+          "retention_percentage": 30.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 64.0,
+          "retention_percentage": 64.0
+        },
+        "mean_retention_percentage": 52.91
+      },
+      "step_410000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 64.32
+      },
+      "step_415000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 60.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 65.35
+      },
+      "step_420000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 29.41
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 12.0,
+          "retention_percentage": 30.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 28.0
+        },
+        "mean_retention_percentage": 42.44
+      },
+      "step_425000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 35.29
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 64.0,
+          "retention_percentage": 64.0
+        },
+        "mean_retention_percentage": 56.44
+      },
+      "step_430000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 44.0,
+          "retention_percentage": 64.71
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 61.83
+      },
+      "step_435000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 56.94
+      },
+      "step_440000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 29.41
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 8.0,
+          "retention_percentage": 20.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 68.0,
+          "retention_percentage": 68.0
+        },
+        "mean_retention_percentage": 47.0
+      },
+      "step_445000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 44.0,
+          "retention_percentage": 64.71
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 8.0,
+          "retention_percentage": 20.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 64.0,
+          "retention_percentage": 64.0
+        },
+        "mean_retention_percentage": 47.47
+      },
+      "step_450000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 68.0,
+          "retention_percentage": 68.0
+        },
+        "mean_retention_percentage": 60.82
+      },
+      "step_455000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 44.0,
+          "retention_percentage": 64.71
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 55.94
+      },
+      "step_460000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 12.0,
+          "retention_percentage": 30.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 88.0,
+          "retention_percentage": 88.0
+        },
+        "mean_retention_percentage": 57.44
+      },
+      "step_465000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 60.0,
+          "retention_percentage": 88.24
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 23.53
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 12.0,
+          "retention_percentage": 30.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 54.44
+      },
+      "step_470000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 84.0,
+          "retention_percentage": 84.0
+        },
+        "mean_retention_percentage": 67.32
+      },
+      "step_475000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 12.0,
+          "retention_percentage": 30.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 56.38
+      },
+      "step_480000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 35.29
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 44.0,
+          "retention_percentage": 44.0
+        },
+        "mean_retention_percentage": 47.47
+      },
+      "step_485000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 64.0,
+          "retention_percentage": 64.0
+        },
+        "mean_retention_percentage": 56.88
+      },
+      "step_490000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 40.0,
+          "retention_percentage": 58.82
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 35.29
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 68.0,
+          "retention_percentage": 68.0
+        },
+        "mean_retention_percentage": 53.03
+      },
+      "step_495000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 44.0,
+          "retention_percentage": 64.71
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 40.0,
+          "retention_percentage": 58.82
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 68.0,
+          "retention_percentage": 68.0
+        },
+        "mean_retention_percentage": 60.38
+      },
+      "step_500000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 40.0,
+          "retention_percentage": 58.82
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 8.0,
+          "retention_percentage": 20.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 80.0,
+          "retention_percentage": 80.0
+        },
+        "mean_retention_percentage": 57.35
+      },
+      "step_505000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 64.0,
+          "retention_percentage": 94.12
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 44.0,
+          "retention_percentage": 64.71
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 60.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 73.71
+      },
+      "step_510000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 40.0,
+          "retention_percentage": 58.82
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 64.0,
+          "retention_percentage": 64.0
+        },
+        "mean_retention_percentage": 60.85
+      },
+      "step_515000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 60.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 63.88
+      },
+      "step_520000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 56.94
+      },
+      "step_525000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 68.0,
+          "retention_percentage": 68.0
+        },
+        "mean_retention_percentage": 61.85
+      },
+      "step_530000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 59.91
+      },
+      "step_535000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 60.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 64.88
+      },
+      "step_540000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 35.29
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 12.0,
+          "retention_percentage": 30.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 64.0,
+          "retention_percentage": 64.0
+        },
+        "mean_retention_percentage": 49.97
+      },
+      "step_545000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 60.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 64.88
+      },
+      "step_550000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 60.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 63.88
+      },
+      "step_555000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 60.0,
+          "retention_percentage": 88.24
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 65.33
+      },
+      "step_560000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 80.0,
+          "retention_percentage": 80.0
+        },
+        "mean_retention_percentage": 57.94
+      },
+      "step_565000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 40.0,
+          "retention_percentage": 58.82
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 68.0,
+          "retention_percentage": 68.0
+        },
+        "mean_retention_percentage": 62.29
+      },
+      "step_570000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 60.0,
+          "retention_percentage": 88.24
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 68.0,
+          "retention_percentage": 68.0
+        },
+        "mean_retention_percentage": 64.8
+      },
+      "step_575000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 35.29
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 60.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 62.41
+      },
+      "step_580000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 8.0,
+          "retention_percentage": 20.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 84.0,
+          "retention_percentage": 84.0
+        },
+        "mean_retention_percentage": 53.94
+      },
+      "step_585000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 80.0,
+          "retention_percentage": 80.0
+        },
+        "mean_retention_percentage": 63.82
+      },
+      "step_590000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 62.38
+      },
+      "step_595000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 44.0,
+          "retention_percentage": 64.71
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 57.41
+      },
+      "step_600000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 56.0,
+          "retention_percentage": 82.35
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 60.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 84.0,
+          "retention_percentage": 84.0
+        },
+        "mean_retention_percentage": 66.88
+      },
+      "step_605000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 44.0,
+          "retention_percentage": 64.71
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 57.41
+      },
+      "step_610000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 20.0,
+          "retention_percentage": 50.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 80.0,
+          "retention_percentage": 80.0
+        },
+        "mean_retention_percentage": 63.38
+      },
+      "step_615000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 35.29
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 80.0,
+          "retention_percentage": 80.0
+        },
+        "mean_retention_percentage": 56.47
+      },
+      "step_620000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 44.0,
+          "retention_percentage": 64.71
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 24.0,
+          "retention_percentage": 60.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 61.94
+      },
+      "step_625000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 48.0,
+          "retention_percentage": 70.59
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 36.0,
+          "retention_percentage": 52.94
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 72.0,
+          "retention_percentage": 72.0
+        },
+        "mean_retention_percentage": 58.88
+      },
+      "step_630000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 58.41
+      },
+      "step_635000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 28.0,
+          "retention_percentage": 41.18
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 12.0,
+          "retention_percentage": 30.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 55.91
+      },
+      "step_640000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 59.88
+      },
+      "step_645000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 44.0,
+          "retention_percentage": 64.71
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 80.0,
+          "retention_percentage": 80.0
+        },
+        "mean_retention_percentage": 57.94
+      },
+      "step_650000": {
+        "PIQA": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 52.0,
+          "retention_percentage": 76.47
+        },
+        "ARC-Challenge": {
+          "num_samples": 25,
+          "base_accuracy": 68.0,
+          "upcycled_accuracy": 32.0,
+          "retention_percentage": 47.06
+        },
+        "HellaSwag": {
+          "num_samples": 25,
+          "base_accuracy": 40.0,
+          "upcycled_accuracy": 16.0,
+          "retention_percentage": 40.0
+        },
+        "LAMBADA": {
+          "num_samples": 25,
+          "base_accuracy": 100.0,
+          "upcycled_accuracy": 76.0,
+          "retention_percentage": 76.0
+        },
+        "mean_retention_percentage": 59.88
+      }
+    }
+  }
+}

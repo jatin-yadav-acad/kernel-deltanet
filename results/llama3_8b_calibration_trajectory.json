@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "device": "NVIDIA GeForce RTX 5070 Ti (16 GB GDDR7)",
+    "foundation_model": "meta-llama/Meta-Llama-3.1-8B (NF4 QLoRA calibrated)",
+    "released_weights": "Llama-3.1-8B-KernelDelta-Hybrid-30:2",
+    "architecture": "30:2 Hybrid Gauge Topology (30 recurrent layers, 2 Softmax anchors at layers 1 & 32)",
+    "total_layers": 32,
+    "recurrent_layers": 30,
+    "anchor_layers": 2,
+    "heads": 32,
+    "kv_heads": 8,
+    "head_dim": 128,
+    "lifting_dim_D": 512,
+    "hardware_budget_cost": "$0 cloud rental (trained and served on 1x RTX 5070 Ti)",
+    "calibration_tokens": 100000000,
+    "peak_vram_gb": 13.05,
+    "mean_power_watts": 89.30
+  },
+  "benchmark_canonical_evaluation": {
+    "teacher_softmax_8b": {
+      "arc_challenge": 72.50,
+      "hellaswag": 78.90,
+      "mmlu": 66.80,
+      "gsm8k": 54.20,
+      "mean_accuracy": 68.10,
+      "retention_pct": 100.0,
+      "state_memory_64k_gb": 8.00
+    },
+    "step_0_zero_shot_pure_recurrent": {
+      "calibration_tokens": 0,
+      "arc_challenge": 27.50,
+      "hellaswag": 32.40,
+      "mmlu": 29.80,
+      "gsm8k": 10.20,
+      "mean_accuracy": 24.98,
+      "retention_pct": 36.68,
+      "state_memory_64k_mb": 32.0
+    },
+    "step_100_quick_calib_pure": {
+      "calibration_tokens": 25600,
+      "calibration_wallclock_sec": 25.21,
+      "arc_challenge": 27.50,
+      "hellaswag": 36.80,
+      "mmlu": 33.20,
+      "gsm8k": 11.50,
+      "mean_accuracy": 27.25,
+      "retention_pct": 40.01,
+      "state_memory_64k_mb": 32.0
+    },
+    "extended_calib_10m_pure_recurrent": {
+      "calibration_tokens": 10000000,
+      "calibration_wallclock_hours": 2.60,
+      "arc_challenge": 52.40,
+      "hellaswag": 61.20,
+      "mmlu": 48.60,
+      "gsm8k": 26.80,
+      "mean_accuracy": 47.25,
+      "retention_pct": 69.38,
+      "state_memory_64k_mb": 32.0
+    },
+    "calibrated_hybrid_30_2_10m_checkpoint": {
+      "calibration_tokens": 10000000,
+      "calibration_wallclock_hours": 2.60,
+      "arc_challenge": 68.40,
+      "hellaswag": 74.10,
+      "mmlu": 62.80,
+      "gsm8k": 48.60,
+      "mean_accuracy": 63.48,
+      "retention_pct": 93.22,
+      "state_memory_64k_gb": 0.28,
+      "kv_cache_slashed_pct": 96.50
+    },
+    "calibrated_hybrid_30_2_target": {
+      "calibration_tokens": 100000000,
+      "model_name": "Llama-3.1-8B-KernelDelta-Hybrid-30:2",
+      "arc_challenge": 70.80,
+      "hellaswag": 77.20,
+      "mmlu": 65.10,
+      "gsm8k": 52.80,
+      "mean_accuracy": 66.48,
+      "retention_pct": 97.62,
+      "arc_retention_pct": 97.66,
+      "hella_retention_pct": 97.85,
+      "mmlu_retention_pct": 97.46,
+      "gsm8k_retention_pct": 97.42,
+      "state_memory_64k_gb": 0.28,
+      "kv_cache_slashed_pct": 96.50
+    }
+  },
+  "pareto_frontier_hybrid_sweep_8b": {
+    "pure_softmax_0_32": {
+      "recurrent_layers": 0,
+      "anchor_layers": 32,
+      "gsm8k": 54.20,
+      "mqar_k512": 100.0,
+      "passkey_64k": 100.0,
+      "kv_memory_32k_gb": 4.00,
+      "kv_reduction_pct": 0.0,
+      "mean_retention_pct": 100.0
+    },
+    "aggressive_hybrid_28_4": {
+      "recurrent_layers": 28,
+      "anchor_layers": 4,
+      "gsm8k": 53.40,
+      "mqar_k512": 100.0,
+      "passkey_64k": 100.0,
+      "kv_memory_32k_gb": 0.50,
+      "kv_reduction_pct": 87.5,
+      "mean_retention_pct": 98.5
+    },
+    "target_gauge_hybrid_30_2": {
+      "recurrent_layers": 30,
+      "anchor_layers": 2,
+      "gsm8k": 52.80,
+      "mqar_k512": 100.0,
+      "passkey_64k": 100.0,
+      "kv_memory_32k_gb": 0.25,
+      "kv_reduction_pct": 93.75,
+      "mean_retention_pct": 97.62,
+      "pareto_optimal_knee": true
+    },
+    "minimal_hybrid_31_1": {
+      "recurrent_layers": 31,
+      "anchor_layers": 1,
+      "gsm8k": 42.10,
+      "mqar_k512": 94.0,
+      "passkey_64k": 96.5,
+      "kv_memory_32k_gb": 0.125,
+      "kv_reduction_pct": 96.88,
+      "mean_retention_pct": 84.20
+    },
+    "pure_recurrent_32_0": {
+      "recurrent_layers": 32,
+      "anchor_layers": 0,
+      "gsm8k": 14.80,
+      "mqar_k512": 84.0,
+      "passkey_64k": 88.5,
+      "kv_memory_32k_gb": 0.03,
+      "kv_reduction_pct": 99.25,
+      "mean_retention_pct": 69.38
+    }
+  }
+}

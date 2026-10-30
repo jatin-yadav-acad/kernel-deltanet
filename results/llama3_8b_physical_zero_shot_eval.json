@@ -1,0 +1,45 @@
+{
+  "foundation_model": "meta-llama/Meta-Llama-3-8B (unsloth 4-bit NF4 quantized)",
+  "hardware": {
+    "device": "NVIDIA GeForce RTX 5070 Ti",
+    "vram_gb": 15.92,
+    "model_vram_footprint_gb": 5.31
+  },
+  "analytical_transmutation": {
+    "gradient_training_tokens": 0,
+    "d_model": 4096,
+    "layers": 32,
+    "heads": 32,
+    "kv_heads": 8,
+    "d_k": 128,
+    "D": 512,
+    "tau_star": 3.3636,
+    "chunk_size": 64,
+    "b_lambda": 4.143,
+    "b_beta": -2.333
+  },
+  "downstream_benchmarks": {
+    "arc_challenge": {
+      "teacher_acc": 72.5,
+      "transmuted_acc": 25.0,
+      "retention_pct": 34.5
+    },
+    "hellaswag": {
+      "teacher_acc": 42.5,
+      "transmuted_acc": 27.5,
+      "retention_pct": 64.7
+    },
+    "mean_retention_pct": 49.6
+  },
+  "long_context_retrieval": {
+    "passkey_32k_accuracy_pct": 0.0,
+    "evaluation_time_sec": 15.31
+  },
+  "memory_accounting": {
+    "kernel_deltanet_state_mb": 32.0,
+    "softmax_kv_32k_gb": 4.0,
+    "softmax_kv_64k_gb": 8.0,
+    "compression_ratio_32k": 128.0,
+    "compression_ratio_64k": 256.0
+  }
+}

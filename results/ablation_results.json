@@ -1,0 +1,225 @@
+{
+  "axis1_rkhs_expansion_ratio": {
+    "factor_1x": {
+      "rkhs_factor": 1,
+      "rkhs_dim": 64,
+      "top1_recall": false,
+      "cos_sim": 0.31763625144958496,
+      "snr_db": -5.310126841225688,
+      "latency_ms": 1.1893899994902313
+    },
+    "factor_2x": {
+      "rkhs_factor": 2,
+      "rkhs_dim": 128,
+      "top1_recall": true,
+      "cos_sim": 0.7248891592025757,
+      "snr_db": -1.3153587690252897,
+      "latency_ms": 1.2801000000763452
+    },
+    "factor_4x": {
+      "rkhs_factor": 4,
+      "rkhs_dim": 256,
+      "top1_recall": true,
+      "cos_sim": 0.776992678642273,
+      "snr_db": 2.6850339135201495,
+      "latency_ms": 1.2108999999327352
+    },
+    "factor_8x": {
+      "rkhs_factor": 8,
+      "rkhs_dim": 512,
+      "top1_recall": true,
+      "cos_sim": 0.8533033132553101,
+      "snr_db": 2.9168737855432383,
+      "latency_ms": 1.2913600003230385
+    },
+    "factor_16x": {
+      "rkhs_factor": 16,
+      "rkhs_dim": 1024,
+      "top1_recall": true,
+      "cos_sim": 0.9188199043273926,
+      "snr_db": 7.2381211281537885,
+      "latency_ms": 1.3001200000871904
+    }
+  },
+  "axis2_kernel_families": {
+    "Gaussian_RFF": {
+      "mean_crosstalk": 0.0407729297876358,
+      "max_crosstalk": 0.17926999926567078,
+      "projection_latency_ms": 0.13937500025349436
+    },
+    "Orthogonal_ORF": {
+      "mean_crosstalk": 0.04033008590340614,
+      "max_crosstalk": 0.19775022566318512,
+      "projection_latency_ms": 0.10660499992809491
+    },
+    "Cauchy_HeavyTailed": {
+      "mean_crosstalk": 0.9436072111129761,
+      "max_crosstalk": 0.9767518639564514,
+      "projection_latency_ms": 0.0928150002437178
+    },
+    "Fastfood_Hadamard": {
+      "mean_crosstalk": 0.8974377512931824,
+      "max_crosstalk": 0.9563323855400085,
+      "projection_latency_ms": 2.0827100004680688
+    },
+    "Polynomial_CountSketch": {
+      "mean_crosstalk": 0.0019616014324128628,
+      "max_crosstalk": 0.004412924405187368,
+      "projection_latency_ms": 0.19389499957469525
+    }
+  },
+  "axis3_chunk_sizes": {
+    "C_16": {
+      "chunk_size": 16,
+      "latency_ms": 3.4915133333318713,
+      "peak_vram_mb": 194.33935546875,
+      "throughput_tok_per_sec": 4692521.103554007
+    },
+    "C_32": {
+      "chunk_size": 32,
+      "latency_ms": 2.0864333336551986,
+      "peak_vram_mb": 164.35693359375,
+      "throughput_tok_per_sec": 7852635.277493894
+    },
+    "C_64": {
+      "chunk_size": 64,
+      "latency_ms": 1.3577133337093983,
+      "peak_vram_mb": 160.080078125,
+      "throughput_tok_per_sec": 12067348.528748259
+    },
+    "C_128": {
+      "chunk_size": 128,
+      "latency_ms": 1.0496066669778277,
+      "peak_vram_mb": 160.080078125,
+      "throughput_tok_per_sec": 15609656.946230223
+    },
+    "C_256": {
+      "chunk_size": 256,
+      "latency_ms": 1.1178800004320995,
+      "peak_vram_mb": 185.58447265625,
+      "throughput_tok_per_sec": 14656313.731050754
+    }
+  },
+  "axis4_test_time_hyperparams": {
+    "lambda_0.90_eta_0.05": {
+      "decay_lambda": 0.9,
+      "learning_rate_eta": 0.05,
+      "top1_accuracy": 0.0,
+      "cos_sim": -0.21169355511665344
+    },
+    "lambda_0.90_eta_0.10": {
+      "decay_lambda": 0.9,
+      "learning_rate_eta": 0.1,
+      "top1_accuracy": 0.0,
+      "cos_sim": 0.027850456535816193
+    },
+    "lambda_0.90_eta_0.50": {
+      "decay_lambda": 0.9,
+      "learning_rate_eta": 0.5,
+      "top1_accuracy": 0.0,
+      "cos_sim": -0.36966586112976074
+    },
+    "lambda_0.90_eta_1.00": {
+      "decay_lambda": 0.9,
+      "learning_rate_eta": 1.0,
+      "top1_accuracy": 0.0,
+      "cos_sim": -0.4527278542518616
+    },
+    "lambda_0.90_eta_2.00": {
+      "decay_lambda": 0.9,
+      "learning_rate_eta": 2.0,
+      "top1_accuracy": 0.0,
+      "cos_sim": 0.04042026400566101
+    },
+    "lambda_0.95_eta_0.05": {
+      "decay_lambda": 0.95,
+      "learning_rate_eta": 0.05,
+      "top1_accuracy": 0.0,
+      "cos_sim": -0.20122987031936646
+    },
+    "lambda_0.95_eta_0.10": {
+      "decay_lambda": 0.95,
+      "learning_rate_eta": 0.1,
+      "top1_accuracy": 0.0,
+      "cos_sim": 0.318290650844574
+    },
+    "lambda_0.95_eta_0.50": {
+      "decay_lambda": 0.95,
+      "learning_rate_eta": 0.5,
+      "top1_accuracy": 1.0,
+      "cos_sim": 0.36274072527885437
+    },
+    "lambda_0.95_eta_1.00": {
+      "decay_lambda": 0.95,
+      "learning_rate_eta": 1.0,
+      "top1_accuracy": 0.0,
+      "cos_sim": -0.2019912153482437
+    },
+    "lambda_0.95_eta_2.00": {
+      "decay_lambda": 0.95,
+      "learning_rate_eta": 2.0,
+      "top1_accuracy": 0.0,
+      "cos_sim": 0.2167203724384308
+    },
+    "lambda_0.99_eta_0.05": {
+      "decay_lambda": 0.99,
+      "learning_rate_eta": 0.05,
+      "top1_accuracy": 0.0,
+      "cos_sim": 0.2986854910850525
+    },
+    "lambda_0.99_eta_0.10": {
+      "decay_lambda": 0.99,
+      "learning_rate_eta": 0.1,
+      "top1_accuracy": 0.0,
+      "cos_sim": 0.020544763654470444
+    },
+    "lambda_0.99_eta_0.50": {
+      "decay_lambda": 0.99,
+      "learning_rate_eta": 0.5,
+      "top1_accuracy": 0.0,
+      "cos_sim": 0.27162396907806396
+    },
+    "lambda_0.99_eta_1.00": {
+      "decay_lambda": 0.99,
+      "learning_rate_eta": 1.0,
+      "top1_accuracy": 0.0,
+      "cos_sim": -0.19443653523921967
+    },
+    "lambda_0.99_eta_2.00": {
+      "decay_lambda": 0.99,
+      "learning_rate_eta": 2.0,
+      "top1_accuracy": 0.0,
+      "cos_sim": -0.07436980307102203
+    },
+    "lambda_1.00_eta_0.05": {
+      "decay_lambda": 1.0,
+      "learning_rate_eta": 0.05,
+      "top1_accuracy": 1.0,
+      "cos_sim": 0.8545724153518677
+    },
+    "lambda_1.00_eta_0.10": {
+      "decay_lambda": 1.0,
+      "learning_rate_eta": 0.1,
+      "top1_accuracy": 1.0,
+      "cos_sim": 0.8394292593002319
+    },
+    "lambda_1.00_eta_0.50": {
+      "decay_lambda": 1.0,
+      "learning_rate_eta": 0.5,
+      "top1_accuracy": 1.0,
+      "cos_sim": 0.8701602220535278
+    },
+    "lambda_1.00_eta_1.00": {
+      "decay_lambda": 1.0,
+      "learning_rate_eta": 1.0,
+      "top1_accuracy": 1.0,
+      "cos_sim": 0.8138289451599121
+    },
+    "lambda_1.00_eta_2.00": {
+      "decay_lambda": 1.0,
+      "learning_rate_eta": 2.0,
+      "top1_accuracy": 1.0,
+      "cos_sim": 0.8991451859474182
+    }
+  }
+}

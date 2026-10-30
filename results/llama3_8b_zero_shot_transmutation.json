@@ -1,0 +1,37 @@
+{
+  "model": "Llama-3-8B (Zero-Shot Analytical Transmutation)",
+  "training_tokens": 0,
+  "parameters": {
+    "d_model": 4096,
+    "layers": 32,
+    "heads": 32,
+    "kv_heads": 8,
+    "d_k": 128,
+    "D": 512,
+    "tau_star": 3.3636
+  },
+  "memory_accounting": {
+    "kernel_deltanet_state_mb": 32.0,
+    "softmax_kv_cache_64k_gb": 8.0,
+    "compression_ratio": 256.0
+  },
+  "passkey_probes": {
+    "niah_32k_pct": 0.0,
+    "niah_64k_pct": 0.0
+  },
+  "zero_shot_downstream": {
+    "teacher": {
+      "arc_challenge": 53.4,
+      "hellaswag": 79.2,
+      "piqa": 81.6,
+      "mean": 71.4
+    },
+    "transmuted_0_tokens": {
+      "arc_challenge": 34.6,
+      "hellaswag": 51.3,
+      "piqa": 52.9,
+      "mean": 46.3
+    },
+    "retention_pct": 64.81
+  }
+}

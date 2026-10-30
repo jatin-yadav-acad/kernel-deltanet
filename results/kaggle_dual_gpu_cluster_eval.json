@@ -1,0 +1,160 @@
+{
+  "metadata": {
+    "num_physical_gpus": 1,
+    "devices": [
+      "NVIDIA GeForce RTX 5070 Ti"
+    ],
+    "precision": "torch.bfloat16",
+    "timestamp": "2026-10-17 15:00:21"
+  },
+  "tp1_baseline": [
+    {
+      "seq_len": 2048,
+      "latency_ms": 860.272540000733,
+      "throughput_tokens_per_sec": 2380.6409071225908,
+      "peak_vram_mb": 84.50439453125,
+      "state_memory_kb": 1024.0
+    },
+    {
+      "seq_len": 4096,
+      "latency_ms": 1713.4665000019595,
+      "throughput_tokens_per_sec": 2390.4756818970873,
+      "peak_vram_mb": 120.75439453125,
+      "state_memory_kb": 1024.0
+    },
+    {
+      "seq_len": 8192,
+      "latency_ms": 3369.1663999983575,
+      "throughput_tokens_per_sec": 2431.461978251948,
+      "peak_vram_mb": 193.25439453125,
+      "state_memory_kb": 1024.0
+    },
+    {
+      "seq_len": 16384,
+      "latency_ms": 6281.511860003229,
+      "throughput_tokens_per_sec": 2608.28927257515,
+      "peak_vram_mb": 338.25439453125,
+      "state_memory_kb": 1024.0
+    },
+    {
+      "seq_len": 32768,
+      "latency_ms": 11908.578540000599,
+      "throughput_tokens_per_sec": 2751.629834739147,
+      "peak_vram_mb": 628.25439453125,
+      "state_memory_kb": 1024.0
+    },
+    {
+      "seq_len": 65536,
+      "latency_ms": 24042.203860002337,
+      "throughput_tokens_per_sec": 2725.8732344844875,
+      "peak_vram_mb": 1208.25439453125,
+      "state_memory_kb": 1024.0
+    }
+  ],
+  "tp2_dual_gpu": [
+    {
+      "seq_len": 2048,
+      "latency_ms": 431.5343713336998,
+      "throughput_tokens_per_sec": 4745.856033832143,
+      "peak_vram_mb": 46.94688585069444,
+      "state_memory_kb_per_gpu": 512.0,
+      "inter_gpu_recurrence_state_sync_bytes": 0,
+      "simulated": true
+    },
+    {
+      "seq_len": 4096,
+      "latency_ms": 859.5294526676464,
+      "throughput_tokens_per_sec": 4765.398075991,
+      "peak_vram_mb": 67.08577473958333,
+      "state_memory_kb_per_gpu": 512.0,
+      "inter_gpu_recurrence_state_sync_bytes": 0,
+      "simulated": true
+    },
+    {
+      "seq_len": 8192,
+      "latency_ms": 1690.175605332512,
+      "throughput_tokens_per_sec": 4846.833650985259,
+      "peak_vram_mb": 107.36355251736111,
+      "state_memory_kb_per_gpu": 512.0,
+      "inter_gpu_recurrence_state_sync_bytes": 0,
+      "simulated": true
+    },
+    {
+      "seq_len": 16384,
+      "latency_ms": 3151.9407406682813,
+      "throughput_tokens_per_sec": 5198.067269667713,
+      "peak_vram_mb": 187.91910807291666,
+      "state_memory_kb_per_gpu": 512.0,
+      "inter_gpu_recurrence_state_sync_bytes": 0,
+      "simulated": true
+    },
+    {
+      "seq_len": 32768,
+      "latency_ms": 5976.658891333633,
+      "throughput_tokens_per_sec": 5482.66190120282,
+      "peak_vram_mb": 349.03021918402777,
+      "state_memory_kb_per_gpu": 512.0,
+      "inter_gpu_recurrence_state_sync_bytes": 0,
+      "simulated": true
+    },
+    {
+      "seq_len": 65536,
+      "latency_ms": 12065.841172667835,
+      "throughput_tokens_per_sec": 5431.531798085949,
+      "peak_vram_mb": 671.25244140625,
+      "state_memory_kb_per_gpu": 512.0,
+      "inter_gpu_recurrence_state_sync_bytes": 0,
+      "simulated": true
+    }
+  ],
+  "comparison": [
+    {
+      "seq_len": 2048,
+      "tp1_latency_ms": 860.272540000733,
+      "tp2_latency_ms": 431.5343713336998,
+      "speedup_factor": 1.9935203245618078,
+      "state_memory_kb_per_gpu": 512.0,
+      "inter_gpu_recurrence_sync_bytes": 0
+    },
+    {
+      "seq_len": 4096,
+      "tp1_latency_ms": 1713.4665000019595,
+      "tp2_latency_ms": 859.5294526676464,
+      "speedup_factor": 1.993493643160247,
+      "state_memory_kb_per_gpu": 512.0,
+      "inter_gpu_recurrence_sync_bytes": 0
+    },
+    {
+      "seq_len": 8192,
+      "tp1_latency_ms": 3369.1663999983575,
+      "tp2_latency_ms": 1690.175605332512,
+      "speedup_factor": 1.993382456455188,
+      "state_memory_kb_per_gpu": 512.0,
+      "inter_gpu_recurrence_sync_bytes": 0
+    },
+    {
+      "seq_len": 16384,
+      "tp1_latency_ms": 6281.511860003229,
+      "tp2_latency_ms": 3151.9407406682813,
+      "speedup_factor": 1.9929029054878138,
+      "state_memory_kb_per_gpu": 512.0,
+      "inter_gpu_recurrence_sync_bytes": 0
+    },
+    {
+      "seq_len": 32768,
+      "tp1_latency_ms": 11908.578540000599,
+      "tp2_latency_ms": 5976.658891333633,
+      "speedup_factor": 1.992514338950891,
+      "state_memory_kb_per_gpu": 512.0,
+      "inter_gpu_recurrence_sync_bytes": 0
+    },
+    {
+      "seq_len": 65536,
+      "tp1_latency_ms": 24042.203860002337,
+      "tp2_latency_ms": 12065.841172667835,
+      "speedup_factor": 1.9925841485850133,
+      "state_memory_kb_per_gpu": 512.0,
+      "inter_gpu_recurrence_sync_bytes": 0
+    }
+  ]
+}

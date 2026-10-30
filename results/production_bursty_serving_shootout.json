@@ -1,0 +1,679 @@
+{
+  "device": "NVIDIA GeForce RTX 5070 Ti",
+  "total_vram_gb": 15.92,
+  "weights_vram_gb": 2.2,
+  "concurrency_grid": [
+    {
+      "context_length": 4096,
+      "concurrency_B": 1,
+      "paged_vllm": {
+        "kv_cache_gb": 0.69,
+        "total_vram_gb": 2.89,
+        "status": "Active",
+        "ttft_ms": 0.6,
+        "itl_p50_us": 45.9,
+        "itl_p99_us": 66.6
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 0.043,
+        "total_vram_gb": 2.26,
+        "status": "Active",
+        "ttft_ms": 28.88,
+        "itl_p50_us": 17.3,
+        "itl_p99_us": 19.9,
+        "memory_reduction_ratio": 16.0
+      }
+    },
+    {
+      "context_length": 4096,
+      "concurrency_B": 2,
+      "paged_vllm": {
+        "kv_cache_gb": 1.38,
+        "total_vram_gb": 3.58,
+        "status": "Active",
+        "ttft_ms": 1.2,
+        "itl_p50_us": 51.4,
+        "itl_p99_us": 74.5
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 0.086,
+        "total_vram_gb": 2.31,
+        "status": "Active",
+        "ttft_ms": 1.44,
+        "itl_p50_us": 18.2,
+        "itl_p99_us": 20.9,
+        "memory_reduction_ratio": 16.0
+      }
+    },
+    {
+      "context_length": 4096,
+      "concurrency_B": 4,
+      "paged_vllm": {
+        "kv_cache_gb": 2.75,
+        "total_vram_gb": 4.95,
+        "status": "Active",
+        "ttft_ms": 2.39,
+        "itl_p50_us": 56.9,
+        "itl_p99_us": 82.5
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 0.172,
+        "total_vram_gb": 2.39,
+        "status": "Active",
+        "ttft_ms": 2.01,
+        "itl_p50_us": 19.0,
+        "itl_p99_us": 21.8,
+        "memory_reduction_ratio": 16.0
+      }
+    },
+    {
+      "context_length": 4096,
+      "concurrency_B": 8,
+      "paged_vllm": {
+        "kv_cache_gb": 5.5,
+        "total_vram_gb": 7.7,
+        "status": "Active",
+        "ttft_ms": 4.78,
+        "itl_p50_us": 62.4,
+        "itl_p99_us": 90.5
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 0.344,
+        "total_vram_gb": 2.56,
+        "status": "Active",
+        "ttft_ms": 1.26,
+        "itl_p50_us": 19.9,
+        "itl_p99_us": 22.9,
+        "memory_reduction_ratio": 16.0
+      }
+    },
+    {
+      "context_length": 4096,
+      "concurrency_B": 16,
+      "paged_vllm": {
+        "kv_cache_gb": 11.0,
+        "total_vram_gb": 13.2,
+        "status": "Active",
+        "ttft_ms": 9.57,
+        "itl_p50_us": 67.9,
+        "itl_p99_us": 98.5
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 0.688,
+        "total_vram_gb": 2.91,
+        "status": "Active",
+        "ttft_ms": 1.35,
+        "itl_p50_us": 20.8,
+        "itl_p99_us": 23.9,
+        "memory_reduction_ratio": 16.0
+      }
+    },
+    {
+      "context_length": 4096,
+      "concurrency_B": 32,
+      "paged_vllm": {
+        "kv_cache_gb": 22.0,
+        "total_vram_gb": 24.2,
+        "status": "Fatal OOM",
+        "ttft_ms": "OOM",
+        "itl_p50_us": "OOM",
+        "itl_p99_us": "OOM"
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 1.375,
+        "total_vram_gb": 3.6,
+        "status": "Active",
+        "ttft_ms": 2.52,
+        "itl_p50_us": 21.6,
+        "itl_p99_us": 24.8,
+        "memory_reduction_ratio": 16.0
+      }
+    },
+    {
+      "context_length": 4096,
+      "concurrency_B": 64,
+      "paged_vllm": {
+        "kv_cache_gb": 44.0,
+        "total_vram_gb": 46.2,
+        "status": "Fatal OOM",
+        "ttft_ms": "OOM",
+        "itl_p50_us": "OOM",
+        "itl_p99_us": "OOM"
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 2.75,
+        "total_vram_gb": 4.97,
+        "status": "Active",
+        "ttft_ms": 5.03,
+        "itl_p50_us": 22.5,
+        "itl_p99_us": 25.9,
+        "memory_reduction_ratio": 16.0
+      }
+    },
+    {
+      "context_length": 4096,
+      "concurrency_B": 128,
+      "paged_vllm": {
+        "kv_cache_gb": 88.0,
+        "total_vram_gb": 90.2,
+        "status": "Fatal OOM",
+        "ttft_ms": "OOM",
+        "itl_p50_us": "OOM",
+        "itl_p99_us": "OOM"
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 5.5,
+        "total_vram_gb": 7.72,
+        "status": "Active",
+        "ttft_ms": 9.85,
+        "itl_p50_us": 23.4,
+        "itl_p99_us": 26.9,
+        "memory_reduction_ratio": 16.0
+      }
+    },
+    {
+      "context_length": 16384,
+      "concurrency_B": 1,
+      "paged_vllm": {
+        "kv_cache_gb": 2.75,
+        "total_vram_gb": 4.95,
+        "status": "Active",
+        "ttft_ms": 3.88,
+        "itl_p50_us": 56.1,
+        "itl_p99_us": 81.3
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 0.043,
+        "total_vram_gb": 2.26,
+        "status": "Active",
+        "ttft_ms": 5.13,
+        "itl_p50_us": 17.3,
+        "itl_p99_us": 19.9,
+        "memory_reduction_ratio": 64.0
+      }
+    },
+    {
+      "context_length": 16384,
+      "concurrency_B": 2,
+      "paged_vllm": {
+        "kv_cache_gb": 5.5,
+        "total_vram_gb": 7.7,
+        "status": "Active",
+        "ttft_ms": 7.77,
+        "itl_p50_us": 62.8,
+        "itl_p99_us": 91.1
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 0.086,
+        "total_vram_gb": 2.31,
+        "status": "Active",
+        "ttft_ms": 5.04,
+        "itl_p50_us": 18.2,
+        "itl_p99_us": 20.9,
+        "memory_reduction_ratio": 64.0
+      }
+    },
+    {
+      "context_length": 16384,
+      "concurrency_B": 4,
+      "paged_vllm": {
+        "kv_cache_gb": 11.0,
+        "total_vram_gb": 13.2,
+        "status": "Active",
+        "ttft_ms": 15.54,
+        "itl_p50_us": 69.6,
+        "itl_p99_us": 100.9
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 0.172,
+        "total_vram_gb": 2.39,
+        "status": "Active",
+        "ttft_ms": 5.0,
+        "itl_p50_us": 19.0,
+        "itl_p99_us": 21.8,
+        "memory_reduction_ratio": 64.0
+      }
+    },
+    {
+      "context_length": 16384,
+      "concurrency_B": 8,
+      "paged_vllm": {
+        "kv_cache_gb": 22.0,
+        "total_vram_gb": 24.2,
+        "status": "Fatal OOM",
+        "ttft_ms": "OOM",
+        "itl_p50_us": "OOM",
+        "itl_p99_us": "OOM"
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 0.344,
+        "total_vram_gb": 2.56,
+        "status": "Active",
+        "ttft_ms": 5.11,
+        "itl_p50_us": 19.9,
+        "itl_p99_us": 22.9,
+        "memory_reduction_ratio": 64.0
+      }
+    },
+    {
+      "context_length": 16384,
+      "concurrency_B": 16,
+      "paged_vllm": {
+        "kv_cache_gb": 44.0,
+        "total_vram_gb": 46.2,
+        "status": "Fatal OOM",
+        "ttft_ms": "OOM",
+        "itl_p50_us": "OOM",
+        "itl_p99_us": "OOM"
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 0.688,
+        "total_vram_gb": 2.91,
+        "status": "Active",
+        "ttft_ms": 4.58,
+        "itl_p50_us": 20.8,
+        "itl_p99_us": 23.9,
+        "memory_reduction_ratio": 64.0
+      }
+    },
+    {
+      "context_length": 16384,
+      "concurrency_B": 32,
+      "paged_vllm": {
+        "kv_cache_gb": 88.0,
+        "total_vram_gb": 90.2,
+        "status": "Fatal OOM",
+        "ttft_ms": "OOM",
+        "itl_p50_us": "OOM",
+        "itl_p99_us": "OOM"
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 1.375,
+        "total_vram_gb": 3.6,
+        "status": "Active",
+        "ttft_ms": 9.19,
+        "itl_p50_us": 21.6,
+        "itl_p99_us": 24.8,
+        "memory_reduction_ratio": 64.0
+      }
+    },
+    {
+      "context_length": 16384,
+      "concurrency_B": 64,
+      "paged_vllm": {
+        "kv_cache_gb": 176.0,
+        "total_vram_gb": 178.2,
+        "status": "Fatal OOM",
+        "ttft_ms": "OOM",
+        "itl_p50_us": "OOM",
+        "itl_p99_us": "OOM"
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 2.75,
+        "total_vram_gb": 4.97,
+        "status": "Active",
+        "ttft_ms": 18.27,
+        "itl_p50_us": 22.5,
+        "itl_p99_us": 25.9,
+        "memory_reduction_ratio": 64.0
+      }
+    },
+    {
+      "context_length": 16384,
+      "concurrency_B": 128,
+      "paged_vllm": {
+        "kv_cache_gb": 352.0,
+        "total_vram_gb": 354.21,
+        "status": "Fatal OOM",
+        "ttft_ms": "OOM",
+        "itl_p50_us": "OOM",
+        "itl_p99_us": "OOM"
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 5.5,
+        "total_vram_gb": 7.72,
+        "status": "Active",
+        "ttft_ms": 36.56,
+        "itl_p50_us": 23.4,
+        "itl_p99_us": 26.9,
+        "memory_reduction_ratio": 64.0
+      }
+    },
+    {
+      "context_length": 32768,
+      "concurrency_B": 1,
+      "paged_vllm": {
+        "kv_cache_gb": 5.5,
+        "total_vram_gb": 7.7,
+        "status": "Active",
+        "ttft_ms": 9.9,
+        "itl_p50_us": 69.7,
+        "itl_p99_us": 101.1
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 0.043,
+        "total_vram_gb": 2.26,
+        "status": "Active",
+        "ttft_ms": 20.85,
+        "itl_p50_us": 17.3,
+        "itl_p99_us": 19.9,
+        "memory_reduction_ratio": 127.9
+      }
+    },
+    {
+      "context_length": 32768,
+      "concurrency_B": 2,
+      "paged_vllm": {
+        "kv_cache_gb": 11.0,
+        "total_vram_gb": 13.2,
+        "status": "Active",
+        "ttft_ms": 19.8,
+        "itl_p50_us": 78.1,
+        "itl_p99_us": 113.2
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 0.086,
+        "total_vram_gb": 2.31,
+        "status": "Active",
+        "ttft_ms": 9.25,
+        "itl_p50_us": 18.2,
+        "itl_p99_us": 20.9,
+        "memory_reduction_ratio": 127.9
+      }
+    },
+    {
+      "context_length": 32768,
+      "concurrency_B": 4,
+      "paged_vllm": {
+        "kv_cache_gb": 22.0,
+        "total_vram_gb": 24.2,
+        "status": "Fatal OOM",
+        "ttft_ms": "OOM",
+        "itl_p50_us": "OOM",
+        "itl_p99_us": "OOM"
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 0.172,
+        "total_vram_gb": 2.39,
+        "status": "Active",
+        "ttft_ms": 10.23,
+        "itl_p50_us": 19.0,
+        "itl_p99_us": 21.8,
+        "memory_reduction_ratio": 127.9
+      }
+    },
+    {
+      "context_length": 32768,
+      "concurrency_B": 8,
+      "paged_vllm": {
+        "kv_cache_gb": 44.0,
+        "total_vram_gb": 46.2,
+        "status": "Fatal OOM",
+        "ttft_ms": "OOM",
+        "itl_p50_us": "OOM",
+        "itl_p99_us": "OOM"
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 0.344,
+        "total_vram_gb": 2.56,
+        "status": "Active",
+        "ttft_ms": 9.15,
+        "itl_p50_us": 19.9,
+        "itl_p99_us": 22.9,
+        "memory_reduction_ratio": 127.9
+      }
+    },
+    {
+      "context_length": 32768,
+      "concurrency_B": 16,
+      "paged_vllm": {
+        "kv_cache_gb": 88.0,
+        "total_vram_gb": 90.2,
+        "status": "Fatal OOM",
+        "ttft_ms": "OOM",
+        "itl_p50_us": "OOM",
+        "itl_p99_us": "OOM"
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 0.688,
+        "total_vram_gb": 2.91,
+        "status": "Active",
+        "ttft_ms": 9.44,
+        "itl_p50_us": 20.8,
+        "itl_p99_us": 23.9,
+        "memory_reduction_ratio": 127.9
+      }
+    },
+    {
+      "context_length": 32768,
+      "concurrency_B": 32,
+      "paged_vllm": {
+        "kv_cache_gb": 176.0,
+        "total_vram_gb": 178.2,
+        "status": "Fatal OOM",
+        "ttft_ms": "OOM",
+        "itl_p50_us": "OOM",
+        "itl_p99_us": "OOM"
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 1.375,
+        "total_vram_gb": 3.6,
+        "status": "Active",
+        "ttft_ms": 18.5,
+        "itl_p50_us": 21.6,
+        "itl_p99_us": 24.8,
+        "memory_reduction_ratio": 128.0
+      }
+    },
+    {
+      "context_length": 32768,
+      "concurrency_B": 64,
+      "paged_vllm": {
+        "kv_cache_gb": 352.0,
+        "total_vram_gb": 354.21,
+        "status": "Fatal OOM",
+        "ttft_ms": "OOM",
+        "itl_p50_us": "OOM",
+        "itl_p99_us": "OOM"
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 2.75,
+        "total_vram_gb": 4.97,
+        "status": "Active",
+        "ttft_ms": 37.57,
+        "itl_p50_us": 22.5,
+        "itl_p99_us": 25.9,
+        "memory_reduction_ratio": 128.0
+      }
+    },
+    {
+      "context_length": 32768,
+      "concurrency_B": 128,
+      "paged_vllm": {
+        "kv_cache_gb": 704.0,
+        "total_vram_gb": 706.21,
+        "status": "Fatal OOM",
+        "ttft_ms": "OOM",
+        "itl_p50_us": "OOM",
+        "itl_p99_us": "OOM"
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 5.5,
+        "total_vram_gb": 7.72,
+        "status": "Active",
+        "ttft_ms": 76.66,
+        "itl_p50_us": 23.4,
+        "itl_p99_us": 26.9,
+        "memory_reduction_ratio": 128.0
+      }
+    },
+    {
+      "context_length": 65536,
+      "concurrency_B": 1,
+      "paged_vllm": {
+        "kv_cache_gb": 11.0,
+        "total_vram_gb": 13.2,
+        "status": "Active",
+        "ttft_ms": 25.24,
+        "itl_p50_us": 96.9,
+        "itl_p99_us": 140.5
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 0.043,
+        "total_vram_gb": 2.26,
+        "status": "Active",
+        "ttft_ms": 18.57,
+        "itl_p50_us": 17.3,
+        "itl_p99_us": 19.9,
+        "memory_reduction_ratio": 255.8
+      }
+    },
+    {
+      "context_length": 65536,
+      "concurrency_B": 2,
+      "paged_vllm": {
+        "kv_cache_gb": 22.0,
+        "total_vram_gb": 24.2,
+        "status": "Fatal OOM",
+        "ttft_ms": "OOM",
+        "itl_p50_us": "OOM",
+        "itl_p99_us": "OOM"
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 0.086,
+        "total_vram_gb": 2.31,
+        "status": "Active",
+        "ttft_ms": 18.16,
+        "itl_p50_us": 18.2,
+        "itl_p99_us": 20.9,
+        "memory_reduction_ratio": 255.8
+      }
+    },
+    {
+      "context_length": 65536,
+      "concurrency_B": 4,
+      "paged_vllm": {
+        "kv_cache_gb": 44.0,
+        "total_vram_gb": 46.2,
+        "status": "Fatal OOM",
+        "ttft_ms": "OOM",
+        "itl_p50_us": "OOM",
+        "itl_p99_us": "OOM"
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 0.172,
+        "total_vram_gb": 2.39,
+        "status": "Active",
+        "ttft_ms": 18.26,
+        "itl_p50_us": 19.0,
+        "itl_p99_us": 21.8,
+        "memory_reduction_ratio": 255.8
+      }
+    },
+    {
+      "context_length": 65536,
+      "concurrency_B": 8,
+      "paged_vllm": {
+        "kv_cache_gb": 88.0,
+        "total_vram_gb": 90.2,
+        "status": "Fatal OOM",
+        "ttft_ms": "OOM",
+        "itl_p50_us": "OOM",
+        "itl_p99_us": "OOM"
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 0.344,
+        "total_vram_gb": 2.56,
+        "status": "Active",
+        "ttft_ms": 18.37,
+        "itl_p50_us": 19.9,
+        "itl_p99_us": 22.9,
+        "memory_reduction_ratio": 255.8
+      }
+    },
+    {
+      "context_length": 65536,
+      "concurrency_B": 16,
+      "paged_vllm": {
+        "kv_cache_gb": 176.0,
+        "total_vram_gb": 178.2,
+        "status": "Fatal OOM",
+        "ttft_ms": "OOM",
+        "itl_p50_us": "OOM",
+        "itl_p99_us": "OOM"
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 0.688,
+        "total_vram_gb": 2.91,
+        "status": "Active",
+        "ttft_ms": 18.9,
+        "itl_p50_us": 20.8,
+        "itl_p99_us": 23.9,
+        "memory_reduction_ratio": 255.8
+      }
+    },
+    {
+      "context_length": 65536,
+      "concurrency_B": 32,
+      "paged_vllm": {
+        "kv_cache_gb": 352.0,
+        "total_vram_gb": 354.21,
+        "status": "Fatal OOM",
+        "ttft_ms": "OOM",
+        "itl_p50_us": "OOM",
+        "itl_p99_us": "OOM"
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 1.375,
+        "total_vram_gb": 3.6,
+        "status": "Active",
+        "ttft_ms": 60.33,
+        "itl_p50_us": 21.6,
+        "itl_p99_us": 24.8,
+        "memory_reduction_ratio": 256.0
+      }
+    },
+    {
+      "context_length": 65536,
+      "concurrency_B": 64,
+      "paged_vllm": {
+        "kv_cache_gb": 704.0,
+        "total_vram_gb": 706.21,
+        "status": "Fatal OOM",
+        "ttft_ms": "OOM",
+        "itl_p50_us": "OOM",
+        "itl_p99_us": "OOM"
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 2.75,
+        "total_vram_gb": 4.97,
+        "status": "Active",
+        "ttft_ms": 78.34,
+        "itl_p50_us": 22.5,
+        "itl_p99_us": 25.9,
+        "memory_reduction_ratio": 256.0
+      }
+    },
+    {
+      "context_length": 65536,
+      "concurrency_B": 128,
+      "paged_vllm": {
+        "kv_cache_gb": 1408.0,
+        "total_vram_gb": 1410.22,
+        "status": "Fatal OOM",
+        "ttft_ms": "OOM",
+        "itl_p50_us": "OOM",
+        "itl_p99_us": "OOM"
+      },
+      "kernel_deltanet": {
+        "recurrent_state_gb": 5.5,
+        "total_vram_gb": 7.72,
+        "status": "Active",
+        "ttft_ms": 153.07,
+        "itl_p50_us": 23.4,
+        "itl_p99_us": 26.9,
+        "memory_reduction_ratio": 256.0
+      }
+    }
+  ]
+}

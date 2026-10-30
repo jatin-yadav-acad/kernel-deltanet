@@ -1,0 +1,107 @@
+{
+  "kernel_deltanet_points": [
+    {
+      "model_family": "kernel_deltanet",
+      "scale_name": "Scale-35M",
+      "params": 14260752,
+      "non_embed_params": 14260752,
+      "total_tokens": 1024000,
+      "total_flops": 87618060288000.0,
+      "final_train_loss": 2.5138556957244873,
+      "final_val_loss": 2.500854730606079,
+      "final_ppl": 12.192911162466446,
+      "converged": true,
+      "throughput_tok_per_sec": 76346.06236008077,
+      "elapsed_seconds": 13.412610530853271,
+      "checkpoint_path": "checkpoints\\kernel_deltanet_scale-35m_converged.pt"
+    },
+    {
+      "model_family": "kernel_deltanet",
+      "scale_name": "Scale-70M",
+      "params": 32254704,
+      "non_embed_params": 32254704,
+      "total_tokens": 1228800,
+      "total_flops": 237807481651200.0,
+      "final_train_loss": 2.45148651599884,
+      "final_val_loss": 2.433210849761963,
+      "final_ppl": 11.39541235905886,
+      "converged": true,
+      "throughput_tok_per_sec": 52418.164291331435,
+      "elapsed_seconds": 23.44225549697876,
+      "checkpoint_path": "checkpoints\\kernel_deltanet_scale-70m_converged.pt"
+    },
+    {
+      "model_family": "kernel_deltanet",
+      "scale_name": "Scale-125M",
+      "params": 85150896,
+      "non_embed_params": 85150896,
+      "total_tokens": 1433600,
+      "total_flops": 732433947033600.0,
+      "final_train_loss": 2.354369354248047,
+      "final_val_loss": 2.323730945587158,
+      "final_ppl": 10.213710103846493,
+      "converged": true,
+      "throughput_tok_per_sec": 27688.80942559116,
+      "elapsed_seconds": 51.775429487228394,
+      "checkpoint_path": "checkpoints\\kernel_deltanet_scale-125m_converged.pt"
+    }
+  ],
+  "transformer_points": [
+    {
+      "model_family": "transformer",
+      "scale_name": "Scale-35M",
+      "params": 14260608,
+      "non_embed_params": 14162304,
+      "total_tokens": 1024000,
+      "total_flops": 87013195776000.0,
+      "final_train_loss": 2.6797470569610597,
+      "final_val_loss": 2.6429200172424316,
+      "final_ppl": 14.054182203876556,
+      "converged": true,
+      "throughput_tok_per_sec": 212124.22899417038,
+      "elapsed_seconds": 4.827359914779663,
+      "checkpoint_path": "checkpoints\\transformer_scale-35m_converged.pt"
+    },
+    {
+      "model_family": "transformer",
+      "scale_name": "Scale-70M",
+      "params": 32254464,
+      "non_embed_params": 32123392,
+      "total_tokens": 1228800,
+      "total_flops": 236839344537600.0,
+      "final_train_loss": 2.6040112733840943,
+      "final_val_loss": 2.5825958251953125,
+      "final_ppl": 13.231440125090845,
+      "converged": true,
+      "throughput_tok_per_sec": 140287.21795154386,
+      "elapsed_seconds": 8.759172916412354,
+      "checkpoint_path": "checkpoints\\transformer_scale-70m_converged.pt"
+    },
+    {
+      "model_family": "transformer",
+      "scale_name": "Scale-125M",
+      "params": 85150464,
+      "non_embed_params": 84953856,
+      "total_tokens": 1433600,
+      "total_flops": 730739087769600.0,
+      "final_train_loss": 2.5822482347488402,
+      "final_val_loss": 2.546416759490967,
+      "final_ppl": 12.761294970595078,
+      "converged": true,
+      "throughput_tok_per_sec": 71129.57432890101,
+      "elapsed_seconds": 20.15476703643799,
+      "checkpoint_path": "checkpoints\\transformer_scale-125m_converged.pt"
+    }
+  ],
+  "kernel_deltanet_fit": {
+    "scaling_exponent_gamma": 0.034727961048640996,
+    "coefficient_A": 7.644997244944127,
+    "r2_fit": 0.9877463158742544
+  },
+  "transformer_fit": {
+    "scaling_exponent_gamma": 0.01737693899554417,
+    "coefficient_A": 4.607400757729603,
+    "r2_fit": 0.9705350365404509
+  },
+  "converged_regime_verified": true
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "B_decode": 1,
+    "baseline_itl_p50_us": 42.9,
+    "interleaved_itl_p50_us": 72.8,
+    "interleaved_itl_p99_us": 101.68,
+    "mean_chunk_prefill_ms": 0.113,
+    "max_preemption_latency_ms": 1.016,
+    "transient_activation_mb": 8.0,
+    "total_vram_mb": 2252.0
+  },
+  {
+    "B_decode": 4,
+    "baseline_itl_p50_us": 275.0,
+    "interleaved_itl_p50_us": 274.1,
+    "interleaved_itl_p99_us": 361.54,
+    "mean_chunk_prefill_ms": 0.108,
+    "max_preemption_latency_ms": 0.192,
+    "transient_activation_mb": 8.0,
+    "total_vram_mb": 2318.0
+  },
+  {
+    "B_decode": 16,
+    "baseline_itl_p50_us": 996.5,
+    "interleaved_itl_p50_us": 1000.55,
+    "interleaved_itl_p99_us": 1344.07,
+    "mean_chunk_prefill_ms": 0.12,
+    "max_preemption_latency_ms": 0.217,
+    "transient_activation_mb": 8.0,
+    "total_vram_mb": 2582.0
+  },
+  {
+    "B_decode": 32,
+    "baseline_itl_p50_us": 1977.2,
+    "interleaved_itl_p50_us": 1970.25,
+    "interleaved_itl_p99_us": 2389.13,
+    "mean_chunk_prefill_ms": 0.128,
+    "max_preemption_latency_ms": 0.233,
+    "transient_activation_mb": 8.0,
+    "total_vram_mb": 2934.0
+  }
+]

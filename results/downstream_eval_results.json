@@ -1,0 +1,70 @@
+{
+  "evaluation_protocol": "Standardized Zero-Shot Prompt-Conditioned Log-Likelihood Scoring",
+  "hardware": "NVIDIA GeForce RTX 5070 Ti (16 GB GDDR7)",
+  "samples_per_task": 150,
+  "checkpoint_evaluated": "checkpoints_125m_pretrain/kernel_deltanet_125m_final.pt",
+  "models": {
+    "Kernel-DeltaNet-125M (Ours, RKHS D=256)": {
+      "HellaSwag": {
+        "task": "HellaSwag",
+        "correct": 44,
+        "total": 150,
+        "accuracy": 29.33,
+        "standard_error": 3.72,
+        "mean_sample_latency_ms": 153.0,
+        "total_time_sec": 22.96
+      },
+      "ARC-Easy": {
+        "task": "ARC-Easy",
+        "correct": 52,
+        "total": 150,
+        "accuracy": 34.67,
+        "standard_error": 3.89,
+        "mean_sample_latency_ms": 150.51,
+        "total_time_sec": 22.59
+      },
+      "PIQA": {
+        "task": "PIQA",
+        "correct": 88,
+        "total": 150,
+        "accuracy": 58.67,
+        "standard_error": 4.02,
+        "mean_sample_latency_ms": 77.33,
+        "total_time_sec": 11.62
+      },
+      "mean_accuracy": 40.89
+    },
+    "Linear-DeltaNet-125M (Baseline, Identity)": {
+      "HellaSwag": {
+        "task": "HellaSwag",
+        "correct": 21,
+        "total": 150,
+        "accuracy": 14.0,
+        "standard_error": 2.83,
+        "mean_sample_latency_ms": 141.79,
+        "total_time_sec": 21.28
+      },
+      "ARC-Easy": {
+        "task": "ARC-Easy",
+        "correct": 26,
+        "total": 150,
+        "accuracy": 17.33,
+        "standard_error": 3.09,
+        "mean_sample_latency_ms": 140.88,
+        "total_time_sec": 21.14
+      },
+      "PIQA": {
+        "task": "PIQA",
+        "correct": 66,
+        "total": 150,
+        "accuracy": 44.0,
+        "standard_error": 4.05,
+        "mean_sample_latency_ms": 70.68,
+        "total_time_sec": 10.62
+      },
+      "mean_accuracy": 25.11
+    }
+  },
+  "peak_vram_allocated_mb": 1732.81,
+  "peak_vram_allocated_gb": 1.6922
+}

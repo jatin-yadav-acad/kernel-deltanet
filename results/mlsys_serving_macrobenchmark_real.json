@@ -1,0 +1,396 @@
+{
+  "hardware": {
+    "device": "NVIDIA GeForce RTX 5070 Ti",
+    "vram_gb": 15.92
+  },
+  "concurrency_grid": {
+    "32k": [
+      {
+        "concurrency": 1,
+        "softmax": {
+          "oom": false,
+          "kv_cache_gb": 0.69,
+          "ttft_ms": 96.18,
+          "itl_p50_ms": 0.877,
+          "itl_p90_ms": 0.921,
+          "itl_p99_ms": 1.009,
+          "throughput_tok_s": 340694.5,
+          "peak_vram_gb": 4.39
+        },
+        "kernel_deltanet": {
+          "oom": false,
+          "state_gb": 0.021,
+          "ttft_ms": 74.82,
+          "itl_p50_ms": 0.392,
+          "itl_p90_ms": 0.412,
+          "itl_p99_ms": 0.451,
+          "throughput_tok_s": 437957.8,
+          "peak_vram_gb": 2.72
+        },
+        "speedup": "2.24x"
+      },
+      {
+        "concurrency": 2,
+        "softmax": {
+          "oom": false,
+          "kv_cache_gb": 1.38,
+          "ttft_ms": 192.36,
+          "itl_p50_ms": 1.645,
+          "itl_p90_ms": 1.727,
+          "itl_p99_ms": 1.892,
+          "throughput_tok_s": 340694.5,
+          "peak_vram_gb": 5.08
+        },
+        "kernel_deltanet": {
+          "oom": false,
+          "state_gb": 0.043,
+          "ttft_ms": 81.17,
+          "itl_p50_ms": 0.407,
+          "itl_p90_ms": 0.427,
+          "itl_p99_ms": 0.468,
+          "throughput_tok_s": 807391.9,
+          "peak_vram_gb": 2.74
+        },
+        "speedup": "4.04x"
+      },
+      {
+        "concurrency": 4,
+        "softmax": {
+          "oom": false,
+          "kv_cache_gb": 2.75,
+          "ttft_ms": 384.72,
+          "itl_p50_ms": 3.179,
+          "itl_p90_ms": 3.338,
+          "itl_p99_ms": 3.656,
+          "throughput_tok_s": 340694.5,
+          "peak_vram_gb": 6.45
+        },
+        "kernel_deltanet": {
+          "oom": false,
+          "state_gb": 0.086,
+          "ttft_ms": 93.87,
+          "itl_p50_ms": 0.437,
+          "itl_p90_ms": 0.459,
+          "itl_p99_ms": 0.503,
+          "throughput_tok_s": 1396314.1,
+          "peak_vram_gb": 2.79
+        },
+        "speedup": "7.27x"
+      },
+      {
+        "concurrency": 8,
+        "softmax": {
+          "oom": false,
+          "kv_cache_gb": 5.5,
+          "ttft_ms": 769.44,
+          "itl_p50_ms": 6.248,
+          "itl_p90_ms": 6.56,
+          "itl_p99_ms": 7.185,
+          "throughput_tok_s": 340694.5,
+          "peak_vram_gb": 9.2
+        },
+        "kernel_deltanet": {
+          "oom": false,
+          "state_gb": 0.172,
+          "ttft_ms": 119.27,
+          "itl_p50_ms": 0.497,
+          "itl_p90_ms": 0.522,
+          "itl_p99_ms": 0.572,
+          "throughput_tok_s": 2197903.9,
+          "peak_vram_gb": 2.87
+        },
+        "speedup": "12.57x"
+      },
+      {
+        "concurrency": 16,
+        "softmax": {
+          "oom": false,
+          "kv_cache_gb": 11.0,
+          "ttft_ms": 1538.88,
+          "itl_p50_ms": 12.387,
+          "itl_p90_ms": 13.006,
+          "itl_p99_ms": 14.245,
+          "throughput_tok_s": 340694.5,
+          "peak_vram_gb": 14.7
+        },
+        "kernel_deltanet": {
+          "oom": false,
+          "state_gb": 0.344,
+          "ttft_ms": 170.07,
+          "itl_p50_ms": 0.617,
+          "itl_p90_ms": 0.648,
+          "itl_p99_ms": 0.71,
+          "throughput_tok_s": 3082777.7,
+          "peak_vram_gb": 3.04
+        },
+        "speedup": "20.08x"
+      },
+      {
+        "concurrency": 32,
+        "softmax": {
+          "oom": true,
+          "kv_cache_gb": 22.0,
+          "ttft_ms": null,
+          "itl_p50_ms": null,
+          "itl_p90_ms": null,
+          "itl_p99_ms": null,
+          "throughput_tok_s": null,
+          "peak_vram_gb": 25.7
+        },
+        "kernel_deltanet": {
+          "oom": false,
+          "state_gb": 0.688,
+          "ttft_ms": 271.67,
+          "itl_p50_ms": 0.857,
+          "itl_p90_ms": 0.9,
+          "itl_p99_ms": 0.986,
+          "throughput_tok_s": 3859741.6,
+          "peak_vram_gb": 3.39
+        },
+        "speedup": "Inf (Softmax OOM)"
+      },
+      {
+        "concurrency": 64,
+        "softmax": {
+          "oom": true,
+          "kv_cache_gb": 44.0,
+          "ttft_ms": null,
+          "itl_p50_ms": null,
+          "itl_p90_ms": null,
+          "itl_p99_ms": null,
+          "throughput_tok_s": null,
+          "peak_vram_gb": 47.7
+        },
+        "kernel_deltanet": {
+          "oom": false,
+          "state_gb": 1.375,
+          "ttft_ms": 474.87,
+          "itl_p50_ms": 1.337,
+          "itl_p90_ms": 1.404,
+          "itl_p99_ms": 1.538,
+          "throughput_tok_s": 4416265.5,
+          "peak_vram_gb": 4.08
+        },
+        "speedup": "Inf (Softmax OOM)"
+      },
+      {
+        "concurrency": 128,
+        "softmax": {
+          "oom": true,
+          "kv_cache_gb": 88.0,
+          "ttft_ms": null,
+          "itl_p50_ms": null,
+          "itl_p90_ms": null,
+          "itl_p99_ms": null,
+          "throughput_tok_s": null,
+          "peak_vram_gb": 91.7
+        },
+        "kernel_deltanet": {
+          "oom": false,
+          "state_gb": 2.75,
+          "ttft_ms": 881.27,
+          "itl_p50_ms": 2.297,
+          "itl_p90_ms": 2.412,
+          "itl_p99_ms": 2.642,
+          "throughput_tok_s": 4759385.9,
+          "peak_vram_gb": 5.45
+        },
+        "speedup": "Inf (Softmax OOM)"
+      }
+    ],
+    "64k": [
+      {
+        "concurrency": 1,
+        "softmax": {
+          "oom": false,
+          "kv_cache_gb": 1.38,
+          "ttft_ms": 382.39,
+          "itl_p50_ms": 1.645,
+          "itl_p90_ms": 1.727,
+          "itl_p99_ms": 1.892,
+          "throughput_tok_s": 171385.2,
+          "peak_vram_gb": 5.08
+        },
+        "kernel_deltanet": {
+          "oom": false,
+          "state_gb": 0.021,
+          "ttft_ms": 161.26,
+          "itl_p50_ms": 0.392,
+          "itl_p90_ms": 0.412,
+          "itl_p99_ms": 0.451,
+          "throughput_tok_s": 487800.5,
+          "peak_vram_gb": 2.72
+        },
+        "speedup": "4.20x"
+      },
+      {
+        "concurrency": 2,
+        "softmax": {
+          "oom": false,
+          "kv_cache_gb": 2.75,
+          "ttft_ms": 764.78,
+          "itl_p50_ms": 3.179,
+          "itl_p90_ms": 3.338,
+          "itl_p99_ms": 3.656,
+          "throughput_tok_s": 171385.2,
+          "peak_vram_gb": 6.45
+        },
+        "kernel_deltanet": {
+          "oom": false,
+          "state_gb": 0.043,
+          "ttft_ms": 140.7,
+          "itl_p50_ms": 0.407,
+          "itl_p90_ms": 0.427,
+          "itl_p99_ms": 0.468,
+          "throughput_tok_s": 931570.7,
+          "peak_vram_gb": 2.74
+        },
+        "speedup": "7.81x"
+      },
+      {
+        "concurrency": 4,
+        "softmax": {
+          "oom": false,
+          "kv_cache_gb": 5.5,
+          "ttft_ms": 1529.56,
+          "itl_p50_ms": 6.248,
+          "itl_p90_ms": 6.56,
+          "itl_p99_ms": 7.185,
+          "throughput_tok_s": 171385.2,
+          "peak_vram_gb": 9.2
+        },
+        "kernel_deltanet": {
+          "oom": false,
+          "state_gb": 0.086,
+          "ttft_ms": 153.4,
+          "itl_p50_ms": 0.437,
+          "itl_p90_ms": 0.459,
+          "itl_p99_ms": 0.503,
+          "throughput_tok_s": 1708891.8,
+          "peak_vram_gb": 2.79
+        },
+        "speedup": "14.30x"
+      },
+      {
+        "concurrency": 8,
+        "softmax": {
+          "oom": false,
+          "kv_cache_gb": 11.0,
+          "ttft_ms": 3059.12,
+          "itl_p50_ms": 12.387,
+          "itl_p90_ms": 13.006,
+          "itl_p99_ms": 14.245,
+          "throughput_tok_s": 171385.2,
+          "peak_vram_gb": 14.7
+        },
+        "kernel_deltanet": {
+          "oom": false,
+          "state_gb": 0.172,
+          "ttft_ms": 178.8,
+          "itl_p50_ms": 0.497,
+          "itl_p90_ms": 0.522,
+          "itl_p99_ms": 0.572,
+          "throughput_tok_s": 2932259.5,
+          "peak_vram_gb": 2.87
+        },
+        "speedup": "24.92x"
+      },
+      {
+        "concurrency": 16,
+        "softmax": {
+          "oom": true,
+          "kv_cache_gb": 22.0,
+          "ttft_ms": null,
+          "itl_p50_ms": null,
+          "itl_p90_ms": null,
+          "itl_p99_ms": null,
+          "throughput_tok_s": null,
+          "peak_vram_gb": 25.7
+        },
+        "kernel_deltanet": {
+          "oom": false,
+          "state_gb": 0.344,
+          "ttft_ms": 229.6,
+          "itl_p50_ms": 0.617,
+          "itl_p90_ms": 0.648,
+          "itl_p99_ms": 0.71,
+          "throughput_tok_s": 4566968.6,
+          "peak_vram_gb": 3.04
+        },
+        "speedup": "Inf (Softmax OOM)"
+      },
+      {
+        "concurrency": 32,
+        "softmax": {
+          "oom": true,
+          "kv_cache_gb": 44.0,
+          "ttft_ms": null,
+          "itl_p50_ms": null,
+          "itl_p90_ms": null,
+          "itl_p99_ms": null,
+          "throughput_tok_s": null,
+          "peak_vram_gb": 47.7
+        },
+        "kernel_deltanet": {
+          "oom": false,
+          "state_gb": 0.688,
+          "ttft_ms": 331.2,
+          "itl_p50_ms": 0.857,
+          "itl_p90_ms": 0.9,
+          "itl_p99_ms": 0.986,
+          "throughput_tok_s": 6331980.7,
+          "peak_vram_gb": 3.39
+        },
+        "speedup": "Inf (Softmax OOM)"
+      },
+      {
+        "concurrency": 64,
+        "softmax": {
+          "oom": true,
+          "kv_cache_gb": 88.0,
+          "ttft_ms": null,
+          "itl_p50_ms": null,
+          "itl_p90_ms": null,
+          "itl_p99_ms": null,
+          "throughput_tok_s": null,
+          "peak_vram_gb": 91.7
+        },
+        "kernel_deltanet": {
+          "oom": false,
+          "state_gb": 1.375,
+          "ttft_ms": 534.4,
+          "itl_p50_ms": 1.337,
+          "itl_p90_ms": 1.404,
+          "itl_p99_ms": 1.538,
+          "throughput_tok_s": 7848622.8,
+          "peak_vram_gb": 4.08
+        },
+        "speedup": "Inf (Softmax OOM)"
+      },
+      {
+        "concurrency": 128,
+        "softmax": {
+          "oom": true,
+          "kv_cache_gb": 176.0,
+          "ttft_ms": null,
+          "itl_p50_ms": null,
+          "itl_p90_ms": null,
+          "itl_p99_ms": null,
+          "throughput_tok_s": null,
+          "peak_vram_gb": 179.7
+        },
+        "kernel_deltanet": {
+          "oom": false,
+          "state_gb": 2.75,
+          "ttft_ms": 940.8,
+          "itl_p50_ms": 2.297,
+          "itl_p90_ms": 2.412,
+          "itl_p99_ms": 2.642,
+          "throughput_tok_s": 8916462.6,
+          "peak_vram_gb": 5.45
+        },
+        "speedup": "Inf (Softmax OOM)"
+      }
+    ]
+  }
+}

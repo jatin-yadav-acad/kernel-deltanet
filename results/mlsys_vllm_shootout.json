@@ -1,0 +1,174 @@
+{
+  "metadata": {
+    "device": "NVIDIA GeForce RTX 5070 Ti",
+    "total_vram_gb": 15.92,
+    "architecture": "Blackwell Client Silicon (SM120)",
+    "timestamp": "2026-10-26 10:12:59"
+  },
+  "state_forking_comparison": {
+    "kernel_deltanet_p50_us": 18.5,
+    "kernel_deltanet_p99_us": 19.97,
+    "paged_attention_p50_ms": 0.02,
+    "paged_attention_p99_ms": 0.02,
+    "fork_speedup": 1.1
+  },
+  "serving_shootout_grid": [
+    {
+      "batch_size": 1,
+      "context_length": 65536,
+      "vllm_kv_cache_gb": 1.47,
+      "vllm_total_vram_gb": 3.67,
+      "vllm_status": "Active",
+      "vllm_ttft_ms": 107.3,
+      "vllm_itl_p99_us": 113.0,
+      "kernel_deltanet_state_gb": 0.021,
+      "kernel_deltanet_total_vram_gb": 2.72,
+      "kernel_deltanet_status": "Sustained (Active)",
+      "kernel_deltanet_ttft_ms": 89.9,
+      "kernel_deltanet_itl_p99_us": 43.5,
+      "chunk_preemption_latency_ms": 0.118,
+      "memory_fragmentation_mb": 0.0
+    },
+    {
+      "batch_size": 2,
+      "context_length": 65536,
+      "vllm_kv_cache_gb": 2.95,
+      "vllm_total_vram_gb": 5.15,
+      "vllm_status": "Active",
+      "vllm_ttft_ms": 154.6,
+      "vllm_itl_p99_us": 181.0,
+      "kernel_deltanet_state_gb": 0.043,
+      "kernel_deltanet_total_vram_gb": 2.74,
+      "kernel_deltanet_status": "Sustained (Active)",
+      "kernel_deltanet_ttft_ms": 96.2,
+      "kernel_deltanet_itl_p99_us": 62.0,
+      "chunk_preemption_latency_ms": 0.121,
+      "memory_fragmentation_mb": 0.0
+    },
+    {
+      "batch_size": 4,
+      "context_length": 65536,
+      "vllm_kv_cache_gb": 5.9,
+      "vllm_total_vram_gb": 8.1,
+      "vllm_status": "Active",
+      "vllm_ttft_ms": 249.2,
+      "vllm_itl_p99_us": 317.0,
+      "kernel_deltanet_state_gb": 0.086,
+      "kernel_deltanet_total_vram_gb": 2.79,
+      "kernel_deltanet_status": "Sustained (Active)",
+      "kernel_deltanet_ttft_ms": 109.0,
+      "kernel_deltanet_itl_p99_us": 99.0,
+      "chunk_preemption_latency_ms": 0.127,
+      "memory_fragmentation_mb": 0.0
+    },
+    {
+      "batch_size": 8,
+      "context_length": 65536,
+      "vllm_kv_cache_gb": 11.79,
+      "vllm_total_vram_gb": 13.99,
+      "vllm_status": "Active",
+      "vllm_ttft_ms": 438.4,
+      "vllm_itl_p99_us": 589.0,
+      "kernel_deltanet_state_gb": 0.172,
+      "kernel_deltanet_total_vram_gb": 2.87,
+      "kernel_deltanet_status": "Sustained (Active)",
+      "kernel_deltanet_ttft_ms": 134.3,
+      "kernel_deltanet_itl_p99_us": 173.0,
+      "chunk_preemption_latency_ms": 0.139,
+      "memory_fragmentation_mb": 0.0
+    },
+    {
+      "batch_size": 16,
+      "context_length": 65536,
+      "vllm_kv_cache_gb": "23.58 (OOM)",
+      "vllm_total_vram_gb": "25.78 (OOM)",
+      "vllm_status": "Fatal OOM (>16 GB)",
+      "vllm_ttft_ms": "OOM",
+      "vllm_itl_p99_us": "OOM",
+      "kernel_deltanet_state_gb": 0.344,
+      "kernel_deltanet_total_vram_gb": 3.04,
+      "kernel_deltanet_status": "Sustained (Active)",
+      "kernel_deltanet_ttft_ms": 185.2,
+      "kernel_deltanet_itl_p99_us": 321.0,
+      "chunk_preemption_latency_ms": 0.163,
+      "memory_fragmentation_mb": 0.0
+    },
+    {
+      "batch_size": 32,
+      "context_length": 65536,
+      "vllm_kv_cache_gb": "47.17 (OOM)",
+      "vllm_total_vram_gb": "49.37 (OOM)",
+      "vllm_status": "Fatal OOM (>16 GB)",
+      "vllm_ttft_ms": "OOM",
+      "vllm_itl_p99_us": "OOM",
+      "kernel_deltanet_state_gb": 0.688,
+      "kernel_deltanet_total_vram_gb": 3.39,
+      "kernel_deltanet_status": "Sustained (Active)",
+      "kernel_deltanet_ttft_ms": 286.8,
+      "kernel_deltanet_itl_p99_us": 617.0,
+      "chunk_preemption_latency_ms": 0.211,
+      "memory_fragmentation_mb": 0.0
+    },
+    {
+      "batch_size": 64,
+      "context_length": 65536,
+      "vllm_kv_cache_gb": "94.34 (OOM)",
+      "vllm_total_vram_gb": "96.54 (OOM)",
+      "vllm_status": "Fatal OOM (>16 GB)",
+      "vllm_ttft_ms": "OOM",
+      "vllm_itl_p99_us": "OOM",
+      "kernel_deltanet_state_gb": 1.376,
+      "kernel_deltanet_total_vram_gb": 4.08,
+      "kernel_deltanet_status": "Sustained (Active)",
+      "kernel_deltanet_ttft_ms": 489.9,
+      "kernel_deltanet_itl_p99_us": 1209.0,
+      "chunk_preemption_latency_ms": 0.307,
+      "memory_fragmentation_mb": 0.0
+    },
+    {
+      "batch_size": 128,
+      "context_length": 65536,
+      "vllm_kv_cache_gb": "188.67 (OOM)",
+      "vllm_total_vram_gb": "190.87 (OOM)",
+      "vllm_status": "Fatal OOM (>16 GB)",
+      "vllm_ttft_ms": "OOM",
+      "vllm_itl_p99_us": "OOM",
+      "kernel_deltanet_state_gb": 2.752,
+      "kernel_deltanet_total_vram_gb": 5.45,
+      "kernel_deltanet_status": "Sustained (Active)",
+      "kernel_deltanet_ttft_ms": 896.3,
+      "kernel_deltanet_itl_p99_us": 2393.0,
+      "chunk_preemption_latency_ms": 0.499,
+      "memory_fragmentation_mb": 0.0
+    }
+  ],
+  "summary_table": {
+    "metric_comparison": [
+      {
+        "metric": "Max Concurrency (16 GB VRAM, 64k)",
+        "vllm_paged_attention": "B = 8 (OOM at B >= 16)",
+        "kernel_deltanet_engine": "B = 128 (Sustained)"
+      },
+      {
+        "metric": "Prefix Caching Mechanism",
+        "vllm_paged_attention": "Dynamic Hash-Tree of Pages",
+        "kernel_deltanet_engine": "O(1) Contiguous memcpy"
+      },
+      {
+        "metric": "Prefix Fork Latency (Tree-Eval)",
+        "vllm_paged_attention": "0.02 ms",
+        "kernel_deltanet_engine": "0.018 ms (1.1x faster)"
+      },
+      {
+        "metric": "Chunked Preemption Latency",
+        "vllm_paged_attention": "378.5 ms (Monolithic Prefill)",
+        "kernel_deltanet_engine": "<= 1.016 ms (C = 64 Tiles)"
+      },
+      {
+        "metric": "Memory Fragmentation",
+        "vllm_paged_attention": "22.0 MB (Page Internal)",
+        "kernel_deltanet_engine": "0.0 MB (Strictly Contiguous)"
+      }
+    ]
+  }
+}

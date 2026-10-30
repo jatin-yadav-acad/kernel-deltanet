@@ -1,0 +1,96 @@
+{
+  "hardware": {
+    "device": "NVIDIA GeForce RTX 5070 Ti",
+    "num_trials": 30
+  },
+  "capacity_sweeps": {
+    "K_16": {
+      "T": 512,
+      "K": 16,
+      "saturation_ratio": 0.5,
+      "Linear DeltaNet (dk=32)": 100.0,
+      "Linear DeltaNet (Wide dk=512)": 6.7,
+      "Kernel-DeltaNet (D=512, RKHS)": 100.0
+    },
+    "K_32": {
+      "T": 512,
+      "K": 32,
+      "saturation_ratio": 1.0,
+      "Linear DeltaNet (dk=32)": 96.7,
+      "Linear DeltaNet (Wide dk=512)": 3.3,
+      "Kernel-DeltaNet (D=512, RKHS)": 100.0
+    },
+    "K_64": {
+      "T": 1024,
+      "K": 64,
+      "saturation_ratio": 2.0,
+      "Linear DeltaNet (dk=32)": 66.7,
+      "Linear DeltaNet (Wide dk=512)": 3.3,
+      "Kernel-DeltaNet (D=512, RKHS)": 100.0
+    },
+    "K_128": {
+      "T": 2048,
+      "K": 128,
+      "saturation_ratio": 4.0,
+      "Linear DeltaNet (dk=32)": 16.7,
+      "Linear DeltaNet (Wide dk=512)": 0.0,
+      "Kernel-DeltaNet (D=512, RKHS)": 100.0
+    },
+    "K_256": {
+      "T": 4096,
+      "K": 256,
+      "saturation_ratio": 8.0,
+      "Linear DeltaNet (dk=32)": 20.0,
+      "Linear DeltaNet (Wide dk=512)": 0.0,
+      "Kernel-DeltaNet (D=512, RKHS)": 90.0
+    },
+    "K_512": {
+      "T": 4096,
+      "K": 512,
+      "saturation_ratio": 16.0,
+      "Linear DeltaNet (dk=32)": 10.0,
+      "Linear DeltaNet (Wide dk=512)": 0.0,
+      "Kernel-DeltaNet (D=512, RKHS)": 70.0
+    },
+    "K_1024": {
+      "T": 8192,
+      "K": 1024,
+      "saturation_ratio": 32.0,
+      "Linear DeltaNet (dk=32)": 0.0,
+      "Linear DeltaNet (Wide dk=512)": 0.0,
+      "Kernel-DeltaNet (D=512, RKHS)": 23.3
+    }
+  },
+  "depth_sweeps": {
+    "depth_10pct": {
+      "depth_pct": 10,
+      "Linear DeltaNet (dk=32)": 23.3,
+      "Linear DeltaNet (Wide dk=512)": 0.0,
+      "Kernel-DeltaNet (D=512, RKHS)": 100.0
+    },
+    "depth_25pct": {
+      "depth_pct": 25,
+      "Linear DeltaNet (dk=32)": 23.3,
+      "Linear DeltaNet (Wide dk=512)": 0.0,
+      "Kernel-DeltaNet (D=512, RKHS)": 100.0
+    },
+    "depth_50pct": {
+      "depth_pct": 50,
+      "Linear DeltaNet (dk=32)": 23.3,
+      "Linear DeltaNet (Wide dk=512)": 0.0,
+      "Kernel-DeltaNet (D=512, RKHS)": 100.0
+    },
+    "depth_75pct": {
+      "depth_pct": 75,
+      "Linear DeltaNet (dk=32)": 23.3,
+      "Linear DeltaNet (Wide dk=512)": 0.0,
+      "Kernel-DeltaNet (D=512, RKHS)": 100.0
+    },
+    "depth_90pct": {
+      "depth_pct": 90,
+      "Linear DeltaNet (dk=32)": 23.3,
+      "Linear DeltaNet (Wide dk=512)": 0.0,
+      "Kernel-DeltaNet (D=512, RKHS)": 100.0
+    }
+  }
+}

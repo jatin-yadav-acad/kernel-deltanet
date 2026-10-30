@@ -1,0 +1,50 @@
+{
+  "prefix_lengths": [
+    16,
+    32,
+    64,
+    128,
+    256,
+    512,
+    1024
+  ],
+  "softmax_teacher_acc": [
+    100.0,
+    100.0,
+    99.8,
+    99.7,
+    99.5,
+    99.2,
+    98.6
+  ],
+  "kernel_deltanet_acc": [
+    99.8,
+    99.5,
+    98.6,
+    97.4,
+    94.8,
+    91.2,
+    68.4
+  ],
+  "linear_deltanet_acc": [
+    98.2,
+    89.1,
+    31.4,
+    8.2,
+    2.1,
+    0.8,
+    0.2
+  ],
+  "state_expanded_linear_acc": [
+    99.1,
+    98.4,
+    96.2,
+    92.1,
+    84.5,
+    52.3,
+    14.1
+  ],
+  "rank_expansion_factor": 8.0,
+  "ambient_head_dim": 64,
+  "rkhs_expanded_dim": 512
+}

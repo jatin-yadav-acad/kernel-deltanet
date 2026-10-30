@@ -1,0 +1,78 @@
+{
+  "T_512": {
+    "Standard Transformer (Softmax)": {
+      "step_ms": 0.15934999973978847,
+      "tokens_per_sec": 3213053.0331727234
+    },
+    "TTT-Linear (DeltaNet Scan)": {
+      "step_ms": 0.619360000200686,
+      "tokens_per_sec": 826659.777567329
+    },
+    "TTT-MLP (Sequential Inner GELU)": {
+      "step_ms": 53.08312000051956,
+      "tokens_per_sec": 9645.250693534757
+    },
+    "Kernel-TTT (Our Closed-Form Dual)": {
+      "step_ms": 0.8386600009544054,
+      "tokens_per_sec": 610497.6980150928
+    },
+    "speedup_kernel_over_mlp": 63.29516118190346
+  },
+  "T_1024": {
+    "Standard Transformer (Softmax)": {
+      "step_ms": 0.1921500010212185,
+      "tokens_per_sec": 5329169.891010946
+    },
+    "TTT-Linear (DeltaNet Scan)": {
+      "step_ms": 0.9688699996331707,
+      "tokens_per_sec": 1056901.3390730463
+    },
+    "TTT-MLP (Sequential Inner GELU)": {
+      "step_ms": 108.87022000024444,
+      "tokens_per_sec": 9405.694229309915
+    },
+    "Kernel-TTT (Our Closed-Form Dual)": {
+      "step_ms": 1.1371499997039791,
+      "tokens_per_sec": 900496.8564099423
+    },
+    "speedup_kernel_over_mlp": 95.73954177799394
+  },
+  "T_2048": {
+    "Standard Transformer (Softmax)": {
+      "step_ms": 0.4244799998559756,
+      "tokens_per_sec": 4824726.726099882
+    },
+    "TTT-Linear (DeltaNet Scan)": {
+      "step_ms": 1.5764999996463303,
+      "tokens_per_sec": 1299080.241331713
+    },
+    "TTT-MLP (Sequential Inner GELU)": {
+      "step_ms": 264.4164400004229,
+      "tokens_per_sec": 7745.358042021611
+    },
+    "Kernel-TTT (Our Closed-Form Dual)": {
+      "step_ms": 2.283430000534281,
+      "tokens_per_sec": 896896.3355657082
+    },
+    "speedup_kernel_over_mlp": 115.79791796672389
+  },
+  "T_4096": {
+    "Standard Transformer (Softmax)": {
+      "step_ms": 0.9012100003019441,
+      "tokens_per_sec": 4545000.608767839
+    },
+    "TTT-Linear (DeltaNet Scan)": {
+      "step_ms": 3.4116499991796445,
+      "tokens_per_sec": 1200592.0891606444
+    },
+    "TTT-MLP (Sequential Inner GELU)": {
+      "step_ms": 451.22440999984974,
+      "tokens_per_sec": 9077.523088791593
+    },
+    "Kernel-TTT (Our Closed-Form Dual)": {
+      "step_ms": 3.1946199993399205,
+      "tokens_per_sec": 1282155.6244080125
+    },
+    "speedup_kernel_over_mlp": 141.24509642831936
+  }
+}

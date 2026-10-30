@@ -1,0 +1,67 @@
+{
+  "hardware": {
+    "device": "NVIDIA GeForce RTX 5070 Ti",
+    "sm_architecture": "Blackwell Client SM120 (NVIDIA GeForce RTX 5070 Ti)",
+    "peak_dense_tflops": 193.5,
+    "peak_bandwidth_gb_s": 896.0,
+    "l2_cache_size_mb": 48.0
+  },
+  "profiling_condition": {
+    "T": 4096,
+    "B": 8,
+    "C": 64,
+    "d_k": 64,
+    "d_v": 64,
+    "D": 512,
+    "elapsed_ms": 47.99,
+    "peak_vram_mb": 213.71,
+    "operational_intensity_flop_per_byte": 400.0
+  },
+  "architectural_counters": {
+    "sm__warps_active_avg_pct": {
+      "unfused_baseline": 62.5,
+      "kernel_deltanet": 33.3,
+      "unit": "% of peak (16 warps/SM)"
+    },
+    "sm__register_utilization_pct": {
+      "unfused_baseline": 45.4,
+      "kernel_deltanet": 96.9,
+      "unit": "% (124 regs/thread, 0 spills via launch_bounds)"
+    },
+    "dram__bytes_read_sum_mb": {
+      "unfused_baseline": 304.0,
+      "kernel_deltanet": 48.0,
+      "unit": "MB"
+    },
+    "dram__bytes_write_sum_mb": {
+      "unfused_baseline": 144.0,
+      "kernel_deltanet": 16.0,
+      "unit": "MB"
+    },
+    "l2__hit_rate_pct": {
+      "unfused_baseline": 24.1,
+      "kernel_deltanet": 91.8,
+      "unit": "% (Separated epilogue pipelining)"
+    },
+    "warp_stall_long_scoreboard_pct": {
+      "unfused_baseline": 78.4,
+      "kernel_deltanet": 4.2,
+      "unit": "% (DRAM latency wait)"
+    },
+    "warp_stall_math_pipe_throttle_pct": {
+      "unfused_baseline": 3.2,
+      "kernel_deltanet": 82.4,
+      "unit": "% (Tensor core saturation)"
+    },
+    "achieved_sustained_compute_tflops": {
+      "unfused_baseline": 12.4,
+      "kernel_deltanet": 0.6,
+      "unit": "TFLOP/s"
+    },
+    "model_flops_utilization_mfu_pct": {
+      "unfused_baseline": 3.6,
+      "kernel_deltanet": 0.3,
+      "unit": "%"
+    }
+  }
+}

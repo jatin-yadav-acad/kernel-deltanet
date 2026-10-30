@@ -1,0 +1,2420 @@
+{
+  "model": "Llama-1B-Kernel-DeltaNet",
+  "total_steps": 300,
+  "audit": {
+    "total_parameters": 1100096256,
+    "trainable_parameters": 207665920,
+    "frozen_parameters": 892430336,
+    "trainable_percentage": 18.877068153570736,
+    "breakdown": {
+      "embeddings": 65536000,
+      "mlps": 761266176,
+      "kernel_deltanet_projections": 207618048,
+      "kernel_deltanet_scan_params": 2816,
+      "norms_and_heads": 65673216,
+      "other": 0
+    }
+  },
+  "history": [
+    {
+      "step": 1,
+      "total_loss": 5.625,
+      "distill_loss": 1.4609375,
+      "ce_loss": 9.8125,
+      "vram_allocated_gb": 6.456,
+      "throughput_tokens_per_sec": 226.7
+    },
+    {
+      "step": 2,
+      "total_loss": 6.21875,
+      "distill_loss": 1.5546875,
+      "ce_loss": 10.875,
+      "vram_allocated_gb": 7.258,
+      "throughput_tokens_per_sec": 2922.0
+    },
+    {
+      "step": 3,
+      "total_loss": 6.28125,
+      "distill_loss": 1.640625,
+      "ce_loss": 10.9375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4007.0
+    },
+    {
+      "step": 4,
+      "total_loss": 6.75,
+      "distill_loss": 1.765625,
+      "ce_loss": 11.75,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3973.1
+    },
+    {
+      "step": 5,
+      "total_loss": 5.34375,
+      "distill_loss": 1.8359375,
+      "ce_loss": 8.875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3791.0
+    },
+    {
+      "step": 6,
+      "total_loss": 5.375,
+      "distill_loss": 1.8515625,
+      "ce_loss": 8.875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3727.2
+    },
+    {
+      "step": 7,
+      "total_loss": 4.84375,
+      "distill_loss": 1.8125,
+      "ce_loss": 7.875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4388.0
+    },
+    {
+      "step": 8,
+      "total_loss": 4.6875,
+      "distill_loss": 1.734375,
+      "ce_loss": 7.65625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3938.9
+    },
+    {
+      "step": 9,
+      "total_loss": 4.78125,
+      "distill_loss": 1.703125,
+      "ce_loss": 7.84375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3785.6
+    },
+    {
+      "step": 10,
+      "total_loss": 4.625,
+      "distill_loss": 1.7265625,
+      "ce_loss": 7.53125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4242.7
+    },
+    {
+      "step": 11,
+      "total_loss": 4.21875,
+      "distill_loss": 1.75,
+      "ce_loss": 6.6875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4400.9
+    },
+    {
+      "step": 12,
+      "total_loss": 4.28125,
+      "distill_loss": 1.7890625,
+      "ce_loss": 6.78125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4645.1
+    },
+    {
+      "step": 13,
+      "total_loss": 4.125,
+      "distill_loss": 1.703125,
+      "ce_loss": 6.5625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3886.4
+    },
+    {
+      "step": 14,
+      "total_loss": 4.3125,
+      "distill_loss": 1.6484375,
+      "ce_loss": 6.96875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3855.8
+    },
+    {
+      "step": 15,
+      "total_loss": 4.125,
+      "distill_loss": 1.578125,
+      "ce_loss": 6.65625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4267.3
+    },
+    {
+      "step": 16,
+      "total_loss": 4.25,
+      "distill_loss": 1.546875,
+      "ce_loss": 6.96875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4518.1
+    },
+    {
+      "step": 17,
+      "total_loss": 4.375,
+      "distill_loss": 1.453125,
+      "ce_loss": 7.3125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3951.0
+    },
+    {
+      "step": 18,
+      "total_loss": 4.125,
+      "distill_loss": 1.3828125,
+      "ce_loss": 6.84375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4588.0
+    },
+    {
+      "step": 19,
+      "total_loss": 4.40625,
+      "distill_loss": 1.359375,
+      "ce_loss": 7.46875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3196.0
+    },
+    {
+      "step": 20,
+      "total_loss": 4.125,
+      "distill_loss": 1.2890625,
+      "ce_loss": 6.96875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3839.5
+    },
+    {
+      "step": 21,
+      "total_loss": 4.03125,
+      "distill_loss": 1.2578125,
+      "ce_loss": 6.8125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4075.3
+    },
+    {
+      "step": 22,
+      "total_loss": 3.828125,
+      "distill_loss": 1.25,
+      "ce_loss": 6.40625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4010.5
+    },
+    {
+      "step": 23,
+      "total_loss": 4.09375,
+      "distill_loss": 1.2890625,
+      "ce_loss": 6.875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3867.4
+    },
+    {
+      "step": 24,
+      "total_loss": 3.765625,
+      "distill_loss": 1.2265625,
+      "ce_loss": 6.3125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4033.3
+    },
+    {
+      "step": 25,
+      "total_loss": 3.71875,
+      "distill_loss": 1.21875,
+      "ce_loss": 6.21875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4603.3
+    },
+    {
+      "step": 26,
+      "total_loss": 4.40625,
+      "distill_loss": 1.2734375,
+      "ce_loss": 7.5625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4148.5
+    },
+    {
+      "step": 27,
+      "total_loss": 3.8125,
+      "distill_loss": 1.2421875,
+      "ce_loss": 6.375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4429.8
+    },
+    {
+      "step": 28,
+      "total_loss": 3.5,
+      "distill_loss": 1.203125,
+      "ce_loss": 5.8125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4465.4
+    },
+    {
+      "step": 29,
+      "total_loss": 4.34375,
+      "distill_loss": 1.2265625,
+      "ce_loss": 7.4375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4291.7
+    },
+    {
+      "step": 30,
+      "total_loss": 3.75,
+      "distill_loss": 1.1875,
+      "ce_loss": 6.3125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4023.8
+    },
+    {
+      "step": 31,
+      "total_loss": 3.65625,
+      "distill_loss": 1.1875,
+      "ce_loss": 6.125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4540.7
+    },
+    {
+      "step": 32,
+      "total_loss": 4.03125,
+      "distill_loss": 1.2109375,
+      "ce_loss": 6.875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4354.8
+    },
+    {
+      "step": 33,
+      "total_loss": 3.515625,
+      "distill_loss": 1.1484375,
+      "ce_loss": 5.875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4727.9
+    },
+    {
+      "step": 34,
+      "total_loss": 3.90625,
+      "distill_loss": 1.15625,
+      "ce_loss": 6.65625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4122.5
+    },
+    {
+      "step": 35,
+      "total_loss": 3.84375,
+      "distill_loss": 1.1484375,
+      "ce_loss": 6.53125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3679.1
+    },
+    {
+      "step": 36,
+      "total_loss": 3.6875,
+      "distill_loss": 1.125,
+      "ce_loss": 6.25,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4027.7
+    },
+    {
+      "step": 37,
+      "total_loss": 3.65625,
+      "distill_loss": 1.1328125,
+      "ce_loss": 6.1875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4626.8
+    },
+    {
+      "step": 38,
+      "total_loss": 3.734375,
+      "distill_loss": 1.1328125,
+      "ce_loss": 6.34375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4435.5
+    },
+    {
+      "step": 39,
+      "total_loss": 3.59375,
+      "distill_loss": 1.109375,
+      "ce_loss": 6.0625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3974.4
+    },
+    {
+      "step": 40,
+      "total_loss": 3.453125,
+      "distill_loss": 1.1015625,
+      "ce_loss": 5.8125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3806.3
+    },
+    {
+      "step": 41,
+      "total_loss": 3.890625,
+      "distill_loss": 1.125,
+      "ce_loss": 6.65625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3644.2
+    },
+    {
+      "step": 42,
+      "total_loss": 3.0625,
+      "distill_loss": 1.109375,
+      "ce_loss": 5.0,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3838.5
+    },
+    {
+      "step": 43,
+      "total_loss": 3.03125,
+      "distill_loss": 1.078125,
+      "ce_loss": 5.0,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4192.5
+    },
+    {
+      "step": 44,
+      "total_loss": 3.84375,
+      "distill_loss": 1.15625,
+      "ce_loss": 6.53125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4049.3
+    },
+    {
+      "step": 45,
+      "total_loss": 3.875,
+      "distill_loss": 1.140625,
+      "ce_loss": 6.59375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3796.9
+    },
+    {
+      "step": 46,
+      "total_loss": 3.546875,
+      "distill_loss": 1.125,
+      "ce_loss": 5.96875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4103.5
+    },
+    {
+      "step": 47,
+      "total_loss": 3.46875,
+      "distill_loss": 1.1171875,
+      "ce_loss": 5.8125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3747.1
+    },
+    {
+      "step": 48,
+      "total_loss": 3.359375,
+      "distill_loss": 1.09375,
+      "ce_loss": 5.625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3974.5
+    },
+    {
+      "step": 49,
+      "total_loss": 3.28125,
+      "distill_loss": 1.078125,
+      "ce_loss": 5.5,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4547.6
+    },
+    {
+      "step": 50,
+      "total_loss": 3.765625,
+      "distill_loss": 1.1171875,
+      "ce_loss": 6.40625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4389.0
+    },
+    {
+      "step": 51,
+      "total_loss": 3.34375,
+      "distill_loss": 1.0859375,
+      "ce_loss": 5.59375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4052.3
+    },
+    {
+      "step": 52,
+      "total_loss": 3.21875,
+      "distill_loss": 1.078125,
+      "ce_loss": 5.34375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4004.9
+    },
+    {
+      "step": 53,
+      "total_loss": 3.0,
+      "distill_loss": 1.046875,
+      "ce_loss": 4.96875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3937.3
+    },
+    {
+      "step": 54,
+      "total_loss": 3.484375,
+      "distill_loss": 1.0625,
+      "ce_loss": 5.90625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3854.1
+    },
+    {
+      "step": 55,
+      "total_loss": 3.28125,
+      "distill_loss": 1.078125,
+      "ce_loss": 5.5,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4687.8
+    },
+    {
+      "step": 56,
+      "total_loss": 2.96875,
+      "distill_loss": 1.046875,
+      "ce_loss": 4.875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4422.8
+    },
+    {
+      "step": 57,
+      "total_loss": 3.390625,
+      "distill_loss": 1.0546875,
+      "ce_loss": 5.71875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3547.5
+    },
+    {
+      "step": 58,
+      "total_loss": 3.15625,
+      "distill_loss": 1.0546875,
+      "ce_loss": 5.25,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4205.7
+    },
+    {
+      "step": 59,
+      "total_loss": 3.65625,
+      "distill_loss": 1.0546875,
+      "ce_loss": 6.25,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3798.0
+    },
+    {
+      "step": 60,
+      "total_loss": 3.375,
+      "distill_loss": 1.0390625,
+      "ce_loss": 5.71875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3877.7
+    },
+    {
+      "step": 61,
+      "total_loss": 3.0625,
+      "distill_loss": 1.0390625,
+      "ce_loss": 5.09375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3885.2
+    },
+    {
+      "step": 62,
+      "total_loss": 3.046875,
+      "distill_loss": 1.0390625,
+      "ce_loss": 5.0625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4192.9
+    },
+    {
+      "step": 63,
+      "total_loss": 3.15625,
+      "distill_loss": 1.0546875,
+      "ce_loss": 5.25,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4547.2
+    },
+    {
+      "step": 64,
+      "total_loss": 3.625,
+      "distill_loss": 1.078125,
+      "ce_loss": 6.1875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4465.9
+    },
+    {
+      "step": 65,
+      "total_loss": 3.21875,
+      "distill_loss": 1.0390625,
+      "ce_loss": 5.40625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3809.4
+    },
+    {
+      "step": 66,
+      "total_loss": 2.75,
+      "distill_loss": 1.0234375,
+      "ce_loss": 4.46875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4166.3
+    },
+    {
+      "step": 67,
+      "total_loss": 3.28125,
+      "distill_loss": 1.046875,
+      "ce_loss": 5.5,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4017.9
+    },
+    {
+      "step": 68,
+      "total_loss": 3.125,
+      "distill_loss": 1.0390625,
+      "ce_loss": 5.21875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3467.8
+    },
+    {
+      "step": 69,
+      "total_loss": 3.0625,
+      "distill_loss": 1.046875,
+      "ce_loss": 5.09375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3478.3
+    },
+    {
+      "step": 70,
+      "total_loss": 2.59375,
+      "distill_loss": 1.015625,
+      "ce_loss": 4.15625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4073.9
+    },
+    {
+      "step": 71,
+      "total_loss": 3.015625,
+      "distill_loss": 1.0390625,
+      "ce_loss": 5.0,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3940.5
+    },
+    {
+      "step": 72,
+      "total_loss": 3.25,
+      "distill_loss": 1.078125,
+      "ce_loss": 5.40625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3902.5
+    },
+    {
+      "step": 73,
+      "total_loss": 3.046875,
+      "distill_loss": 1.0390625,
+      "ce_loss": 5.0625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3513.7
+    },
+    {
+      "step": 74,
+      "total_loss": 3.109375,
+      "distill_loss": 1.0390625,
+      "ce_loss": 5.1875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3839.3
+    },
+    {
+      "step": 75,
+      "total_loss": 2.5625,
+      "distill_loss": 1.0234375,
+      "ce_loss": 4.09375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4187.8
+    },
+    {
+      "step": 76,
+      "total_loss": 2.5625,
+      "distill_loss": 1.015625,
+      "ce_loss": 4.09375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4386.3
+    },
+    {
+      "step": 77,
+      "total_loss": 2.875,
+      "distill_loss": 1.0234375,
+      "ce_loss": 4.71875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4391.6
+    },
+    {
+      "step": 78,
+      "total_loss": 3.203125,
+      "distill_loss": 1.03125,
+      "ce_loss": 5.375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4123.8
+    },
+    {
+      "step": 79,
+      "total_loss": 2.8125,
+      "distill_loss": 1.015625,
+      "ce_loss": 4.59375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4028.5
+    },
+    {
+      "step": 80,
+      "total_loss": 2.953125,
+      "distill_loss": 1.0234375,
+      "ce_loss": 4.875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4227.0
+    },
+    {
+      "step": 81,
+      "total_loss": 2.875,
+      "distill_loss": 1.015625,
+      "ce_loss": 4.71875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3803.2
+    },
+    {
+      "step": 82,
+      "total_loss": 3.0625,
+      "distill_loss": 1.015625,
+      "ce_loss": 5.09375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4332.4
+    },
+    {
+      "step": 83,
+      "total_loss": 3.0,
+      "distill_loss": 1.015625,
+      "ce_loss": 4.96875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3976.6
+    },
+    {
+      "step": 84,
+      "total_loss": 3.0,
+      "distill_loss": 1.015625,
+      "ce_loss": 5.0,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3738.1
+    },
+    {
+      "step": 85,
+      "total_loss": 3.171875,
+      "distill_loss": 1.0234375,
+      "ce_loss": 5.3125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3367.7
+    },
+    {
+      "step": 86,
+      "total_loss": 3.140625,
+      "distill_loss": 1.0,
+      "ce_loss": 5.28125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4591.9
+    },
+    {
+      "step": 87,
+      "total_loss": 2.65625,
+      "distill_loss": 0.9921875,
+      "ce_loss": 4.3125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4304.7
+    },
+    {
+      "step": 88,
+      "total_loss": 3.125,
+      "distill_loss": 1.015625,
+      "ce_loss": 5.25,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4068.4
+    },
+    {
+      "step": 89,
+      "total_loss": 2.796875,
+      "distill_loss": 0.9921875,
+      "ce_loss": 4.59375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3812.2
+    },
+    {
+      "step": 90,
+      "total_loss": 3.0,
+      "distill_loss": 0.9921875,
+      "ce_loss": 5.0,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4697.7
+    },
+    {
+      "step": 91,
+      "total_loss": 3.03125,
+      "distill_loss": 1.015625,
+      "ce_loss": 5.0625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4136.4
+    },
+    {
+      "step": 92,
+      "total_loss": 2.828125,
+      "distill_loss": 0.98046875,
+      "ce_loss": 4.6875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4852.6
+    },
+    {
+      "step": 93,
+      "total_loss": 2.734375,
+      "distill_loss": 0.9921875,
+      "ce_loss": 4.46875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4274.1
+    },
+    {
+      "step": 94,
+      "total_loss": 2.765625,
+      "distill_loss": 0.98828125,
+      "ce_loss": 4.53125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4755.2
+    },
+    {
+      "step": 95,
+      "total_loss": 2.984375,
+      "distill_loss": 1.0078125,
+      "ce_loss": 4.96875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4732.0
+    },
+    {
+      "step": 96,
+      "total_loss": 2.515625,
+      "distill_loss": 0.9765625,
+      "ce_loss": 4.0625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4712.7
+    },
+    {
+      "step": 97,
+      "total_loss": 2.875,
+      "distill_loss": 1.0,
+      "ce_loss": 4.75,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4553.9
+    },
+    {
+      "step": 98,
+      "total_loss": 3.015625,
+      "distill_loss": 1.0078125,
+      "ce_loss": 5.03125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4411.3
+    },
+    {
+      "step": 99,
+      "total_loss": 3.234375,
+      "distill_loss": 1.0,
+      "ce_loss": 5.46875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4280.0
+    },
+    {
+      "step": 100,
+      "total_loss": 2.34375,
+      "distill_loss": 0.9609375,
+      "ce_loss": 3.71875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4254.0
+    },
+    {
+      "step": 101,
+      "total_loss": 2.25,
+      "distill_loss": 0.98046875,
+      "ce_loss": 3.53125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4859.1
+    },
+    {
+      "step": 102,
+      "total_loss": 2.4375,
+      "distill_loss": 0.9765625,
+      "ce_loss": 3.890625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4818.4
+    },
+    {
+      "step": 103,
+      "total_loss": 3.515625,
+      "distill_loss": 1.0078125,
+      "ce_loss": 6.03125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4810.0
+    },
+    {
+      "step": 104,
+      "total_loss": 3.140625,
+      "distill_loss": 1.0234375,
+      "ce_loss": 5.25,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4545.4
+    },
+    {
+      "step": 105,
+      "total_loss": 2.6875,
+      "distill_loss": 0.98828125,
+      "ce_loss": 4.375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4804.3
+    },
+    {
+      "step": 106,
+      "total_loss": 3.09375,
+      "distill_loss": 1.0078125,
+      "ce_loss": 5.1875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4730.8
+    },
+    {
+      "step": 107,
+      "total_loss": 3.234375,
+      "distill_loss": 1.0078125,
+      "ce_loss": 5.46875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4363.4
+    },
+    {
+      "step": 108,
+      "total_loss": 3.03125,
+      "distill_loss": 1.046875,
+      "ce_loss": 5.0,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4278.7
+    },
+    {
+      "step": 109,
+      "total_loss": 2.5,
+      "distill_loss": 0.98046875,
+      "ce_loss": 4.03125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4304.3
+    },
+    {
+      "step": 110,
+      "total_loss": 2.4375,
+      "distill_loss": 0.96875,
+      "ce_loss": 3.890625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4460.0
+    },
+    {
+      "step": 111,
+      "total_loss": 2.84375,
+      "distill_loss": 0.98828125,
+      "ce_loss": 4.6875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4547.7
+    },
+    {
+      "step": 112,
+      "total_loss": 2.75,
+      "distill_loss": 0.98828125,
+      "ce_loss": 4.5,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4864.8
+    },
+    {
+      "step": 113,
+      "total_loss": 3.09375,
+      "distill_loss": 1.0078125,
+      "ce_loss": 5.1875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4357.5
+    },
+    {
+      "step": 114,
+      "total_loss": 2.859375,
+      "distill_loss": 0.9921875,
+      "ce_loss": 4.71875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4134.9
+    },
+    {
+      "step": 115,
+      "total_loss": 2.453125,
+      "distill_loss": 0.98046875,
+      "ce_loss": 3.921875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4266.3
+    },
+    {
+      "step": 116,
+      "total_loss": 2.4375,
+      "distill_loss": 0.96875,
+      "ce_loss": 3.90625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4875.5
+    },
+    {
+      "step": 117,
+      "total_loss": 2.828125,
+      "distill_loss": 0.9765625,
+      "ce_loss": 4.6875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4514.4
+    },
+    {
+      "step": 118,
+      "total_loss": 2.890625,
+      "distill_loss": 0.9609375,
+      "ce_loss": 4.8125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4577.8
+    },
+    {
+      "step": 119,
+      "total_loss": 2.734375,
+      "distill_loss": 0.9765625,
+      "ce_loss": 4.5,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4216.2
+    },
+    {
+      "step": 120,
+      "total_loss": 3.03125,
+      "distill_loss": 0.98828125,
+      "ce_loss": 5.0625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4429.7
+    },
+    {
+      "step": 121,
+      "total_loss": 2.765625,
+      "distill_loss": 0.98828125,
+      "ce_loss": 4.53125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4182.1
+    },
+    {
+      "step": 122,
+      "total_loss": 2.796875,
+      "distill_loss": 0.98046875,
+      "ce_loss": 4.625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4719.5
+    },
+    {
+      "step": 123,
+      "total_loss": 2.203125,
+      "distill_loss": 0.95703125,
+      "ce_loss": 3.453125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4298.9
+    },
+    {
+      "step": 124,
+      "total_loss": 2.25,
+      "distill_loss": 0.94921875,
+      "ce_loss": 3.5625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4469.1
+    },
+    {
+      "step": 125,
+      "total_loss": 2.765625,
+      "distill_loss": 0.9765625,
+      "ce_loss": 4.5625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4099.1
+    },
+    {
+      "step": 126,
+      "total_loss": 2.8125,
+      "distill_loss": 0.9609375,
+      "ce_loss": 4.65625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4104.8
+    },
+    {
+      "step": 127,
+      "total_loss": 2.8125,
+      "distill_loss": 0.96875,
+      "ce_loss": 4.65625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4917.3
+    },
+    {
+      "step": 128,
+      "total_loss": 2.765625,
+      "distill_loss": 0.9609375,
+      "ce_loss": 4.5625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4374.2
+    },
+    {
+      "step": 129,
+      "total_loss": 2.421875,
+      "distill_loss": 0.9453125,
+      "ce_loss": 3.90625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4798.7
+    },
+    {
+      "step": 130,
+      "total_loss": 2.734375,
+      "distill_loss": 0.96875,
+      "ce_loss": 4.5,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4820.4
+    },
+    {
+      "step": 131,
+      "total_loss": 2.6875,
+      "distill_loss": 0.95703125,
+      "ce_loss": 4.40625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4606.9
+    },
+    {
+      "step": 132,
+      "total_loss": 2.4375,
+      "distill_loss": 0.94921875,
+      "ce_loss": 3.9375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4786.7
+    },
+    {
+      "step": 133,
+      "total_loss": 2.390625,
+      "distill_loss": 0.9609375,
+      "ce_loss": 3.828125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4731.6
+    },
+    {
+      "step": 134,
+      "total_loss": 3.03125,
+      "distill_loss": 0.95703125,
+      "ce_loss": 5.09375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4628.2
+    },
+    {
+      "step": 135,
+      "total_loss": 2.8125,
+      "distill_loss": 0.9609375,
+      "ce_loss": 4.65625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3975.9
+    },
+    {
+      "step": 136,
+      "total_loss": 3.375,
+      "distill_loss": 0.98046875,
+      "ce_loss": 5.78125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4291.3
+    },
+    {
+      "step": 137,
+      "total_loss": 2.609375,
+      "distill_loss": 0.94921875,
+      "ce_loss": 4.28125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4289.9
+    },
+    {
+      "step": 138,
+      "total_loss": 2.375,
+      "distill_loss": 0.9375,
+      "ce_loss": 3.8125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4687.4
+    },
+    {
+      "step": 139,
+      "total_loss": 2.546875,
+      "distill_loss": 0.9453125,
+      "ce_loss": 4.15625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4343.3
+    },
+    {
+      "step": 140,
+      "total_loss": 2.828125,
+      "distill_loss": 0.9609375,
+      "ce_loss": 4.6875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4461.3
+    },
+    {
+      "step": 141,
+      "total_loss": 2.375,
+      "distill_loss": 0.95703125,
+      "ce_loss": 3.796875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4745.8
+    },
+    {
+      "step": 142,
+      "total_loss": 2.796875,
+      "distill_loss": 0.98828125,
+      "ce_loss": 4.59375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4081.1
+    },
+    {
+      "step": 143,
+      "total_loss": 2.640625,
+      "distill_loss": 0.9609375,
+      "ce_loss": 4.3125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4525.7
+    },
+    {
+      "step": 144,
+      "total_loss": 3.015625,
+      "distill_loss": 0.98828125,
+      "ce_loss": 5.03125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4710.0
+    },
+    {
+      "step": 145,
+      "total_loss": 2.96875,
+      "distill_loss": 0.96875,
+      "ce_loss": 4.96875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4440.7
+    },
+    {
+      "step": 146,
+      "total_loss": 2.9375,
+      "distill_loss": 0.96875,
+      "ce_loss": 4.90625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4534.4
+    },
+    {
+      "step": 147,
+      "total_loss": 3.5625,
+      "distill_loss": 0.9921875,
+      "ce_loss": 6.125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4462.0
+    },
+    {
+      "step": 148,
+      "total_loss": 2.703125,
+      "distill_loss": 0.94921875,
+      "ce_loss": 4.46875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4662.3
+    },
+    {
+      "step": 149,
+      "total_loss": 2.28125,
+      "distill_loss": 0.9296875,
+      "ce_loss": 3.640625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4163.5
+    },
+    {
+      "step": 150,
+      "total_loss": 3.046875,
+      "distill_loss": 0.95703125,
+      "ce_loss": 5.125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4791.4
+    },
+    {
+      "step": 151,
+      "total_loss": 2.515625,
+      "distill_loss": 0.9375,
+      "ce_loss": 4.09375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4952.9
+    },
+    {
+      "step": 152,
+      "total_loss": 2.75,
+      "distill_loss": 0.96875,
+      "ce_loss": 4.53125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4851.3
+    },
+    {
+      "step": 153,
+      "total_loss": 2.890625,
+      "distill_loss": 0.98046875,
+      "ce_loss": 4.8125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4754.8
+    },
+    {
+      "step": 154,
+      "total_loss": 2.984375,
+      "distill_loss": 0.96875,
+      "ce_loss": 5.0,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4594.2
+    },
+    {
+      "step": 155,
+      "total_loss": 2.375,
+      "distill_loss": 0.94921875,
+      "ce_loss": 3.8125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4579.7
+    },
+    {
+      "step": 156,
+      "total_loss": 2.453125,
+      "distill_loss": 0.9609375,
+      "ce_loss": 3.9375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4516.7
+    },
+    {
+      "step": 157,
+      "total_loss": 2.78125,
+      "distill_loss": 0.96875,
+      "ce_loss": 4.59375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4521.2
+    },
+    {
+      "step": 158,
+      "total_loss": 2.53125,
+      "distill_loss": 0.95703125,
+      "ce_loss": 4.09375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4571.1
+    },
+    {
+      "step": 159,
+      "total_loss": 2.765625,
+      "distill_loss": 0.94921875,
+      "ce_loss": 4.59375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4898.3
+    },
+    {
+      "step": 160,
+      "total_loss": 2.078125,
+      "distill_loss": 0.92578125,
+      "ce_loss": 3.234375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4341.4
+    },
+    {
+      "step": 161,
+      "total_loss": 2.859375,
+      "distill_loss": 0.95703125,
+      "ce_loss": 4.75,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4887.3
+    },
+    {
+      "step": 162,
+      "total_loss": 3.0,
+      "distill_loss": 0.95703125,
+      "ce_loss": 5.03125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4496.8
+    },
+    {
+      "step": 163,
+      "total_loss": 2.828125,
+      "distill_loss": 0.94921875,
+      "ce_loss": 4.71875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4170.6
+    },
+    {
+      "step": 164,
+      "total_loss": 2.25,
+      "distill_loss": 0.9375,
+      "ce_loss": 3.578125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 5086.5
+    },
+    {
+      "step": 165,
+      "total_loss": 3.234375,
+      "distill_loss": 1.0,
+      "ce_loss": 5.46875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4476.8
+    },
+    {
+      "step": 166,
+      "total_loss": 3.1875,
+      "distill_loss": 0.98828125,
+      "ce_loss": 5.375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4482.8
+    },
+    {
+      "step": 167,
+      "total_loss": 2.59375,
+      "distill_loss": 0.9453125,
+      "ce_loss": 4.25,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4286.1
+    },
+    {
+      "step": 168,
+      "total_loss": 2.953125,
+      "distill_loss": 0.9609375,
+      "ce_loss": 4.9375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4976.8
+    },
+    {
+      "step": 169,
+      "total_loss": 3.09375,
+      "distill_loss": 0.92578125,
+      "ce_loss": 5.25,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4159.9
+    },
+    {
+      "step": 170,
+      "total_loss": 3.328125,
+      "distill_loss": 0.96875,
+      "ce_loss": 5.6875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4638.7
+    },
+    {
+      "step": 171,
+      "total_loss": 2.734375,
+      "distill_loss": 0.9453125,
+      "ce_loss": 4.53125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4889.5
+    },
+    {
+      "step": 172,
+      "total_loss": 2.8125,
+      "distill_loss": 0.92578125,
+      "ce_loss": 4.6875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3716.1
+    },
+    {
+      "step": 173,
+      "total_loss": 2.1875,
+      "distill_loss": 0.94921875,
+      "ce_loss": 3.4375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4474.8
+    },
+    {
+      "step": 174,
+      "total_loss": 2.3125,
+      "distill_loss": 0.9375,
+      "ce_loss": 3.671875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4722.4
+    },
+    {
+      "step": 175,
+      "total_loss": 2.265625,
+      "distill_loss": 0.9375,
+      "ce_loss": 3.59375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4257.3
+    },
+    {
+      "step": 176,
+      "total_loss": 2.953125,
+      "distill_loss": 0.9609375,
+      "ce_loss": 4.9375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4240.6
+    },
+    {
+      "step": 177,
+      "total_loss": 2.15625,
+      "distill_loss": 0.9375,
+      "ce_loss": 3.375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4123.4
+    },
+    {
+      "step": 178,
+      "total_loss": 2.296875,
+      "distill_loss": 0.9296875,
+      "ce_loss": 3.671875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4934.6
+    },
+    {
+      "step": 179,
+      "total_loss": 2.359375,
+      "distill_loss": 0.92578125,
+      "ce_loss": 3.796875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3982.7
+    },
+    {
+      "step": 180,
+      "total_loss": 2.671875,
+      "distill_loss": 0.9609375,
+      "ce_loss": 4.375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4076.1
+    },
+    {
+      "step": 181,
+      "total_loss": 2.8125,
+      "distill_loss": 0.94921875,
+      "ce_loss": 4.6875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4057.6
+    },
+    {
+      "step": 182,
+      "total_loss": 3.03125,
+      "distill_loss": 0.92578125,
+      "ce_loss": 5.125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4474.8
+    },
+    {
+      "step": 183,
+      "total_loss": 2.453125,
+      "distill_loss": 0.91796875,
+      "ce_loss": 4.0,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3990.9
+    },
+    {
+      "step": 184,
+      "total_loss": 2.859375,
+      "distill_loss": 0.9375,
+      "ce_loss": 4.78125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4032.7
+    },
+    {
+      "step": 185,
+      "total_loss": 2.578125,
+      "distill_loss": 0.9296875,
+      "ce_loss": 4.21875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4246.8
+    },
+    {
+      "step": 186,
+      "total_loss": 2.890625,
+      "distill_loss": 0.9453125,
+      "ce_loss": 4.84375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4240.1
+    },
+    {
+      "step": 187,
+      "total_loss": 3.140625,
+      "distill_loss": 0.9765625,
+      "ce_loss": 5.3125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4496.8
+    },
+    {
+      "step": 188,
+      "total_loss": 2.71875,
+      "distill_loss": 0.91796875,
+      "ce_loss": 4.53125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4646.6
+    },
+    {
+      "step": 189,
+      "total_loss": 2.375,
+      "distill_loss": 0.9296875,
+      "ce_loss": 3.828125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3728.5
+    },
+    {
+      "step": 190,
+      "total_loss": 2.484375,
+      "distill_loss": 0.9296875,
+      "ce_loss": 4.03125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4331.4
+    },
+    {
+      "step": 191,
+      "total_loss": 2.453125,
+      "distill_loss": 0.9140625,
+      "ce_loss": 4.0,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3889.3
+    },
+    {
+      "step": 192,
+      "total_loss": 2.328125,
+      "distill_loss": 0.91796875,
+      "ce_loss": 3.734375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3893.1
+    },
+    {
+      "step": 193,
+      "total_loss": 2.0625,
+      "distill_loss": 0.90625,
+      "ce_loss": 3.234375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4564.6
+    },
+    {
+      "step": 194,
+      "total_loss": 2.59375,
+      "distill_loss": 0.9453125,
+      "ce_loss": 4.25,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3977.2
+    },
+    {
+      "step": 195,
+      "total_loss": 2.28125,
+      "distill_loss": 0.91796875,
+      "ce_loss": 3.640625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4224.0
+    },
+    {
+      "step": 196,
+      "total_loss": 3.046875,
+      "distill_loss": 0.9296875,
+      "ce_loss": 5.15625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4392.5
+    },
+    {
+      "step": 197,
+      "total_loss": 2.546875,
+      "distill_loss": 0.92578125,
+      "ce_loss": 4.15625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3930.1
+    },
+    {
+      "step": 198,
+      "total_loss": 2.46875,
+      "distill_loss": 0.92578125,
+      "ce_loss": 4.0,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3836.1
+    },
+    {
+      "step": 199,
+      "total_loss": 2.796875,
+      "distill_loss": 0.94921875,
+      "ce_loss": 4.65625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3826.5
+    },
+    {
+      "step": 200,
+      "total_loss": 2.609375,
+      "distill_loss": 0.94921875,
+      "ce_loss": 4.28125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3917.6
+    },
+    {
+      "step": 201,
+      "total_loss": 2.390625,
+      "distill_loss": 0.91796875,
+      "ce_loss": 3.859375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4272.0
+    },
+    {
+      "step": 202,
+      "total_loss": 2.65625,
+      "distill_loss": 0.9375,
+      "ce_loss": 4.375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4498.2
+    },
+    {
+      "step": 203,
+      "total_loss": 2.578125,
+      "distill_loss": 0.9296875,
+      "ce_loss": 4.21875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3926.1
+    },
+    {
+      "step": 204,
+      "total_loss": 2.6875,
+      "distill_loss": 0.9453125,
+      "ce_loss": 4.4375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4209.0
+    },
+    {
+      "step": 205,
+      "total_loss": 2.421875,
+      "distill_loss": 0.9140625,
+      "ce_loss": 3.921875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4481.7
+    },
+    {
+      "step": 206,
+      "total_loss": 2.21875,
+      "distill_loss": 0.90625,
+      "ce_loss": 3.53125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3633.6
+    },
+    {
+      "step": 207,
+      "total_loss": 3.046875,
+      "distill_loss": 0.9296875,
+      "ce_loss": 5.15625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4738.3
+    },
+    {
+      "step": 208,
+      "total_loss": 2.21875,
+      "distill_loss": 0.90625,
+      "ce_loss": 3.53125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3925.5
+    },
+    {
+      "step": 209,
+      "total_loss": 3.21875,
+      "distill_loss": 0.92578125,
+      "ce_loss": 5.5,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4346.4
+    },
+    {
+      "step": 210,
+      "total_loss": 2.9375,
+      "distill_loss": 0.9375,
+      "ce_loss": 4.9375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3676.5
+    },
+    {
+      "step": 211,
+      "total_loss": 2.484375,
+      "distill_loss": 0.92578125,
+      "ce_loss": 4.03125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4771.8
+    },
+    {
+      "step": 212,
+      "total_loss": 2.421875,
+      "distill_loss": 0.91796875,
+      "ce_loss": 3.9375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4554.8
+    },
+    {
+      "step": 213,
+      "total_loss": 3.171875,
+      "distill_loss": 0.9453125,
+      "ce_loss": 5.40625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3686.4
+    },
+    {
+      "step": 214,
+      "total_loss": 2.203125,
+      "distill_loss": 0.91796875,
+      "ce_loss": 3.484375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4143.4
+    },
+    {
+      "step": 215,
+      "total_loss": 2.828125,
+      "distill_loss": 0.92578125,
+      "ce_loss": 4.71875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4488.0
+    },
+    {
+      "step": 216,
+      "total_loss": 2.546875,
+      "distill_loss": 0.92578125,
+      "ce_loss": 4.15625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3677.7
+    },
+    {
+      "step": 217,
+      "total_loss": 2.921875,
+      "distill_loss": 0.9296875,
+      "ce_loss": 4.90625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3571.2
+    },
+    {
+      "step": 218,
+      "total_loss": 2.578125,
+      "distill_loss": 0.91796875,
+      "ce_loss": 4.25,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4713.2
+    },
+    {
+      "step": 219,
+      "total_loss": 2.421875,
+      "distill_loss": 0.9140625,
+      "ce_loss": 3.9375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4426.0
+    },
+    {
+      "step": 220,
+      "total_loss": 2.6875,
+      "distill_loss": 0.92578125,
+      "ce_loss": 4.4375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4488.5
+    },
+    {
+      "step": 221,
+      "total_loss": 2.515625,
+      "distill_loss": 0.88671875,
+      "ce_loss": 4.15625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4563.6
+    },
+    {
+      "step": 222,
+      "total_loss": 2.765625,
+      "distill_loss": 0.91796875,
+      "ce_loss": 4.625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4469.7
+    },
+    {
+      "step": 223,
+      "total_loss": 2.515625,
+      "distill_loss": 0.90625,
+      "ce_loss": 4.125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4644.0
+    },
+    {
+      "step": 224,
+      "total_loss": 2.640625,
+      "distill_loss": 0.8984375,
+      "ce_loss": 4.375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3986.9
+    },
+    {
+      "step": 225,
+      "total_loss": 2.703125,
+      "distill_loss": 0.9453125,
+      "ce_loss": 4.46875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4039.5
+    },
+    {
+      "step": 226,
+      "total_loss": 2.421875,
+      "distill_loss": 0.90625,
+      "ce_loss": 3.9375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4426.4
+    },
+    {
+      "step": 227,
+      "total_loss": 2.3125,
+      "distill_loss": 0.89453125,
+      "ce_loss": 3.71875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4455.5
+    },
+    {
+      "step": 228,
+      "total_loss": 2.578125,
+      "distill_loss": 0.91796875,
+      "ce_loss": 4.25,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3885.4
+    },
+    {
+      "step": 229,
+      "total_loss": 2.40625,
+      "distill_loss": 0.91796875,
+      "ce_loss": 3.90625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4441.4
+    },
+    {
+      "step": 230,
+      "total_loss": 2.34375,
+      "distill_loss": 0.88671875,
+      "ce_loss": 3.796875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4050.1
+    },
+    {
+      "step": 231,
+      "total_loss": 2.84375,
+      "distill_loss": 0.9140625,
+      "ce_loss": 4.78125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4198.5
+    },
+    {
+      "step": 232,
+      "total_loss": 2.21875,
+      "distill_loss": 0.8984375,
+      "ce_loss": 3.53125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3966.7
+    },
+    {
+      "step": 233,
+      "total_loss": 2.765625,
+      "distill_loss": 0.9140625,
+      "ce_loss": 4.625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4231.6
+    },
+    {
+      "step": 234,
+      "total_loss": 2.84375,
+      "distill_loss": 0.9140625,
+      "ce_loss": 4.78125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4751.0
+    },
+    {
+      "step": 235,
+      "total_loss": 2.65625,
+      "distill_loss": 0.9296875,
+      "ce_loss": 4.375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4171.7
+    },
+    {
+      "step": 236,
+      "total_loss": 2.796875,
+      "distill_loss": 0.91796875,
+      "ce_loss": 4.6875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4629.8
+    },
+    {
+      "step": 237,
+      "total_loss": 2.6875,
+      "distill_loss": 0.9140625,
+      "ce_loss": 4.46875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4092.1
+    },
+    {
+      "step": 238,
+      "total_loss": 2.765625,
+      "distill_loss": 0.90625,
+      "ce_loss": 4.625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4614.5
+    },
+    {
+      "step": 239,
+      "total_loss": 2.09375,
+      "distill_loss": 0.90625,
+      "ce_loss": 3.28125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4605.1
+    },
+    {
+      "step": 240,
+      "total_loss": 2.171875,
+      "distill_loss": 0.8984375,
+      "ce_loss": 3.453125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4407.6
+    },
+    {
+      "step": 241,
+      "total_loss": 2.890625,
+      "distill_loss": 0.9296875,
+      "ce_loss": 4.84375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4028.9
+    },
+    {
+      "step": 242,
+      "total_loss": 3.453125,
+      "distill_loss": 0.94921875,
+      "ce_loss": 5.96875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4378.0
+    },
+    {
+      "step": 243,
+      "total_loss": 2.765625,
+      "distill_loss": 0.91796875,
+      "ce_loss": 4.625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4594.9
+    },
+    {
+      "step": 244,
+      "total_loss": 2.21875,
+      "distill_loss": 0.90625,
+      "ce_loss": 3.515625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4218.4
+    },
+    {
+      "step": 245,
+      "total_loss": 2.71875,
+      "distill_loss": 0.92578125,
+      "ce_loss": 4.5,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4240.6
+    },
+    {
+      "step": 246,
+      "total_loss": 2.46875,
+      "distill_loss": 0.89453125,
+      "ce_loss": 4.03125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3870.4
+    },
+    {
+      "step": 247,
+      "total_loss": 2.671875,
+      "distill_loss": 0.8984375,
+      "ce_loss": 4.4375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4062.9
+    },
+    {
+      "step": 248,
+      "total_loss": 2.4375,
+      "distill_loss": 0.91796875,
+      "ce_loss": 3.953125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3818.7
+    },
+    {
+      "step": 249,
+      "total_loss": 2.296875,
+      "distill_loss": 0.89453125,
+      "ce_loss": 3.703125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3970.5
+    },
+    {
+      "step": 250,
+      "total_loss": 2.8125,
+      "distill_loss": 0.92578125,
+      "ce_loss": 4.6875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3717.5
+    },
+    {
+      "step": 251,
+      "total_loss": 2.46875,
+      "distill_loss": 0.8828125,
+      "ce_loss": 4.0625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3735.4
+    },
+    {
+      "step": 252,
+      "total_loss": 2.734375,
+      "distill_loss": 0.92578125,
+      "ce_loss": 4.53125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3641.7
+    },
+    {
+      "step": 253,
+      "total_loss": 2.78125,
+      "distill_loss": 0.9296875,
+      "ce_loss": 4.625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3971.9
+    },
+    {
+      "step": 254,
+      "total_loss": 2.6875,
+      "distill_loss": 0.91796875,
+      "ce_loss": 4.46875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4133.0
+    },
+    {
+      "step": 255,
+      "total_loss": 2.546875,
+      "distill_loss": 0.8984375,
+      "ce_loss": 4.1875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3988.3
+    },
+    {
+      "step": 256,
+      "total_loss": 2.953125,
+      "distill_loss": 0.91796875,
+      "ce_loss": 5.0,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3993.9
+    },
+    {
+      "step": 257,
+      "total_loss": 2.546875,
+      "distill_loss": 0.8984375,
+      "ce_loss": 4.1875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4077.3
+    },
+    {
+      "step": 258,
+      "total_loss": 2.25,
+      "distill_loss": 0.89453125,
+      "ce_loss": 3.609375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4050.7
+    },
+    {
+      "step": 259,
+      "total_loss": 2.625,
+      "distill_loss": 0.88671875,
+      "ce_loss": 4.375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4814.5
+    },
+    {
+      "step": 260,
+      "total_loss": 2.140625,
+      "distill_loss": 0.90625,
+      "ce_loss": 3.375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3866.4
+    },
+    {
+      "step": 261,
+      "total_loss": 2.984375,
+      "distill_loss": 0.9296875,
+      "ce_loss": 5.03125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4287.8
+    },
+    {
+      "step": 262,
+      "total_loss": 2.53125,
+      "distill_loss": 0.90625,
+      "ce_loss": 4.15625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4096.1
+    },
+    {
+      "step": 263,
+      "total_loss": 2.734375,
+      "distill_loss": 0.8984375,
+      "ce_loss": 4.5625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3861.9
+    },
+    {
+      "step": 264,
+      "total_loss": 2.734375,
+      "distill_loss": 0.92578125,
+      "ce_loss": 4.53125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4266.3
+    },
+    {
+      "step": 265,
+      "total_loss": 2.28125,
+      "distill_loss": 0.90625,
+      "ce_loss": 3.65625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4312.6
+    },
+    {
+      "step": 266,
+      "total_loss": 2.703125,
+      "distill_loss": 0.90625,
+      "ce_loss": 4.5,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4491.5
+    },
+    {
+      "step": 267,
+      "total_loss": 2.703125,
+      "distill_loss": 0.92578125,
+      "ce_loss": 4.46875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4254.0
+    },
+    {
+      "step": 268,
+      "total_loss": 2.5625,
+      "distill_loss": 0.90625,
+      "ce_loss": 4.21875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4313.7
+    },
+    {
+      "step": 269,
+      "total_loss": 2.890625,
+      "distill_loss": 0.92578125,
+      "ce_loss": 4.84375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4566.6
+    },
+    {
+      "step": 270,
+      "total_loss": 2.109375,
+      "distill_loss": 0.875,
+      "ce_loss": 3.34375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3816.7
+    },
+    {
+      "step": 271,
+      "total_loss": 2.46875,
+      "distill_loss": 0.9140625,
+      "ce_loss": 4.03125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4184.9
+    },
+    {
+      "step": 272,
+      "total_loss": 2.375,
+      "distill_loss": 0.90625,
+      "ce_loss": 3.859375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4088.8
+    },
+    {
+      "step": 273,
+      "total_loss": 2.6875,
+      "distill_loss": 0.90625,
+      "ce_loss": 4.46875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3797.8
+    },
+    {
+      "step": 274,
+      "total_loss": 2.796875,
+      "distill_loss": 0.92578125,
+      "ce_loss": 4.65625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3886.4
+    },
+    {
+      "step": 275,
+      "total_loss": 2.5,
+      "distill_loss": 0.88671875,
+      "ce_loss": 4.125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4272.1
+    },
+    {
+      "step": 276,
+      "total_loss": 3.09375,
+      "distill_loss": 0.9453125,
+      "ce_loss": 5.25,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4212.3
+    },
+    {
+      "step": 277,
+      "total_loss": 3.40625,
+      "distill_loss": 1.0,
+      "ce_loss": 5.8125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3890.3
+    },
+    {
+      "step": 278,
+      "total_loss": 2.328125,
+      "distill_loss": 0.91796875,
+      "ce_loss": 3.734375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3979.2
+    },
+    {
+      "step": 279,
+      "total_loss": 2.234375,
+      "distill_loss": 0.89453125,
+      "ce_loss": 3.578125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4280.5
+    },
+    {
+      "step": 280,
+      "total_loss": 2.171875,
+      "distill_loss": 0.88671875,
+      "ce_loss": 3.46875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4194.3
+    },
+    {
+      "step": 281,
+      "total_loss": 1.953125,
+      "distill_loss": 0.8828125,
+      "ce_loss": 3.03125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4060.5
+    },
+    {
+      "step": 282,
+      "total_loss": 2.40625,
+      "distill_loss": 0.88671875,
+      "ce_loss": 3.9375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4269.3
+    },
+    {
+      "step": 283,
+      "total_loss": 2.703125,
+      "distill_loss": 0.8984375,
+      "ce_loss": 4.5,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4258.6
+    },
+    {
+      "step": 284,
+      "total_loss": 2.421875,
+      "distill_loss": 0.8984375,
+      "ce_loss": 3.953125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3843.7
+    },
+    {
+      "step": 285,
+      "total_loss": 2.671875,
+      "distill_loss": 0.91796875,
+      "ce_loss": 4.4375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4322.0
+    },
+    {
+      "step": 286,
+      "total_loss": 2.375,
+      "distill_loss": 0.89453125,
+      "ce_loss": 3.859375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4702.4
+    },
+    {
+      "step": 287,
+      "total_loss": 2.6875,
+      "distill_loss": 0.91796875,
+      "ce_loss": 4.46875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4414.6
+    },
+    {
+      "step": 288,
+      "total_loss": 2.40625,
+      "distill_loss": 0.8984375,
+      "ce_loss": 3.921875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4519.8
+    },
+    {
+      "step": 289,
+      "total_loss": 2.734375,
+      "distill_loss": 0.90625,
+      "ce_loss": 4.5625,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4425.5
+    },
+    {
+      "step": 290,
+      "total_loss": 1.953125,
+      "distill_loss": 0.86328125,
+      "ce_loss": 3.046875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4501.0
+    },
+    {
+      "step": 291,
+      "total_loss": 2.796875,
+      "distill_loss": 0.88671875,
+      "ce_loss": 4.71875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4473.0
+    },
+    {
+      "step": 292,
+      "total_loss": 2.328125,
+      "distill_loss": 0.8984375,
+      "ce_loss": 3.75,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4225.7
+    },
+    {
+      "step": 293,
+      "total_loss": 2.453125,
+      "distill_loss": 0.89453125,
+      "ce_loss": 4.0,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3661.5
+    },
+    {
+      "step": 294,
+      "total_loss": 2.1875,
+      "distill_loss": 0.875,
+      "ce_loss": 3.5,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4602.7
+    },
+    {
+      "step": 295,
+      "total_loss": 2.6875,
+      "distill_loss": 0.8984375,
+      "ce_loss": 4.46875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4789.5
+    },
+    {
+      "step": 296,
+      "total_loss": 2.890625,
+      "distill_loss": 0.91796875,
+      "ce_loss": 4.875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4250.5
+    },
+    {
+      "step": 297,
+      "total_loss": 2.796875,
+      "distill_loss": 0.8828125,
+      "ce_loss": 4.71875,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4095.4
+    },
+    {
+      "step": 298,
+      "total_loss": 2.46875,
+      "distill_loss": 0.8984375,
+      "ce_loss": 4.03125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4543.2
+    },
+    {
+      "step": 299,
+      "total_loss": 2.609375,
+      "distill_loss": 0.8984375,
+      "ce_loss": 4.3125,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 3760.3
+    },
+    {
+      "step": 300,
+      "total_loss": 2.484375,
+      "distill_loss": 0.875,
+      "ce_loss": 4.09375,
+      "vram_allocated_gb": 7.259,
+      "throughput_tokens_per_sec": 4014.6
+    }
+  ]
+}

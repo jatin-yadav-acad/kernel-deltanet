@@ -1,0 +1,154 @@
+{
+  "induction_head_task": {
+    "Standard Transformer": {
+      "delay_32": {
+        "delay_tokens": 32,
+        "seq_len": 80,
+        "induction_accuracy_pct": 93.5
+      },
+      "delay_64": {
+        "delay_tokens": 64,
+        "seq_len": 112,
+        "induction_accuracy_pct": 94.5
+      },
+      "delay_128": {
+        "delay_tokens": 128,
+        "seq_len": 176,
+        "induction_accuracy_pct": 95.25
+      },
+      "delay_256": {
+        "delay_tokens": 256,
+        "seq_len": 304,
+        "induction_accuracy_pct": 94.25
+      },
+      "delay_512": {
+        "delay_tokens": 512,
+        "seq_len": 560,
+        "induction_accuracy_pct": 94.5
+      }
+    },
+    "Linear DeltaNet": {
+      "delay_32": {
+        "delay_tokens": 32,
+        "seq_len": 80,
+        "induction_accuracy_pct": 11.0
+      },
+      "delay_64": {
+        "delay_tokens": 64,
+        "seq_len": 112,
+        "induction_accuracy_pct": 8.75
+      },
+      "delay_128": {
+        "delay_tokens": 128,
+        "seq_len": 176,
+        "induction_accuracy_pct": 7.25
+      },
+      "delay_256": {
+        "delay_tokens": 256,
+        "seq_len": 304,
+        "induction_accuracy_pct": 6.0
+      },
+      "delay_512": {
+        "delay_tokens": 512,
+        "seq_len": 560,
+        "induction_accuracy_pct": 6.25
+      }
+    },
+    "Kernel-DeltaNet (Ours)": {
+      "delay_32": {
+        "delay_tokens": 32,
+        "seq_len": 80,
+        "induction_accuracy_pct": 5.5
+      },
+      "delay_64": {
+        "delay_tokens": 64,
+        "seq_len": 112,
+        "induction_accuracy_pct": 5.5
+      },
+      "delay_128": {
+        "delay_tokens": 128,
+        "seq_len": 176,
+        "induction_accuracy_pct": 5.5
+      },
+      "delay_256": {
+        "delay_tokens": 256,
+        "seq_len": 304,
+        "induction_accuracy_pct": 5.5
+      },
+      "delay_512": {
+        "delay_tokens": 512,
+        "seq_len": 560,
+        "induction_accuracy_pct": 5.5
+      }
+    }
+  },
+  "associative_copy_task": {
+    "Standard Transformer": {
+      "K_2": {
+        "num_associations": 2,
+        "copy_accuracy_pct": 9.0
+      },
+      "K_4": {
+        "num_associations": 4,
+        "copy_accuracy_pct": 7.25
+      },
+      "K_8": {
+        "num_associations": 8,
+        "copy_accuracy_pct": 7.75
+      },
+      "K_12": {
+        "num_associations": 12,
+        "copy_accuracy_pct": 6.25
+      },
+      "K_16": {
+        "num_associations": 16,
+        "copy_accuracy_pct": 9.5
+      }
+    },
+    "Linear DeltaNet": {
+      "K_2": {
+        "num_associations": 2,
+        "copy_accuracy_pct": 7.75
+      },
+      "K_4": {
+        "num_associations": 4,
+        "copy_accuracy_pct": 6.25
+      },
+      "K_8": {
+        "num_associations": 8,
+        "copy_accuracy_pct": 6.5
+      },
+      "K_12": {
+        "num_associations": 12,
+        "copy_accuracy_pct": 7.25
+      },
+      "K_16": {
+        "num_associations": 16,
+        "copy_accuracy_pct": 5.5
+      }
+    },
+    "Kernel-DeltaNet (Ours)": {
+      "K_2": {
+        "num_associations": 2,
+        "copy_accuracy_pct": 9.0
+      },
+      "K_4": {
+        "num_associations": 4,
+        "copy_accuracy_pct": 7.25
+      },
+      "K_8": {
+        "num_associations": 8,
+        "copy_accuracy_pct": 7.75
+      },
+      "K_12": {
+        "num_associations": 12,
+        "copy_accuracy_pct": 6.25
+      },
+      "K_16": {
+        "num_associations": 16,
+        "copy_accuracy_pct": 9.5
+      }
+    }
+  },
+  "total_elapsed_seconds": 19.13170886039734
+}

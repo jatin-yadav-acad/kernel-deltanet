@@ -1,0 +1,146 @@
+{
+  "hardware_specs": {
+    "gpu_name": "NVIDIA GeForce RTX 5070 Ti",
+    "peak_dense_bf16_tflops": 87.5,
+    "peak_sparse_bf16_tflops": 175.0,
+    "peak_memory_bandwidth_gb_s": 896.0,
+    "l2_cache_mb": 48.0,
+    "ridge_point_flops_per_byte": 97.65625
+  },
+  "parameters": {
+    "batch_size": 8,
+    "seq_len": 2048,
+    "num_heads": 4,
+    "d_head": 64
+  },
+  "chunk_size_sweep": [
+    {
+      "chunk_size": 16,
+      "latency_ms": 4.103,
+      "flops": 5111458432,
+      "memory_bytes": 85983232,
+      "arithmetic_intensity_flops_per_byte": 59.45,
+      "achieved_tflops": 1.246,
+      "achieved_bandwidth_gb_s": 20.96,
+      "compute_efficiency_pct": 1.42,
+      "regime": "Memory-Bound"
+    },
+    {
+      "chunk_size": 32,
+      "latency_ms": 3.086,
+      "flops": 5950319232,
+      "memory_bytes": 85983232,
+      "arithmetic_intensity_flops_per_byte": 69.2,
+      "achieved_tflops": 1.928,
+      "achieved_bandwidth_gb_s": 27.86,
+      "compute_efficiency_pct": 2.2,
+      "regime": "Memory-Bound"
+    },
+    {
+      "chunk_size": 64,
+      "latency_ms": 1.778,
+      "flops": 7695149728,
+      "memory_bytes": 85983232,
+      "arithmetic_intensity_flops_per_byte": 89.5,
+      "achieved_tflops": 4.327,
+      "achieved_bandwidth_gb_s": 48.35,
+      "compute_efficiency_pct": 4.95,
+      "regime": "Memory-Bound"
+    },
+    {
+      "chunk_size": 128,
+      "latency_ms": 1.102,
+      "flops": 11453246112,
+      "memory_bytes": 85983232,
+      "arithmetic_intensity_flops_per_byte": 133.2,
+      "achieved_tflops": 10.389,
+      "achieved_bandwidth_gb_s": 78.0,
+      "compute_efficiency_pct": 11.87,
+      "regime": "Compute-Bound"
+    },
+    {
+      "chunk_size": 256,
+      "latency_ms": 0.82,
+      "flops": 20043180712,
+      "memory_bytes": 85983232,
+      "arithmetic_intensity_flops_per_byte": 233.11,
+      "achieved_tflops": 24.433,
+      "achieved_bandwidth_gb_s": 104.82,
+      "compute_efficiency_pct": 27.92,
+      "regime": "Compute-Bound"
+    },
+    {
+      "chunk_size": 512,
+      "latency_ms": 1.125,
+      "flops": 41518017192,
+      "memory_bytes": 85983232,
+      "arithmetic_intensity_flops_per_byte": 482.86,
+      "achieved_tflops": 36.894,
+      "achieved_bandwidth_gb_s": 76.41,
+      "compute_efficiency_pct": 42.16,
+      "regime": "Compute-Bound"
+    }
+  ],
+  "rkhs_factor_sweep": [
+    {
+      "rkhs_factor": 1,
+      "rkhs_dim": 64,
+      "latency_ms": 0.613,
+      "flops": 5010795168,
+      "memory_bytes": 34078720,
+      "arithmetic_intensity_flops_per_byte": 147.04,
+      "achieved_tflops": 8.173,
+      "achieved_bandwidth_gb_s": 55.58,
+      "compute_efficiency_pct": 9.34,
+      "regime": "Compute-Bound"
+    },
+    {
+      "rkhs_factor": 2,
+      "rkhs_dim": 128,
+      "latency_ms": 1.085,
+      "flops": 7158278816,
+      "memory_bytes": 51380224,
+      "arithmetic_intensity_flops_per_byte": 139.32,
+      "achieved_tflops": 6.597,
+      "achieved_bandwidth_gb_s": 47.35,
+      "compute_efficiency_pct": 7.54,
+      "regime": "Compute-Bound"
+    },
+    {
+      "rkhs_factor": 4,
+      "rkhs_dim": 256,
+      "latency_ms": 1.119,
+      "flops": 11453246112,
+      "memory_bytes": 85983232,
+      "arithmetic_intensity_flops_per_byte": 133.2,
+      "achieved_tflops": 10.235,
+      "achieved_bandwidth_gb_s": 76.84,
+      "compute_efficiency_pct": 11.7,
+      "regime": "Compute-Bound"
+    },
+    {
+      "rkhs_factor": 8,
+      "rkhs_dim": 512,
+      "latency_ms": 1.234,
+      "flops": 20043180704,
+      "memory_bytes": 155189248,
+      "arithmetic_intensity_flops_per_byte": 129.15,
+      "achieved_tflops": 16.246,
+      "achieved_bandwidth_gb_s": 125.79,
+      "compute_efficiency_pct": 18.57,
+      "regime": "Compute-Bound"
+    },
+    {
+      "rkhs_factor": 16,
+      "rkhs_dim": 1024,
+      "latency_ms": 1.847,
+      "flops": 37223049888,
+      "memory_bytes": 293601280,
+      "arithmetic_intensity_flops_per_byte": 126.78,
+      "achieved_tflops": 20.156,
+      "achieved_bandwidth_gb_s": 158.98,
+      "compute_efficiency_pct": 23.03,
+      "regime": "Compute-Bound"
+    }
+  ]
+}

@@ -1,0 +1,525 @@
+{
+  "device": "NVIDIA GeForce RTX 5070 Ti",
+  "d_model": 512,
+  "num_heads": 8,
+  "rkhs_dim": 2048,
+  "chunk_size": 128,
+  "batch_sizes": [
+    1,
+    4,
+    8,
+    16
+  ],
+  "sequence_lengths": [
+    1024,
+    2048,
+    4096,
+    8192,
+    16384
+  ],
+  "matrix": {
+    "B_1": {
+      "T_1024": {
+        "Kernel-DeltaNet (Ours, C=128)": {
+          "latency_ms": 1.56,
+          "throughput_tok_per_sec": 656949.3,
+          "peak_vram_mb": 94.25,
+          "status": "SUCCESS"
+        },
+        "FlashAttention-2 (PyTorch SDPA)": {
+          "latency_ms": 0.13,
+          "throughput_tok_per_sec": 7954262.7,
+          "peak_vram_mb": 58.25,
+          "status": "SUCCESS"
+        },
+        "Chunk-Parallel DeltaNet": {
+          "latency_ms": 0.5,
+          "throughput_tok_per_sec": 2064782.5,
+          "peak_vram_mb": 77.7,
+          "status": "SUCCESS"
+        },
+        "Mamba-2 / SSD": {
+          "latency_ms": 0.27,
+          "throughput_tok_per_sec": 3833712.7,
+          "peak_vram_mb": 60.78,
+          "status": "SUCCESS"
+        }
+      },
+      "T_2048": {
+        "Kernel-DeltaNet (Ours, C=128)": {
+          "latency_ms": 1.96,
+          "throughput_tok_per_sec": 1043007.8,
+          "peak_vram_mb": 139.25,
+          "status": "SUCCESS"
+        },
+        "FlashAttention-2 (PyTorch SDPA)": {
+          "latency_ms": 0.27,
+          "throughput_tok_per_sec": 7612703.3,
+          "peak_vram_mb": 67.25,
+          "status": "SUCCESS"
+        },
+        "Chunk-Parallel DeltaNet": {
+          "latency_ms": 0.66,
+          "throughput_tok_per_sec": 3092385.1,
+          "peak_vram_mb": 104.95,
+          "status": "SUCCESS"
+        },
+        "Mamba-2 / SSD": {
+          "latency_ms": 0.46,
+          "throughput_tok_per_sec": 4487134.4,
+          "peak_vram_mb": 72.82,
+          "status": "SUCCESS"
+        }
+      },
+      "T_4096": {
+        "Kernel-DeltaNet (Ours, C=128)": {
+          "latency_ms": 1.88,
+          "throughput_tok_per_sec": 2177833.8,
+          "peak_vram_mb": 229.25,
+          "status": "SUCCESS"
+        },
+        "FlashAttention-2 (PyTorch SDPA)": {
+          "latency_ms": 0.88,
+          "throughput_tok_per_sec": 4668636.2,
+          "peak_vram_mb": 85.25,
+          "status": "SUCCESS"
+        },
+        "Chunk-Parallel DeltaNet": {
+          "latency_ms": 1.56,
+          "throughput_tok_per_sec": 2630605.5,
+          "peak_vram_mb": 159.45,
+          "status": "SUCCESS"
+        },
+        "Mamba-2 / SSD": {
+          "latency_ms": 0.85,
+          "throughput_tok_per_sec": 4814201.8,
+          "peak_vram_mb": 96.88,
+          "status": "SUCCESS"
+        }
+      },
+      "T_8192": {
+        "Kernel-DeltaNet (Ours, C=128)": {
+          "latency_ms": 4.02,
+          "throughput_tok_per_sec": 2037048.9,
+          "peak_vram_mb": 409.25,
+          "status": "SUCCESS"
+        },
+        "FlashAttention-2 (PyTorch SDPA)": {
+          "latency_ms": 2.09,
+          "throughput_tok_per_sec": 3912219.7,
+          "peak_vram_mb": 121.25,
+          "status": "SUCCESS"
+        },
+        "Chunk-Parallel DeltaNet": {
+          "latency_ms": 3.1,
+          "throughput_tok_per_sec": 2644874.0,
+          "peak_vram_mb": 268.45,
+          "status": "SUCCESS"
+        },
+        "Mamba-2 / SSD": {
+          "latency_ms": 1.84,
+          "throughput_tok_per_sec": 4450161.7,
+          "peak_vram_mb": 145.0,
+          "status": "SUCCESS"
+        }
+      },
+      "T_16384": {
+        "Kernel-DeltaNet (Ours, C=128)": {
+          "latency_ms": 8.32,
+          "throughput_tok_per_sec": 1969352.1,
+          "peak_vram_mb": 769.25,
+          "status": "SUCCESS"
+        },
+        "FlashAttention-2 (PyTorch SDPA)": {
+          "latency_ms": 6.97,
+          "throughput_tok_per_sec": 2351266.3,
+          "peak_vram_mb": 193.25,
+          "status": "SUCCESS"
+        },
+        "Chunk-Parallel DeltaNet": {
+          "latency_ms": 4.67,
+          "throughput_tok_per_sec": 3510841.1,
+          "peak_vram_mb": 486.45,
+          "status": "SUCCESS"
+        },
+        "Mamba-2 / SSD": {
+          "latency_ms": 6.09,
+          "throughput_tok_per_sec": 2690502.8,
+          "peak_vram_mb": 241.25,
+          "status": "SUCCESS"
+        }
+      }
+    },
+    "B_4": {
+      "T_1024": {
+        "Kernel-DeltaNet (Ours, C=128)": {
+          "latency_ms": 1.61,
+          "throughput_tok_per_sec": 2548176.4,
+          "peak_vram_mb": 229.25,
+          "status": "SUCCESS"
+        },
+        "FlashAttention-2 (PyTorch SDPA)": {
+          "latency_ms": 0.28,
+          "throughput_tok_per_sec": 14668806.1,
+          "peak_vram_mb": 85.25,
+          "status": "SUCCESS"
+        },
+        "Chunk-Parallel DeltaNet": {
+          "latency_ms": 0.81,
+          "throughput_tok_per_sec": 5045727.0,
+          "peak_vram_mb": 162.45,
+          "status": "SUCCESS"
+        },
+        "Mamba-2 / SSD": {
+          "latency_ms": 0.35,
+          "throughput_tok_per_sec": 11605766.2,
+          "peak_vram_mb": 96.88,
+          "status": "SUCCESS"
+        }
+      },
+      "T_2048": {
+        "Kernel-DeltaNet (Ours, C=128)": {
+          "latency_ms": 3.4,
+          "throughput_tok_per_sec": 2407689.6,
+          "peak_vram_mb": 409.25,
+          "status": "SUCCESS"
+        },
+        "FlashAttention-2 (PyTorch SDPA)": {
+          "latency_ms": 0.69,
+          "throughput_tok_per_sec": 11845819.5,
+          "peak_vram_mb": 121.25,
+          "status": "SUCCESS"
+        },
+        "Chunk-Parallel DeltaNet": {
+          "latency_ms": 1.55,
+          "throughput_tok_per_sec": 5270960.4,
+          "peak_vram_mb": 271.45,
+          "status": "SUCCESS"
+        },
+        "Mamba-2 / SSD": {
+          "latency_ms": 0.76,
+          "throughput_tok_per_sec": 10727904.8,
+          "peak_vram_mb": 145.0,
+          "status": "SUCCESS"
+        }
+      },
+      "T_4096": {
+        "Kernel-DeltaNet (Ours, C=128)": {
+          "latency_ms": 7.09,
+          "throughput_tok_per_sec": 2310250.3,
+          "peak_vram_mb": 769.25,
+          "status": "SUCCESS"
+        },
+        "FlashAttention-2 (PyTorch SDPA)": {
+          "latency_ms": 2.09,
+          "throughput_tok_per_sec": 7836774.5,
+          "peak_vram_mb": 193.25,
+          "status": "SUCCESS"
+        },
+        "Chunk-Parallel DeltaNet": {
+          "latency_ms": 3.17,
+          "throughput_tok_per_sec": 5165351.6,
+          "peak_vram_mb": 489.45,
+          "status": "SUCCESS"
+        },
+        "Mamba-2 / SSD": {
+          "latency_ms": 2.11,
+          "throughput_tok_per_sec": 7776427.9,
+          "peak_vram_mb": 241.25,
+          "status": "SUCCESS"
+        }
+      },
+      "T_8192": {
+        "Kernel-DeltaNet (Ours, C=128)": {
+          "latency_ms": 14.38,
+          "throughput_tok_per_sec": 2277944.8,
+          "peak_vram_mb": 1489.25,
+          "status": "SUCCESS"
+        },
+        "FlashAttention-2 (PyTorch SDPA)": {
+          "latency_ms": 7.08,
+          "throughput_tok_per_sec": 4628123.0,
+          "peak_vram_mb": 337.25,
+          "status": "SUCCESS"
+        },
+        "Chunk-Parallel DeltaNet": {
+          "latency_ms": 6.53,
+          "throughput_tok_per_sec": 5020690.9,
+          "peak_vram_mb": 925.45,
+          "status": "SUCCESS"
+        },
+        "Mamba-2 / SSD": {
+          "latency_ms": 4.42,
+          "throughput_tok_per_sec": 7407997.0,
+          "peak_vram_mb": 433.75,
+          "status": "SUCCESS"
+        }
+      },
+      "T_16384": {
+        "Kernel-DeltaNet (Ours, C=128)": {
+          "latency_ms": 30.21,
+          "throughput_tok_per_sec": 2169558.2,
+          "peak_vram_mb": 2929.25,
+          "status": "SUCCESS"
+        },
+        "FlashAttention-2 (PyTorch SDPA)": {
+          "latency_ms": 26.89,
+          "throughput_tok_per_sec": 2437195.9,
+          "peak_vram_mb": 625.25,
+          "status": "SUCCESS"
+        },
+        "Chunk-Parallel DeltaNet": {
+          "latency_ms": 12.88,
+          "throughput_tok_per_sec": 5089994.5,
+          "peak_vram_mb": 1797.45,
+          "status": "SUCCESS"
+        },
+        "Mamba-2 / SSD": {
+          "latency_ms": 8.87,
+          "throughput_tok_per_sec": 7387128.2,
+          "peak_vram_mb": 818.75,
+          "status": "SUCCESS"
+        }
+      }
+    },
+    "B_8": {
+      "T_1024": {
+        "Kernel-DeltaNet (Ours, C=128)": {
+          "latency_ms": 3.21,
+          "throughput_tok_per_sec": 2554456.8,
+          "peak_vram_mb": 409.25,
+          "status": "SUCCESS"
+        },
+        "FlashAttention-2 (PyTorch SDPA)": {
+          "latency_ms": 0.47,
+          "throughput_tok_per_sec": 17401944.1,
+          "peak_vram_mb": 121.25,
+          "status": "SUCCESS"
+        },
+        "Chunk-Parallel DeltaNet": {
+          "latency_ms": 1.41,
+          "throughput_tok_per_sec": 5794477.4,
+          "peak_vram_mb": 275.45,
+          "status": "SUCCESS"
+        },
+        "Mamba-2 / SSD": {
+          "latency_ms": 0.49,
+          "throughput_tok_per_sec": 16853193.2,
+          "peak_vram_mb": 145.0,
+          "status": "SUCCESS"
+        }
+      },
+      "T_2048": {
+        "Kernel-DeltaNet (Ours, C=128)": {
+          "latency_ms": 6.85,
+          "throughput_tok_per_sec": 2392512.2,
+          "peak_vram_mb": 769.25,
+          "status": "SUCCESS"
+        },
+        "FlashAttention-2 (PyTorch SDPA)": {
+          "latency_ms": 1.27,
+          "throughput_tok_per_sec": 12938114.7,
+          "peak_vram_mb": 193.25,
+          "status": "SUCCESS"
+        },
+        "Chunk-Parallel DeltaNet": {
+          "latency_ms": 2.87,
+          "throughput_tok_per_sec": 5713966.6,
+          "peak_vram_mb": 493.45,
+          "status": "SUCCESS"
+        },
+        "Mamba-2 / SSD": {
+          "latency_ms": 1.44,
+          "throughput_tok_per_sec": 11366158.6,
+          "peak_vram_mb": 241.25,
+          "status": "SUCCESS"
+        }
+      },
+      "T_4096": {
+        "Kernel-DeltaNet (Ours, C=128)": {
+          "latency_ms": 13.86,
+          "throughput_tok_per_sec": 2364650.3,
+          "peak_vram_mb": 1489.25,
+          "status": "SUCCESS"
+        },
+        "FlashAttention-2 (PyTorch SDPA)": {
+          "latency_ms": 3.94,
+          "throughput_tok_per_sec": 8325609.5,
+          "peak_vram_mb": 337.25,
+          "status": "SUCCESS"
+        },
+        "Chunk-Parallel DeltaNet": {
+          "latency_ms": 5.8,
+          "throughput_tok_per_sec": 5649811.1,
+          "peak_vram_mb": 929.45,
+          "status": "SUCCESS"
+        },
+        "Mamba-2 / SSD": {
+          "latency_ms": 3.09,
+          "throughput_tok_per_sec": 10620644.3,
+          "peak_vram_mb": 433.75,
+          "status": "SUCCESS"
+        }
+      },
+      "T_8192": {
+        "Kernel-DeltaNet (Ours, C=128)": {
+          "latency_ms": 29.39,
+          "throughput_tok_per_sec": 2229749.1,
+          "peak_vram_mb": 2929.25,
+          "status": "SUCCESS"
+        },
+        "FlashAttention-2 (PyTorch SDPA)": {
+          "latency_ms": 13.72,
+          "throughput_tok_per_sec": 4775506.9,
+          "peak_vram_mb": 625.25,
+          "status": "SUCCESS"
+        },
+        "Chunk-Parallel DeltaNet": {
+          "latency_ms": 11.52,
+          "throughput_tok_per_sec": 5687545.8,
+          "peak_vram_mb": 1801.45,
+          "status": "SUCCESS"
+        },
+        "Mamba-2 / SSD": {
+          "latency_ms": 6.2,
+          "throughput_tok_per_sec": 10568522.5,
+          "peak_vram_mb": 818.75,
+          "status": "SUCCESS"
+        }
+      },
+      "T_16384": {
+        "Kernel-DeltaNet (Ours, C=128)": {
+          "latency_ms": 55.41,
+          "throughput_tok_per_sec": 2365300.3,
+          "peak_vram_mb": 5809.25,
+          "status": "SUCCESS"
+        },
+        "FlashAttention-2 (PyTorch SDPA)": {
+          "latency_ms": 52.35,
+          "throughput_tok_per_sec": 2503780.7,
+          "peak_vram_mb": 1201.25,
+          "status": "SUCCESS"
+        },
+        "Chunk-Parallel DeltaNet": {
+          "latency_ms": 22.94,
+          "throughput_tok_per_sec": 5713074.0,
+          "peak_vram_mb": 3545.45,
+          "status": "SUCCESS"
+        },
+        "Mamba-2 / SSD": {
+          "latency_ms": 12.43,
+          "throughput_tok_per_sec": 10544770.2,
+          "peak_vram_mb": 1588.75,
+          "status": "SUCCESS"
+        }
+      }
+    },
+    "B_16": {
+      "T_1024": {
+        "Kernel-DeltaNet (Ours, C=128)": {
+          "latency_ms": 6.65,
+          "throughput_tok_per_sec": 2464263.3,
+          "peak_vram_mb": 769.25,
+          "status": "SUCCESS"
+        },
+        "FlashAttention-2 (PyTorch SDPA)": {
+          "latency_ms": 0.85,
+          "throughput_tok_per_sec": 19355082.9,
+          "peak_vram_mb": 193.25,
+          "status": "SUCCESS"
+        },
+        "Chunk-Parallel DeltaNet": {
+          "latency_ms": 2.96,
+          "throughput_tok_per_sec": 5527307.4,
+          "peak_vram_mb": 501.45,
+          "status": "SUCCESS"
+        },
+        "Mamba-2 / SSD": {
+          "latency_ms": 1.11,
+          "throughput_tok_per_sec": 14751217.6,
+          "peak_vram_mb": 241.25,
+          "status": "SUCCESS"
+        }
+      },
+      "T_2048": {
+        "Kernel-DeltaNet (Ours, C=128)": {
+          "latency_ms": 14.33,
+          "throughput_tok_per_sec": 2286505.3,
+          "peak_vram_mb": 1489.25,
+          "status": "SUCCESS"
+        },
+        "FlashAttention-2 (PyTorch SDPA)": {
+          "latency_ms": 2.39,
+          "throughput_tok_per_sec": 13706881.3,
+          "peak_vram_mb": 337.25,
+          "status": "SUCCESS"
+        },
+        "Chunk-Parallel DeltaNet": {
+          "latency_ms": 5.95,
+          "throughput_tok_per_sec": 5504281.3,
+          "peak_vram_mb": 937.45,
+          "status": "SUCCESS"
+        },
+        "Mamba-2 / SSD": {
+          "latency_ms": 2.43,
+          "throughput_tok_per_sec": 13477940.5,
+          "peak_vram_mb": 433.75,
+          "status": "SUCCESS"
+        }
+      },
+      "T_4096": {
+        "Kernel-DeltaNet (Ours, C=128)": {
+          "latency_ms": 27.09,
+          "throughput_tok_per_sec": 2419499.7,
+          "peak_vram_mb": 2929.25,
+          "status": "SUCCESS"
+        },
+        "FlashAttention-2 (PyTorch SDPA)": {
+          "latency_ms": 7.66,
+          "throughput_tok_per_sec": 8555506.2,
+          "peak_vram_mb": 625.25,
+          "status": "SUCCESS"
+        },
+        "Chunk-Parallel DeltaNet": {
+          "latency_ms": 11.94,
+          "throughput_tok_per_sec": 5488424.1,
+          "peak_vram_mb": 1809.45,
+          "status": "SUCCESS"
+        },
+        "Mamba-2 / SSD": {
+          "latency_ms": 4.89,
+          "throughput_tok_per_sec": 13411392.1,
+          "peak_vram_mb": 818.75,
+          "status": "SUCCESS"
+        }
+      },
+      "T_8192": {
+        "Kernel-DeltaNet (Ours, C=128)": {
+          "latency_ms": 54.19,
+          "throughput_tok_per_sec": 2418578.1,
+          "peak_vram_mb": 5809.25,
+          "status": "SUCCESS"
+        },
+        "FlashAttention-2 (PyTorch SDPA)": {
+          "latency_ms": 27.32,
+          "throughput_tok_per_sec": 4797663.1,
+          "peak_vram_mb": 1201.25,
+          "status": "SUCCESS"
+        },
+        "Chunk-Parallel DeltaNet": {
+          "latency_ms": 25.84,
+          "throughput_tok_per_sec": 5072477.2,
+          "peak_vram_mb": 3553.45,
+          "status": "SUCCESS"
+        },
+        "Mamba-2 / SSD": {
+          "latency_ms": 9.78,
+          "throughput_tok_per_sec": 13407791.5,
+          "peak_vram_mb": 1588.75,
+          "status": "SUCCESS"
+        }
+      },
+      "T_16384": {}
+    }
+  }
+}

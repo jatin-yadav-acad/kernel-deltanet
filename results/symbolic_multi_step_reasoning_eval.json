@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "device": "NVIDIA GeForce RTX 5070 Ti",
+    "foundation_backbone": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "checkpoint": "checkpoints_distill_1b/llama1b_kernel_deltanet_step_650401.pt",
+    "dtype": "torch.bfloat16",
+    "gsm_samples": 500,
+    "humaneval_samples": 164,
+    "timestamp": "2026-10-17 07:27:42"
+  },
+  "models": {
+    "Teacher_Softmax_1.1B": {
+      "GSM8k": {
+        "benchmark": "GSM8k",
+        "num_samples": 500,
+        "correct": 14,
+        "accuracy_pct": 2.8,
+        "stderr_pct": 0.74,
+        "total_time_sec": 1460.8,
+        "avg_latency_ms": 2920.72
+      },
+      "HumanEval": {
+        "benchmark": "HumanEval",
+        "num_samples": 164,
+        "correct": 1,
+        "pass_at_1_pct": 0.61,
+        "stderr_pct": 0.61,
+        "total_time_sec": 390.24,
+        "avg_latency_ms": 2377.98
+      }
+    },
+    "Pure_Kernel_DeltaNet_1.1B": {
+      "GSM8k": {
+        "benchmark": "GSM8k",
+        "num_samples": 500,
+        "correct": 6,
+        "accuracy_pct": 1.2,
+        "stderr_pct": 0.49,
+        "total_time_sec": 1909.29,
+        "avg_latency_ms": 3817.72
+      },
+      "HumanEval": {
+        "benchmark": "HumanEval",
+        "num_samples": 164,
+        "correct": 0,
+        "pass_at_1_pct": 0.0,
+        "stderr_pct": 0.0,
+        "total_time_sec": 657.22,
+        "avg_latency_ms": 4006.01
+      }
+    },
+    "Hybrid_Gauge_Topology_1.1B": {
+      "GSM8k": {
+        "benchmark": "GSM8k",
+        "num_samples": 500,
+        "correct": 3,
+        "accuracy_pct": 0.6,
+        "stderr_pct": 0.35,
+        "total_time_sec": 1865.44,
+        "avg_latency_ms": 3730.06
+      },
+      "HumanEval": {
+        "benchmark": "HumanEval",
+        "num_samples": 164,
+        "correct": 0,
+        "pass_at_1_pct": 0.0,
+        "stderr_pct": 0.0,
+        "total_time_sec": 631.24,
+        "avg_latency_ms": 3847.62
+      }
+    }
+  }
+}

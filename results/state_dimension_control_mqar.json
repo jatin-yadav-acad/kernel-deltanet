@@ -1,0 +1,72 @@
+{
+  "K_16": {
+    "Linear DeltaNet (dk=32)": {
+      "acc": 96.0,
+      "snr": -2.4694674428959194
+    },
+    "Linear DeltaNet (dk=512, Linear)": {
+      "acc": 8.0,
+      "snr": -0.005672939902500307
+    },
+    "Kernel-DeltaNet (D=512, RKHS)": {
+      "acc": 100.0,
+      "snr": 8.285523399288875
+    }
+  },
+  "K_64": {
+    "Linear DeltaNet (dk=32)": {
+      "acc": 36.0,
+      "snr": -6.447803575517947
+    },
+    "Linear DeltaNet (dk=512, Linear)": {
+      "acc": 4.0,
+      "snr": -0.018347884476962423
+    },
+    "Kernel-DeltaNet (D=512, RKHS)": {
+      "acc": 100.0,
+      "snr": 4.108047275784592
+    }
+  },
+  "K_128": {
+    "Linear DeltaNet (dk=32)": {
+      "acc": 12.0,
+      "snr": -9.4827953603044
+    },
+    "Linear DeltaNet (dk=512, Linear)": {
+      "acc": 0.0,
+      "snr": -0.013920959984324402
+    },
+    "Kernel-DeltaNet (D=512, RKHS)": {
+      "acc": 100.0,
+      "snr": 0.8984504513425309
+    }
+  },
+  "K_256": {
+    "Linear DeltaNet (dk=32)": {
+      "acc": 4.0,
+      "snr": -12.56502380394273
+    },
+    "Linear DeltaNet (dk=512, Linear)": {
+      "acc": 0.0,
+      "snr": -0.018885743285284716
+    },
+    "Kernel-DeltaNet (D=512, RKHS)": {
+      "acc": 80.0,
+      "snr": -1.8294416539282892
+    }
+  },
+  "K_512": {
+    "Linear DeltaNet (dk=32)": {
+      "acc": 4.0,
+      "snr": -14.023047205237607
+    },
+    "Linear DeltaNet (dk=512, Linear)": {
+      "acc": 0.0,
+      "snr": -0.018886658648131757
+    },
+    "Kernel-DeltaNet (D=512, RKHS)": {
+      "acc": 72.0,
+      "snr": -3.6389964814024642
+    }
+  }
+}

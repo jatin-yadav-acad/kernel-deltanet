@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "device": "NVIDIA GeForce RTX 5070 Ti",
+    "model_size": "1.1B Parameter Architecture Class",
+    "context_lengths": [
+      4096,
+      8192,
+      16384,
+      32768,
+      65536
+    ],
+    "tasks_evaluated": {
+      "multi_query_retrieval": "Multi-Query Needle-In-A-Haystack",
+      "multi_hop_tracing": "Multi-Hop Variable Tracing",
+      "aggregation": "Frequent Association Aggregation",
+      "qa_distractors": "QA over Distractor Associations"
+    },
+    "memory_footprint_mb": 22.0
+  },
+  "memory_profiles": [
+    {
+      "sequence_length": 1024,
+      "transformer_kv_cache_mb": 22.0,
+      "kernel_deltanet_state_mb": 22.0,
+      "compression_ratio": 1.0
+    },
+    {
+      "sequence_length": 2048,
+      "transformer_kv_cache_mb": 44.0,
+      "kernel_deltanet_state_mb": 22.0,
+      "compression_ratio": 2.0
+    },
+    {
+      "sequence_length": 4096,
+      "transformer_kv_cache_mb": 88.0,
+      "kernel_deltanet_state_mb": 22.0,
+      "compression_ratio": 4.0
+    },
+    {
+      "sequence_length": 8192,
+      "transformer_kv_cache_mb": 176.0,
+      "kernel_deltanet_state_mb": 22.0,
+      "compression_ratio": 8.0
+    },
+    {
+      "sequence_length": 16384,
+      "transformer_kv_cache_mb": 352.0,
+      "kernel_deltanet_state_mb": 22.0,
+      "compression_ratio": 16.0
+    },
+    {
+      "sequence_length": 32768,
+      "transformer_kv_cache_mb": 704.0,
+      "kernel_deltanet_state_mb": 22.0,
+      "compression_ratio": 32.0
+    },
+    {
+      "sequence_length": 65536,
+      "transformer_kv_cache_mb": 1408.0,
+      "kernel_deltanet_state_mb": 22.0,
+      "compression_ratio": 64.0
+    }
+  ],
+  "task_breakdown": {
+    "kernel_deltanet": {
+      "multi_query_retrieval": [
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0
+      ],
+      "multi_hop_tracing": [
+        80.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0
+      ],
+      "aggregation": [
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0
+      ],
+      "qa_distractors": [
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0
+      ]
+    },
+    "linear_deltanet": {
+      "multi_query_retrieval": [
+        100.0,
+        100.0,
+        80.0,
+        40.0,
+        60.0
+      ],
+      "multi_hop_tracing": [
+        40.0,
+        60.0,
+        40.0,
+        60.0,
+        80.0
+      ],
+      "aggregation": [
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0
+      ],
+      "qa_distractors": [
+        100.0,
+        100.0,
+        100.0,
+        60.0,
+        80.0
+      ]
+    },
+    "transformer": {
+      "multi_query_retrieval": [
+        0.0,
+        0.0,
+        0.0,
+        20.0,
+        0.0
+      ],
+      "multi_hop_tracing": [
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0
+      ],
+      "aggregation": [
+        100.0,
+        100.0,
+        100.0,
+        100.0,
+        100.0
+      ],
+      "qa_distractors": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "composite_summary": {
+    "context_lengths": [
+      "4k",
+      "8k",
+      "16k",
+      "32k",
+      "64k"
+    ],
+    "softmax_transformer": [
+      50.0,
+      50.0,
+      50.0,
+      55.0,
+      50.0
+    ],
+    "kernel_deltanet": [
+      95.0,
+      100.0,
+      100.0,
+      100.0,
+      100.0
+    ],
+    "linear_deltanet": [
+      85.0,
+      90.0,
+      80.0,
+      65.0,
+      80.0
+    ],
+    "mamba2_reference": [
+      78.33,
+      69.38,
+      57.98,
+      44.33,
+      28.7
+    ]
+  }
+}

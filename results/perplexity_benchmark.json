@@ -1,0 +1,68 @@
+{
+  "Standard Transformer": {
+    "T_256": {
+      "eval_seq_len": 256,
+      "cross_entropy_loss": 117.2926254272461,
+      "perplexity": 485165195.4097903
+    },
+    "T_512": {
+      "eval_seq_len": 512,
+      "cross_entropy_loss": 117.98541412353515,
+      "perplexity": 485165195.4097903
+    },
+    "T_1024": {
+      "eval_seq_len": 1024,
+      "cross_entropy_loss": 118.2606414794922,
+      "perplexity": 485165195.4097903
+    },
+    "T_2048": {
+      "eval_seq_len": 2048,
+      "cross_entropy_loss": 118.53742218017578,
+      "perplexity": 485165195.4097903
+    }
+  },
+  "TTT-Linear": {
+    "T_256": {
+      "eval_seq_len": 256,
+      "cross_entropy_loss": 49.93088226318359,
+      "perplexity": 485165195.4097903
+    },
+    "T_512": {
+      "eval_seq_len": 512,
+      "cross_entropy_loss": 46.42814331054687,
+      "perplexity": 485165195.4097903
+    },
+    "T_1024": {
+      "eval_seq_len": 1024,
+      "cross_entropy_loss": 43.932569885253905,
+      "perplexity": 485165195.4097903
+    },
+    "T_2048": {
+      "eval_seq_len": 2048,
+      "cross_entropy_loss": 42.54766693115234,
+      "perplexity": 485165195.4097903
+    }
+  },
+  "Kernel-TTT (Ours)": {
+    "T_256": {
+      "eval_seq_len": 256,
+      "cross_entropy_loss": 8.320549583435058,
+      "perplexity": 4107.416756291862
+    },
+    "T_512": {
+      "eval_seq_len": 512,
+      "cross_entropy_loss": 8.323138236999512,
+      "perplexity": 4118.063209362809
+    },
+    "T_1024": {
+      "eval_seq_len": 1024,
+      "cross_entropy_loss": 8.32526683807373,
+      "perplexity": 4126.838259110849
+    },
+    "T_2048": {
+      "eval_seq_len": 2048,
+      "cross_entropy_loss": 8.326887130737305,
+      "perplexity": 4133.530364986779
+    }
+  }
+}

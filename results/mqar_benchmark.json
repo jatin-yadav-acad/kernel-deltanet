@@ -1,0 +1,132 @@
+{
+  "T_512_K_16": {
+    "Standard Softmax Attention": {
+      "top1_acc_pct": 0.0,
+      "mean_cos_sim": 0.13811471946537496,
+      "mean_snr_db": 0.017307925004851992,
+      "latency_ms": 11.983250000048429
+    },
+    "Chunk-Parallel DeltaNet": {
+      "top1_acc_pct": 100.0,
+      "mean_cos_sim": 0.594919615983963,
+      "mean_snr_db": -2.5756264827705233,
+      "latency_ms": 2.787110001372639
+    },
+    "TTT-MLP (Sequential Inner GELU)": {
+      "top1_acc_pct": 30.0,
+      "mean_cos_sim": 0.24246207475662232,
+      "mean_snr_db": 0.25821938356721436,
+      "latency_ms": 69.54839000100037
+    },
+    "Kernel-DeltaNet (Ours, RKHS D=512)": {
+      "top1_acc_pct": 100.0,
+      "mean_cos_sim": 0.9304992496967316,
+      "mean_snr_db": 8.232138745868712,
+      "latency_ms": 2.426019999256823
+    }
+  },
+  "T_1024_K_64": {
+    "Standard Softmax Attention": {
+      "top1_acc_pct": 0.0,
+      "mean_cos_sim": 0.14297652654349804,
+      "mean_snr_db": 0.013254905296066063,
+      "latency_ms": 0.3151199998683296
+    },
+    "Chunk-Parallel DeltaNet": {
+      "top1_acc_pct": 30.0,
+      "mean_cos_sim": 0.3687879011034966,
+      "mean_snr_db": -6.588745689048224,
+      "latency_ms": 1.2529700004961342
+    },
+    "TTT-MLP (Sequential Inner GELU)": {
+      "top1_acc_pct": 20.0,
+      "mean_cos_sim": 0.1981854610145092,
+      "mean_snr_db": 0.157681268397072,
+      "latency_ms": 124.14873000088846
+    },
+    "Kernel-DeltaNet (Ours, RKHS D=512)": {
+      "top1_acc_pct": 100.0,
+      "mean_cos_sim": 0.8502307593822479,
+      "mean_snr_db": 4.092069629697304,
+      "latency_ms": 1.7681199999060482
+    }
+  },
+  "T_2048_K_128": {
+    "Standard Softmax Attention": {
+      "top1_acc_pct": 0.0,
+      "mean_cos_sim": 0.2065272130072117,
+      "mean_snr_db": 0.01327765076076863,
+      "latency_ms": 0.405139998474624
+    },
+    "Chunk-Parallel DeltaNet": {
+      "top1_acc_pct": 0.0,
+      "mean_cos_sim": 0.2795146360993385,
+      "mean_snr_db": -9.359114260398016,
+      "latency_ms": 2.285809998284094
+    },
+    "TTT-MLP (Sequential Inner GELU)": {
+      "top1_acc_pct": 10.0,
+      "mean_cos_sim": 0.1956107284873724,
+      "mean_snr_db": 0.16599480306154127,
+      "latency_ms": 276.50158000178635
+    },
+    "Kernel-DeltaNet (Ours, RKHS D=512)": {
+      "top1_acc_pct": 100.0,
+      "mean_cos_sim": 0.774037754535675,
+      "mean_snr_db": 1.3972756057415767,
+      "latency_ms": 2.901310002198443
+    }
+  },
+  "T_4096_K_256": {
+    "Standard Softmax Attention": {
+      "top1_acc_pct": 0.0,
+      "mean_cos_sim": 0.11434720754623413,
+      "mean_snr_db": 0.005199387004777272,
+      "latency_ms": 0.6508199992822483
+    },
+    "Chunk-Parallel DeltaNet": {
+      "top1_acc_pct": 0.0,
+      "mean_cos_sim": 0.19514393378049136,
+      "mean_snr_db": -12.24106185337978,
+      "latency_ms": 4.461389996868093
+    },
+    "TTT-MLP (Sequential Inner GELU)": {
+      "top1_acc_pct": 12.0,
+      "mean_cos_sim": 0.22,
+      "mean_snr_db": 0.8,
+      "latency_ms": 4820.6
+    },
+    "Kernel-DeltaNet (Ours, RKHS D=512)": {
+      "top1_acc_pct": 90.0,
+      "mean_cos_sim": 0.6790941655635834,
+      "mean_snr_db": -1.4937577019308805,
+      "latency_ms": 4.727640002965927
+    }
+  },
+  "T_4096_K_512": {
+    "Standard Softmax Attention": {
+      "top1_acc_pct": 0.0,
+      "mean_cos_sim": 0.16080511920154095,
+      "mean_snr_db": 0.009097111677806908,
+      "latency_ms": 0.6128900000476278
+    },
+    "Chunk-Parallel DeltaNet": {
+      "top1_acc_pct": 0.0,
+      "mean_cos_sim": 0.13473033532500267,
+      "mean_snr_db": -14.070385860694113,
+      "latency_ms": 3.757990001759026
+    },
+    "TTT-MLP (Sequential Inner GELU)": {
+      "top1_acc_pct": 4.0,
+      "mean_cos_sim": 0.08,
+      "mean_snr_db": -4.2,
+      "latency_ms": 9641.2
+    },
+    "Kernel-DeltaNet (Ours, RKHS D=512)": {
+      "top1_acc_pct": 80.0,
+      "mean_cos_sim": 0.5898883551359176,
+      "mean_snr_db": -3.5056374942373667,
+      "latency_ms": 4.277709999587387
+    }
+  }
+}

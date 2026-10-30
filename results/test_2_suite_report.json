@@ -1,0 +1,55 @@
+{
+  "all_passed": true,
+  "elapsed_seconds": 0.5502190589904785,
+  "timestamp": "2026-09-28 21:17:02",
+  "results": {
+    "TEST-2.1_Semigroup_Associativity": {
+      "passed": true,
+      "status": "PASSED"
+    },
+    "TEST-2.2_Scan_Recurrent_Equivalence": {
+      "passed": true,
+      "status": "PASSED"
+    },
+    "TEST-2.3_Autograd_Gradient_Flow": {
+      "passed": true,
+      "status": "PASSED"
+    },
+    "TEST-2.4_Bochner_Crosstalk_Decoupling": {
+      "passed": true,
+      "status": "PASSED"
+    },
+    "TEST-2.5_Layer_Dual_Mode_Equivalence": {
+      "passed": true,
+      "status": "PASSED"
+    },
+    "TEST-2.6_Fused_Chunk_Kernel": {
+      "passed": true,
+      "status": "PASSED"
+    },
+    "TEST-2.7_Spectral_Bandwidth_Trainability": {
+      "passed": true,
+      "status": "PASSED"
+    },
+    "TEST-2.8_Constant_Inference_Memory": {
+      "passed": true,
+      "status": "PASSED"
+    },
+    "TEST-2.9_Calibrated_Passkey_Retrieval": {
+      "passed": true,
+      "status": "PASSED"
+    },
+    "TEST-2.10_Converged_Scaling_Monotonicity": {
+      "passed": true,
+      "status": "PASSED"
+    },
+    "TEST-2.11_MQAR_Capacity_Saturation": {
+      "passed": true,
+      "status": "PASSED"
+    },
+    "TEST-2.12_GPU_Silicon_Forward_Backward": {
+      "passed": true,
+      "status": "PASSED"
+    }
+  }
+}

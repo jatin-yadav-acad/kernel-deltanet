@@ -1,0 +1,218 @@
+{
+  "evaluation_suite": "RULER (Retrieval, Tracing, Aggregation, QA) & Autoregressive Decoding Memory",
+  "decoding_state_memory_mb": 16.0,
+  "memory_profiles": [
+    {
+      "sequence_length": 1024,
+      "transformer_kv_cache_mb": 64.0,
+      "kernel_deltanet_state_mb": 16.0,
+      "compression_ratio": 4.0
+    },
+    {
+      "sequence_length": 2048,
+      "transformer_kv_cache_mb": 128.0,
+      "kernel_deltanet_state_mb": 16.0,
+      "compression_ratio": 8.0
+    },
+    {
+      "sequence_length": 4096,
+      "transformer_kv_cache_mb": 256.0,
+      "kernel_deltanet_state_mb": 16.0,
+      "compression_ratio": 16.0
+    },
+    {
+      "sequence_length": 8192,
+      "transformer_kv_cache_mb": 512.0,
+      "kernel_deltanet_state_mb": 16.0,
+      "compression_ratio": 32.0
+    },
+    {
+      "sequence_length": 16384,
+      "transformer_kv_cache_mb": 1024.0,
+      "kernel_deltanet_state_mb": 16.0,
+      "compression_ratio": 64.0
+    },
+    {
+      "sequence_length": 32768,
+      "transformer_kv_cache_mb": 2048.0,
+      "kernel_deltanet_state_mb": 16.0,
+      "compression_ratio": 128.0
+    },
+    {
+      "sequence_length": 65536,
+      "transformer_kv_cache_mb": 4096.0,
+      "kernel_deltanet_state_mb": 16.0,
+      "compression_ratio": 256.0
+    }
+  ],
+  "context_lengths": [
+    4096,
+    8192,
+    16384,
+    32768,
+    65536
+  ],
+  "task_breakdown": {
+    "multi_query_retrieval": {
+      "name": "Multi-Query Needle-In-A-Haystack",
+      "transformer": [
+        98.5,
+        97.2,
+        95.8,
+        93.4,
+        91.0
+      ],
+      "kernel_deltanet": [
+        96.4,
+        95.1,
+        93.2,
+        90.5,
+        87.8
+      ],
+      "linear_deltanet": [
+        42.1,
+        23.4,
+        11.0,
+        3.8,
+        0.9
+      ],
+      "mamba2": [
+        81.2,
+        72.4,
+        61.5,
+        47.0,
+        31.2
+      ]
+    },
+    "multi_hop_tracing": {
+      "name": "Multi-Hop Variable Tracing",
+      "transformer": [
+        95.2,
+        93.8,
+        91.5,
+        89.2,
+        86.4
+      ],
+      "kernel_deltanet": [
+        93.0,
+        91.4,
+        88.6,
+        86.1,
+        82.5
+      ],
+      "linear_deltanet": [
+        38.5,
+        21.0,
+        9.4,
+        2.5,
+        0.5
+      ],
+      "mamba2": [
+        75.6,
+        66.8,
+        54.2,
+        41.5,
+        26.0
+      ]
+    },
+    "aggregation": {
+      "name": "Frequent Word Extraction / Aggregation",
+      "transformer": [
+        96.8,
+        95.0,
+        93.2,
+        91.0,
+        88.2
+      ],
+      "kernel_deltanet": [
+        94.5,
+        93.2,
+        91.0,
+        88.4,
+        85.6
+      ],
+      "linear_deltanet": [
+        45.0,
+        26.5,
+        14.2,
+        5.1,
+        1.4
+      ],
+      "mamba2": [
+        79.0,
+        70.1,
+        59.4,
+        45.8,
+        30.1
+      ]
+    },
+    "qa_distractors": {
+      "name": "QA over Distractor Paragraphs",
+      "transformer": [
+        96.4,
+        94.6,
+        92.8,
+        90.5,
+        87.9
+      ],
+      "kernel_deltanet": [
+        94.2,
+        92.6,
+        90.3,
+        87.6,
+        84.4
+      ],
+      "linear_deltanet": [
+        39.2,
+        22.8,
+        10.5,
+        3.2,
+        0.8
+      ],
+      "mamba2": [
+        77.5,
+        68.2,
+        56.8,
+        43.0,
+        27.5
+      ]
+    }
+  },
+  "composite_ruler_averages": {
+    "context_lengths": [
+      4096,
+      8192,
+      16384,
+      32768,
+      65536
+    ],
+    "transformer_avg": [
+      96.72,
+      95.15,
+      93.33,
+      91.03,
+      88.38
+    ],
+    "kernel_deltanet_avg": [
+      94.52,
+      93.07,
+      90.78,
+      88.15,
+      85.08
+    ],
+    "linear_deltanet_avg": [
+      41.2,
+      23.43,
+      11.27,
+      3.65,
+      0.9
+    ],
+    "mamba2_avg": [
+      78.33,
+      69.38,
+      57.97,
+      44.33,
+      28.7
+    ]
+  }
+}

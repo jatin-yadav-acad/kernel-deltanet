@@ -1,0 +1,47 @@
+[
+  {
+    "context_length": 4096,
+    "flashattention2_fwd_bwd_ms": 1.62,
+    "kernel_deltanet_fwd_bwd_ms": 30.45,
+    "training_speedup_vs_fa2": 0.05,
+    "backward_registers_per_thread": 126,
+    "backward_local_spills_bytes": 0,
+    "sfu_to_ffma_ratio_pct": 3.1
+  },
+  {
+    "context_length": 8192,
+    "flashattention2_fwd_bwd_ms": 4.44,
+    "kernel_deltanet_fwd_bwd_ms": 75.21,
+    "training_speedup_vs_fa2": 0.06,
+    "backward_registers_per_thread": 126,
+    "backward_local_spills_bytes": 0,
+    "sfu_to_ffma_ratio_pct": 3.1
+  },
+  {
+    "context_length": 16384,
+    "flashattention2_fwd_bwd_ms": 15.43,
+    "kernel_deltanet_fwd_bwd_ms": 205.88,
+    "training_speedup_vs_fa2": 0.07,
+    "backward_registers_per_thread": 126,
+    "backward_local_spills_bytes": 0,
+    "sfu_to_ffma_ratio_pct": 3.1
+  },
+  {
+    "context_length": 32768,
+    "flashattention2_fwd_bwd_ms": 58.52,
+    "kernel_deltanet_fwd_bwd_ms": 746.24,
+    "training_speedup_vs_fa2": 0.08,
+    "backward_registers_per_thread": 126,
+    "backward_local_spills_bytes": 0,
+    "sfu_to_ffma_ratio_pct": 3.1
+  },
+  {
+    "context_length": 65536,
+    "flashattention2_fwd_bwd_ms": 224.17,
+    "kernel_deltanet_fwd_bwd_ms": 2652.46,
+    "training_speedup_vs_fa2": 0.08,
+    "backward_registers_per_thread": 126,
+    "backward_local_spills_bytes": 0,
+    "sfu_to_ffma_ratio_pct": 3.1
+  }
+]

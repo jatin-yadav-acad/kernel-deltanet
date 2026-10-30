@@ -1,0 +1,209 @@
+{
+  "device": "NVIDIA GeForce RTX 5070 Ti",
+  "scaling_results": {
+    "Kernel-DeltaNet (Chunked)": {
+      "lengths": [
+        2048,
+        4096,
+        8192,
+        16384,
+        32768
+      ],
+      "latency_ms": [
+        4.64,
+        10.98,
+        12.7,
+        25.64,
+        48.74
+      ],
+      "throughput_tok_per_sec": [
+        441525.5,
+        373026.7,
+        645049.1,
+        639047.0,
+        672294.5
+      ],
+      "peak_vram_mb": [
+        124.3,
+        172.32,
+        268.35,
+        460.41,
+        844.54
+      ],
+      "status": [
+        "SUCCESS",
+        "SUCCESS",
+        "SUCCESS",
+        "SUCCESS",
+        "SUCCESS"
+      ]
+    },
+    "Linear DeltaNet": {
+      "lengths": [
+        2048,
+        4096,
+        8192,
+        16384,
+        32768
+      ],
+      "latency_ms": [
+        6.28,
+        8.86,
+        7.75,
+        14.61,
+        32.35
+      ],
+      "throughput_tok_per_sec": [
+        326010.0,
+        462183.9,
+        1057672.0,
+        1121208.8,
+        1012985.8
+      ],
+      "peak_vram_mb": [
+        101.24,
+        125.76,
+        174.79,
+        272.85,
+        468.98
+      ],
+      "status": [
+        "SUCCESS",
+        "SUCCESS",
+        "SUCCESS",
+        "SUCCESS",
+        "SUCCESS"
+      ]
+    },
+    "Standard Attention (SDPA)": {
+      "lengths": [
+        2048,
+        4096,
+        8192,
+        16384,
+        32768
+      ],
+      "latency_ms": [
+        1.81,
+        2.79,
+        6.02,
+        17.09,
+        58.5
+      ],
+      "throughput_tok_per_sec": [
+        1131381.7,
+        1465872.7,
+        1361376.3,
+        958629.2,
+        560163.7
+      ],
+      "peak_vram_mb": [
+        98.55,
+        121.32,
+        167.35,
+        254.41,
+        432.54
+      ],
+      "status": [
+        "SUCCESS",
+        "SUCCESS",
+        "SUCCESS",
+        "SUCCESS",
+        "SUCCESS"
+      ]
+    }
+  },
+  "retention_at_16k": {
+    "Kernel-DeltaNet (Chunked)": {
+      "10%": {
+        "recalled": false,
+        "target_probability": 0.003924
+      },
+      "25%": {
+        "recalled": false,
+        "target_probability": 0.00402
+      },
+      "50%": {
+        "recalled": false,
+        "target_probability": 0.004036
+      },
+      "75%": {
+        "recalled": false,
+        "target_probability": 0.004042
+      },
+      "90%": {
+        "recalled": false,
+        "target_probability": 0.003928
+      },
+      "98%": {
+        "recalled": false,
+        "target_probability": 0.003679
+      }
+    },
+    "Linear DeltaNet": {
+      "10%": {
+        "recalled": false,
+        "target_probability": 0.0
+      },
+      "25%": {
+        "recalled": false,
+        "target_probability": 0.0
+      },
+      "50%": {
+        "recalled": false,
+        "target_probability": 0.0
+      },
+      "75%": {
+        "recalled": false,
+        "target_probability": 0.0
+      },
+      "90%": {
+        "recalled": false,
+        "target_probability": 0.0
+      },
+      "98%": {
+        "recalled": false,
+        "target_probability": 0.0
+      }
+    },
+    "Standard Attention (SDPA)": {
+      "10%": {
+        "recalled": false,
+        "target_probability": 0.004045
+      },
+      "25%": {
+        "recalled": false,
+        "target_probability": 0.003938
+      },
+      "50%": {
+        "recalled": false,
+        "target_probability": 0.003906
+      },
+      "75%": {
+        "recalled": false,
+        "target_probability": 0.004051
+      },
+      "90%": {
+        "recalled": false,
+        "target_probability": 0.004067
+      },
+      "98%": {
+        "recalled": false,
+        "target_probability": 0.003941
+      }
+    }
+  },
+  "streaming_constant_memory": {
+    "evaluated_tokens": 8192,
+    "initial_vram_mb": 70.29,
+    "final_vram_mb": 70.54,
+    "vram_drift_mb": 0.254,
+    "is_constant_o1_memory": true,
+    "streaming_throughput_tok_per_sec": 136046.3
+  },
+  "hardware_limits": {
+    "total_gpu_vram_gb": 15.92,
+    "max_tested_seq_len": 32768,
+    "deltanet_chunk_size": 128
+  }
+}

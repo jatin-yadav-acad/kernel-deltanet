@@ -1,0 +1,105 @@
+{
+  "model_evaluated": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "architecture": "Llama-1B-Kernel-DeltaNet",
+  "zero_shot_benchmarks": {
+    "PIQA": {
+      "task": "PIQA",
+      "total_samples": 5,
+      "base_accuracy": 80.0,
+      "upcycled_accuracy": 0.0,
+      "retention_percentage": 0.0
+    },
+    "ARC-Challenge": {
+      "task": "ARC-Challenge",
+      "total_samples": 4,
+      "base_accuracy": 50.0,
+      "upcycled_accuracy": 25.0,
+      "retention_percentage": 50.0
+    },
+    "HellaSwag": {
+      "task": "HellaSwag",
+      "total_samples": 3,
+      "base_accuracy": 100.0,
+      "upcycled_accuracy": 0.0,
+      "retention_percentage": 0.0
+    },
+    "LAMBADA": {
+      "task": "LAMBADA",
+      "total_samples": 3,
+      "base_accuracy": 100.0,
+      "upcycled_accuracy": 66.67,
+      "retention_percentage": 66.67
+    }
+  },
+  "decoding_memory_profile": [
+    {
+      "sequence_length": 1024,
+      "transformer_kv_cache_mb": 22.0,
+      "kernel_deltanet_state_mb": 22.0,
+      "memory_compression_factor": 1.0
+    },
+    {
+      "sequence_length": 2048,
+      "transformer_kv_cache_mb": 44.0,
+      "kernel_deltanet_state_mb": 22.0,
+      "memory_compression_factor": 2.0
+    },
+    {
+      "sequence_length": 4096,
+      "transformer_kv_cache_mb": 88.0,
+      "kernel_deltanet_state_mb": 22.0,
+      "memory_compression_factor": 4.0
+    },
+    {
+      "sequence_length": 8192,
+      "transformer_kv_cache_mb": 176.0,
+      "kernel_deltanet_state_mb": 22.0,
+      "memory_compression_factor": 8.0
+    },
+    {
+      "sequence_length": 16384,
+      "transformer_kv_cache_mb": 352.0,
+      "kernel_deltanet_state_mb": 22.0,
+      "memory_compression_factor": 16.0
+    },
+    {
+      "sequence_length": 32768,
+      "transformer_kv_cache_mb": 704.0,
+      "kernel_deltanet_state_mb": 22.0,
+      "memory_compression_factor": 32.0
+    }
+  ],
+  "prefill_throughput_scaling": [
+    {
+      "sequence_length": 512,
+      "base_tok_per_sec": 17316.7,
+      "kernel_deltanet_tok_per_sec": 14293.7,
+      "speedup_factor": 0.83
+    },
+    {
+      "sequence_length": 1024,
+      "base_tok_per_sec": 12374.4,
+      "kernel_deltanet_tok_per_sec": 20474.9,
+      "speedup_factor": 1.65
+    },
+    {
+      "sequence_length": 2048,
+      "base_tok_per_sec": 8094.6,
+      "kernel_deltanet_tok_per_sec": 21813.5,
+      "speedup_factor": 2.69
+    },
+    {
+      "sequence_length": 4096,
+      "base_tok_per_sec": 451.7,
+      "kernel_deltanet_tok_per_sec": 20735.6,
+      "speedup_factor": 45.91
+    },
+    {
+      "sequence_length": 8192,
+      "base_tok_per_sec": 4.7,
+      "kernel_deltanet_tok_per_sec": 7270.9,
+      "speedup_factor": 1558.93
+    }
+  ],
+  "mean_retention_percentage": 29.17
+}

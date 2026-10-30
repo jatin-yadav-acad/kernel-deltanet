@@ -1,0 +1,44 @@
+{
+  "device": "NVIDIA GeForce RTX 5070 Ti",
+  "models": [
+    {
+      "model": "TinyLlama-1.1B",
+      "head_dim_d_k": 64,
+      "q_heads": 32,
+      "kv_heads": 32,
+      "layers": 22,
+      "analytical_tau": 2.8284,
+      "per_head_chunk_latency_us": 65.95,
+      "attention_cosine_fidelity": 0.9999,
+      "state_footprint_mb": 44.0,
+      "softmax_kv_64k_gb": 11.0,
+      "compression_ratio_64k": 256.0
+    },
+    {
+      "model": "Meta-Llama-3-8B",
+      "head_dim_d_k": 128,
+      "q_heads": 32,
+      "kv_heads": 8,
+      "layers": 32,
+      "analytical_tau": 3.3636,
+      "per_head_chunk_latency_us": 62.71,
+      "attention_cosine_fidelity": 1.0,
+      "state_footprint_mb": 32.0,
+      "softmax_kv_64k_gb": 8.0,
+      "compression_ratio_64k": 256.0
+    },
+    {
+      "model": "Meta-Llama-3-70B",
+      "head_dim_d_k": 128,
+      "q_heads": 64,
+      "kv_heads": 8,
+      "layers": 80,
+      "analytical_tau": 3.3636,
+      "per_head_chunk_latency_us": 63.35,
+      "attention_cosine_fidelity": 1.0,
+      "state_footprint_mb": 80.0,
+      "softmax_kv_64k_gb": 20.0,
+      "compression_ratio_64k": 256.0
+    }
+  ]
+}

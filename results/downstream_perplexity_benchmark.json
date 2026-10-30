@@ -1,0 +1,200 @@
+{
+  "Scale-35M": {
+    "Kernel-DeltaNet": {
+      "T_128": {
+        "eval_seq_len": 128,
+        "cross_entropy_loss": 2.499176859855652,
+        "perplexity": 12.172470186917415,
+        "eval_latency_ms": 8.495062500060158
+      },
+      "T_256": {
+        "eval_seq_len": 256,
+        "cross_entropy_loss": 2.4722897708415985,
+        "perplexity": 11.84954856223564,
+        "eval_latency_ms": 8.292700000765763
+      },
+      "T_512": {
+        "eval_seq_len": 512,
+        "cross_entropy_loss": 2.4811763763427734,
+        "perplexity": 11.955320104580814,
+        "eval_latency_ms": 12.903537499369122
+      },
+      "T_1024": {
+        "eval_seq_len": 1024,
+        "cross_entropy_loss": 2.62355175614357,
+        "perplexity": 13.784596266253132,
+        "eval_latency_ms": 15.432312500706757
+      },
+      "T_2048": {
+        "eval_seq_len": 2048,
+        "cross_entropy_loss": 2.623042732477188,
+        "perplexity": 13.777581366048668,
+        "eval_latency_ms": 20.188262499232223
+      }
+    },
+    "Transformer": {
+      "T_128": {
+        "eval_seq_len": 128,
+        "cross_entropy_loss": 2.6526193618774414,
+        "perplexity": 14.191161792868657,
+        "eval_latency_ms": 4.170112500105461
+      },
+      "T_256": {
+        "eval_seq_len": 256,
+        "cross_entropy_loss": 2.6259307861328125,
+        "perplexity": 13.817429274029577,
+        "eval_latency_ms": 2.649200000178098
+      },
+      "T_512": {
+        "eval_seq_len": 512,
+        "cross_entropy_loss": 2.6229220628738403,
+        "perplexity": 13.775918931074836,
+        "eval_latency_ms": 3.363150000495807
+      },
+      "T_1024": {
+        "eval_seq_len": 1024,
+        "cross_entropy_loss": 2.802220046520233,
+        "perplexity": 16.48119520654008,
+        "eval_latency_ms": 4.64349999992919
+      },
+      "T_2048": {
+        "eval_seq_len": 2048,
+        "cross_entropy_loss": 2.8002692461013794,
+        "perplexity": 16.449075024246927,
+        "eval_latency_ms": 5.3928375000396045
+      }
+    }
+  },
+  "Scale-70M": {
+    "Kernel-DeltaNet": {
+      "T_128": {
+        "eval_seq_len": 128,
+        "cross_entropy_loss": 2.4258654713630676,
+        "perplexity": 11.312015409317015,
+        "eval_latency_ms": 11.53336249944914
+      },
+      "T_256": {
+        "eval_seq_len": 256,
+        "cross_entropy_loss": 2.403250753879547,
+        "perplexity": 11.059068320349994,
+        "eval_latency_ms": 12.643474999549653
+      },
+      "T_512": {
+        "eval_seq_len": 512,
+        "cross_entropy_loss": 2.4163765609264374,
+        "perplexity": 11.205184364928831,
+        "eval_latency_ms": 15.706024999417423
+      },
+      "T_1024": {
+        "eval_seq_len": 1024,
+        "cross_entropy_loss": 2.577461928129196,
+        "perplexity": 13.163685345301827,
+        "eval_latency_ms": 24.250499999652675
+      },
+      "T_2048": {
+        "eval_seq_len": 2048,
+        "cross_entropy_loss": 2.5780149698257446,
+        "perplexity": 13.17096742563945,
+        "eval_latency_ms": 27.011449999463366
+      }
+    },
+    "Transformer": {
+      "T_128": {
+        "eval_seq_len": 128,
+        "cross_entropy_loss": 2.5919827222824097,
+        "perplexity": 13.356227056614575,
+        "eval_latency_ms": 4.324162499415252
+      },
+      "T_256": {
+        "eval_seq_len": 256,
+        "cross_entropy_loss": 2.5538187623023987,
+        "perplexity": 12.856104569421834,
+        "eval_latency_ms": 4.514637499596574
+      },
+      "T_512": {
+        "eval_seq_len": 512,
+        "cross_entropy_loss": 2.5534000992774963,
+        "perplexity": 12.850723320337952,
+        "eval_latency_ms": 4.962587500358495
+      },
+      "T_1024": {
+        "eval_seq_len": 1024,
+        "cross_entropy_loss": 2.7317192256450653,
+        "perplexity": 15.359270385465521,
+        "eval_latency_ms": 7.484474999728263
+      },
+      "T_2048": {
+        "eval_seq_len": 2048,
+        "cross_entropy_loss": 2.7314015924930573,
+        "perplexity": 15.3543925467231,
+        "eval_latency_ms": 8.816399999886926
+      }
+    }
+  },
+  "Scale-125M": {
+    "Kernel-DeltaNet": {
+      "T_128": {
+        "eval_seq_len": 128,
+        "cross_entropy_loss": 2.3138990998268127,
+        "perplexity": 10.11378252270568,
+        "eval_latency_ms": 16.093487500256742
+      },
+      "T_256": {
+        "eval_seq_len": 256,
+        "cross_entropy_loss": 2.292433351278305,
+        "perplexity": 9.898996132863699,
+        "eval_latency_ms": 16.23458749963902
+      },
+      "T_512": {
+        "eval_seq_len": 512,
+        "cross_entropy_loss": 2.3434098958969116,
+        "perplexity": 10.416695920693273,
+        "eval_latency_ms": 22.89866249930128
+      },
+      "T_1024": {
+        "eval_seq_len": 1024,
+        "cross_entropy_loss": 2.647059440612793,
+        "perplexity": 14.112478988436731,
+        "eval_latency_ms": 44.82940000025337
+      },
+      "T_2048": {
+        "eval_seq_len": 2048,
+        "cross_entropy_loss": 2.7318520843982697,
+        "perplexity": 15.361311134541749,
+        "eval_latency_ms": 46.02911250003672
+      }
+    },
+    "Transformer": {
+      "T_128": {
+        "eval_seq_len": 128,
+        "cross_entropy_loss": 2.551088333129883,
+        "perplexity": 12.821049765568615,
+        "eval_latency_ms": 6.864387500172597
+      },
+      "T_256": {
+        "eval_seq_len": 256,
+        "cross_entropy_loss": 2.5170915126800537,
+        "perplexity": 12.392500765453294,
+        "eval_latency_ms": 6.634737499553012
+      },
+      "T_512": {
+        "eval_seq_len": 512,
+        "cross_entropy_loss": 2.518639922142029,
+        "perplexity": 12.411704294522293,
+        "eval_latency_ms": 8.336149999649933
+      },
+      "T_1024": {
+        "eval_seq_len": 1024,
+        "cross_entropy_loss": 2.7160130441188812,
+        "perplexity": 15.119919461531014,
+        "eval_latency_ms": 14.734249999492022
+      },
+      "T_2048": {
+        "eval_seq_len": 2048,
+        "cross_entropy_loss": 2.7133315801620483,
+        "perplexity": 15.079430251903451,
+        "eval_latency_ms": 16.92822499990143
+      }
+    }
+  }
+}

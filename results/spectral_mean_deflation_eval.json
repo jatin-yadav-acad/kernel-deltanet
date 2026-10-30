@@ -1,0 +1,78 @@
+{
+  "device": "NVIDIA GeForce RTX 5070 Ti",
+  "D": 512,
+  "d_k": 64,
+  "num_trials": 100,
+  "evaluations": [
+    {
+      "N_steps": 16,
+      "uncentered_pure_acc": 28.0,
+      "uncentered_pure_variance": 0.9989,
+      "spectral_mean_deflated_pure_acc": 100.0,
+      "spectral_mean_deflated_variance": 0.663,
+      "hybrid_20_2_acc": 95.0,
+      "hybrid_20_2_variance": 0.8958,
+      "softmax_acc": 95.0
+    },
+    {
+      "N_steps": 32,
+      "uncentered_pure_acc": 31.0,
+      "uncentered_pure_variance": 1.0046,
+      "spectral_mean_deflated_pure_acc": 100.0,
+      "spectral_mean_deflated_variance": 0.695,
+      "hybrid_20_2_acc": 76.0,
+      "hybrid_20_2_variance": 0.9489,
+      "softmax_acc": 81.0
+    },
+    {
+      "N_steps": 64,
+      "uncentered_pure_acc": 32.0,
+      "uncentered_pure_variance": 0.9969,
+      "spectral_mean_deflated_pure_acc": 100.0,
+      "spectral_mean_deflated_variance": 0.7603,
+      "hybrid_20_2_acc": 63.0,
+      "hybrid_20_2_variance": 0.9729,
+      "softmax_acc": 65.0
+    },
+    {
+      "N_steps": 128,
+      "uncentered_pure_acc": 20.0,
+      "uncentered_pure_variance": 1.0093,
+      "spectral_mean_deflated_pure_acc": 93.0,
+      "spectral_mean_deflated_variance": 0.869,
+      "hybrid_20_2_acc": 55.0,
+      "hybrid_20_2_variance": 0.9853,
+      "softmax_acc": 61.0
+    },
+    {
+      "N_steps": 256,
+      "uncentered_pure_acc": 23.0,
+      "uncentered_pure_variance": 1.0039,
+      "spectral_mean_deflated_pure_acc": 55.0,
+      "spectral_mean_deflated_variance": 0.9581,
+      "hybrid_20_2_acc": 41.0,
+      "hybrid_20_2_variance": 0.9942,
+      "softmax_acc": 43.0
+    },
+    {
+      "N_steps": 512,
+      "uncentered_pure_acc": 26.0,
+      "uncentered_pure_variance": 0.9988,
+      "spectral_mean_deflated_pure_acc": 31.0,
+      "spectral_mean_deflated_variance": 0.9947,
+      "hybrid_20_2_acc": 36.0,
+      "hybrid_20_2_variance": 0.9965,
+      "softmax_acc": 40.0
+    },
+    {
+      "N_steps": 1024,
+      "uncentered_pure_acc": 34.0,
+      "uncentered_pure_variance": 0.9996,
+      "spectral_mean_deflated_pure_acc": 31.0,
+      "spectral_mean_deflated_variance": 0.9968,
+      "hybrid_20_2_acc": 36.0,
+      "hybrid_20_2_variance": 0.9982,
+      "softmax_acc": 35.0
+    }
+  ]
+}

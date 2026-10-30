@@ -1,0 +1,60 @@
+{
+  "device": "NVIDIA GeForce RTX 5070 Ti",
+  "benchmarks": [
+    {
+      "seq_len": 2048,
+      "decoupled_latency_ms": 83.875,
+      "monolithic_spill_latency_ms": 82.64,
+      "speedup": 0.985,
+      "dram_traffic_decoupled_mb": 16.0,
+      "dram_traffic_spill_mb": 32.0,
+      "l2_hit_rate_pct": 91.8,
+      "occupancy_ceiling_pct": 33.3,
+      "epilogue_occupancy_pct": 100.0
+    },
+    {
+      "seq_len": 4096,
+      "decoupled_latency_ms": 176.787,
+      "monolithic_spill_latency_ms": 171.927,
+      "speedup": 0.973,
+      "dram_traffic_decoupled_mb": 32.0,
+      "dram_traffic_spill_mb": 64.0,
+      "l2_hit_rate_pct": 91.8,
+      "occupancy_ceiling_pct": 33.3,
+      "epilogue_occupancy_pct": 100.0
+    },
+    {
+      "seq_len": 8192,
+      "decoupled_latency_ms": 339.424,
+      "monolithic_spill_latency_ms": 332.189,
+      "speedup": 0.979,
+      "dram_traffic_decoupled_mb": 64.0,
+      "dram_traffic_spill_mb": 128.0,
+      "l2_hit_rate_pct": 91.8,
+      "occupancy_ceiling_pct": 33.3,
+      "epilogue_occupancy_pct": 100.0
+    },
+    {
+      "seq_len": 16384,
+      "decoupled_latency_ms": 677.534,
+      "monolithic_spill_latency_ms": 674.853,
+      "speedup": 0.996,
+      "dram_traffic_decoupled_mb": 128.0,
+      "dram_traffic_spill_mb": 256.0,
+      "l2_hit_rate_pct": 91.8,
+      "occupancy_ceiling_pct": 33.3,
+      "epilogue_occupancy_pct": 100.0
+    },
+    {
+      "seq_len": 32768,
+      "decoupled_latency_ms": 1359.045,
+      "monolithic_spill_latency_ms": 1369.171,
+      "speedup": 1.007,
+      "dram_traffic_decoupled_mb": 256.0,
+      "dram_traffic_spill_mb": 512.0,
+      "l2_hit_rate_pct": 91.8,
+      "occupancy_ceiling_pct": 33.3,
+      "epilogue_occupancy_pct": 100.0
+    }
+  ]
+}

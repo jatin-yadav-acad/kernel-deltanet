@@ -1,0 +1,87 @@
+{
+  "K_16": {
+    "T": 512,
+    "K": 16,
+    "saturation_ratio": 0.5,
+    "Linear DeltaNet (dk=32)": {
+      "top1_acc_pct": 94.0,
+      "mean_snr_db": -2.221843335193282
+    },
+    "Linear DeltaNet (dk=512, Lin.)": {
+      "top1_acc_pct": 2.0,
+      "mean_snr_db": -0.03324414183941192
+    },
+    "Kernel-DeltaNet (D=512, RKHS)": {
+      "top1_acc_pct": 100.0,
+      "mean_snr_db": 8.159432843811071
+    }
+  },
+  "K_64": {
+    "T": 1024,
+    "K": 64,
+    "saturation_ratio": 2.0,
+    "Linear DeltaNet (dk=32)": {
+      "top1_acc_pct": 57.99999999999999,
+      "mean_snr_db": -6.469404786167604
+    },
+    "Linear DeltaNet (dk=512, Lin.)": {
+      "top1_acc_pct": 0.0,
+      "mean_snr_db": -0.022864652188270638
+    },
+    "Kernel-DeltaNet (D=512, RKHS)": {
+      "top1_acc_pct": 100.0,
+      "mean_snr_db": 4.133208890659234
+    }
+  },
+  "K_128": {
+    "T": 2048,
+    "K": 128,
+    "saturation_ratio": 4.0,
+    "Linear DeltaNet (dk=32)": {
+      "top1_acc_pct": 22.0,
+      "mean_snr_db": -9.447371822232764
+    },
+    "Linear DeltaNet (dk=512, Lin.)": {
+      "top1_acc_pct": 0.0,
+      "mean_snr_db": -0.028918894284732728
+    },
+    "Kernel-DeltaNet (D=512, RKHS)": {
+      "top1_acc_pct": 100.0,
+      "mean_snr_db": 0.9990054464666761
+    }
+  },
+  "K_256": {
+    "T": 4096,
+    "K": 256,
+    "saturation_ratio": 8.0,
+    "Linear DeltaNet (dk=32)": {
+      "top1_acc_pct": 20.0,
+      "mean_snr_db": -12.212386762081241
+    },
+    "Linear DeltaNet (dk=512, Lin.)": {
+      "top1_acc_pct": 0.0,
+      "mean_snr_db": -0.03303027329567302
+    },
+    "Kernel-DeltaNet (D=512, RKHS)": {
+      "top1_acc_pct": 88.0,
+      "mean_snr_db": -1.6681012062471743
+    }
+  },
+  "K_512": {
+    "T": 4096,
+    "K": 512,
+    "saturation_ratio": 16.0,
+    "Linear DeltaNet (dk=32)": {
+      "top1_acc_pct": 10.0,
+      "mean_snr_db": -13.728065038030326
+    },
+    "Linear DeltaNet (dk=512, Lin.)": {
+      "top1_acc_pct": 0.0,
+      "mean_snr_db": -0.03303361034873767
+    },
+    "Kernel-DeltaNet (D=512, RKHS)": {
+      "top1_acc_pct": 72.0,
+      "mean_snr_db": -3.050118814487781
+    }
+  }
+}
